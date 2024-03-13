@@ -1,7 +1,6 @@
-<link rel="stylesheet" href="../public/styles/settings.css">
-<link rel="stylesheet" href="../public/styles/style.css">
-<link rel="stylesheet" href="../public/styles/footer.css">
-
+<?php
+require 'header.php';
+?>
 <footer role="contentinfo" class="footer_mobile">
     <h1>menu</h1>
 
@@ -35,7 +34,7 @@
         <aside class="footer_socials">
             <section>
                 <div class="socials_img">
-                    <img src="../public/img/test.jpg" alt="l'exposition">
+                    <img src="img/test.jpg" alt="l'exposition">
                 </div>
                 <p>5 Bd Descartes, <br> 77420 Champs-sur-Marne</p>
             </section>
@@ -50,3 +49,4 @@
 
     </nav>
 </footer>
+
