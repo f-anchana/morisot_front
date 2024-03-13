@@ -7,9 +7,10 @@ $router = new AltoRouter();
 $router->map('GET', '/', 'HomeController#displayHome', 'accueil');
 $router->map('GET', '/oeuvres', 'OeuvresController#displayOeuvres', 'oeuvres');
 $router->map('GET', '/ressources', 'RessourcesController#displayRessources', 'ressources');
-$router->map('GET', '/votre-visite', 'VisiteController#displayVisite', 'votre-visite');
+$router->map('GET', '/votre-visite', 'VisiteController#displayVisite', 'votre.visite');
 $router->map('GET', '/billeterie', 'BilleterieController#displayAccueilBilleterie', 'billeterie.accueil');
 $router->map('GET', '/billeterie/merci', 'BilleterieController#displayRemerciements', 'billeterie.merci');
+$router->map('GET', '/erreur404', 'ErrorsController#displayError404', 'erreur404');
 
 
 
@@ -35,7 +36,8 @@ $match = $router->match();
 // }
 
 if (!$match) {
-    echo "404";
+    // echo "404";
+    require '../views/404.php';
     die;
 }
 
