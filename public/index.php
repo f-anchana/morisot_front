@@ -6,6 +6,8 @@ $router = new AltoRouter();
 
 $router->map('GET', '/', 'HomeController#displayHome', 'accueil');
 $router->map('GET', '/oeuvres', 'OeuvresController#displayOeuvres', 'oeuvres');
+$router->map('GET', '/ressources', 'RessourcesController#displayRessources', 'ressources');
+$router->map('GET', '/votre-visite', 'VisiteController#displayVisite', 'votre-visite');
 $router->map('GET', '/billeterie', 'BilleterieController#displayAccueilBilleterie', 'billeterie.accueil');
 $router->map('GET', '/billeterie/merci', 'BilleterieController#displayRemerciements', 'billeterie.merci');
 
@@ -13,7 +15,6 @@ $router->map('GET', '/billeterie/merci', 'BilleterieController#displayRemercieme
 
 // $router->map('GET', '/oeuvres', 'oeuvres', 'oeuvres');
 //le 4e paramètre est le nom de la route pour la fonction generate / le 3e est le nom de la page
-
 
 
 // Récupère les informations de la route
