@@ -1,0 +1,15 @@
+:root {
+    --bc-color: #EFEDE5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 1.3rem;
+    background-color: var(--bc-color);
+}
