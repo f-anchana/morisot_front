@@ -1,9 +1,34 @@
+<section class="part-1">
 
-<article>
-    <h1>Accueil</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis officiis architecto minima sit in. Nihil dicta ab saepe adipisci natus, ad tempora nulla, assumenda ut in, aliquid sed. Suscipit aperiam hic qui impedit cupiditate officiis reiciendis maxime eius. Similique cupiditate pariatur temporibus alias eum accusantium quibusdam, iusto quaerat, id rem, ab suscipit. Aliquam accusamus laborum aut vero expedita nostrum ipsum obcaecati sequi architecto. Ex, eius. Numquam magnam voluptatum veniam similique, harum quaerat quos distinctio eos nam! Distinctio officia ipsa cumque quidem iste, odio repellendus aspernatur autem hic iure?
-</article>
+    <div class="home-img"></div>
+    <h1>Shadows and lights</h1>
+    <p>Découvrez l'art de Berthe Morisot entre ombre et lumière : une exposition captivante qui éclaire votre esprit et
+        joue avec vos sens</p>
+    <p>Une exposition <span>immersive</span> et multisensorielle</p>
 
-<script>
-    console.log('hello');
-</script>
+</section>
+
+
+<section class="part-2">
+
+    <h1>Une expérience immersive multisensorielle</h1>
+
+    <div>
+        <p>31 mars . 30 avril / 2024</p>
+        <p>Découvrez Berthe Morisot, une artiste éminente du mouvement impressionniste, dans une expérience en réalité
+            virtuelle inédite où vos sens fusionne avec la réalité. Traversez les portes de son univers, vivez des
+            moments
+            clefs de son parcours et laissez vous emporter par de douces mélodies dans la quatrième dimension.
+        </p>
+    </div>
+
+    <div>
+        <img src="img/home-2.png" alt="">
+    </div>
+
+    <a href="" class="bouton">Découvrir</a>
+    
+</section>
+
+
+<section></section>

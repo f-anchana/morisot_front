@@ -42,7 +42,7 @@ if (!$match) {
 }
 
 if ($match) {
-    // require_once './src/view/template/header.php';
+    
     list($controller, $action) = explode('#', $match['target']);
     $controller = 'App\\Controller\\' . $controller;
     $controller = new $controller($router);

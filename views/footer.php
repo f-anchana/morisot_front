@@ -1,6 +1,3 @@
-<?php
-require 'header.php';
-?>
 <footer role="contentinfo" class="footer_mobile">
     <h1>menu</h1>
 
