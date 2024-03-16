@@ -7,5 +7,6 @@
             <a href="<?= $this->router->generate('votre.visite') ?>">Votre visite </a><br>
             <a href="<?= $this->router->generate('billeterie.accueil') ?>">Billeterie </a><br>
             <a href="<?= $this->router->generate('erreur404') ?>">ERREUR404 </a><br>
+            <a href="<?= $this->router->generate('inscription') ?>">S'inscrire </a><br>
         </main>
     </nav>
