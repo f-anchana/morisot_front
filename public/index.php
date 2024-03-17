@@ -4,6 +4,7 @@ $uri = $_SERVER['REQUEST_URI'];
 $router = new AltoRouter();
 
 
+
 $router->map('GET', '/', 'HomeController#displayHome', 'accueil');
 $router->map('GET', '/oeuvres', 'OeuvresController#displayOeuvres', 'oeuvres');
 $router->map('GET', '/ressources', 'RessourcesController#displayRessources', 'ressources');
@@ -11,7 +12,11 @@ $router->map('GET', '/votre-visite', 'VisiteController#displayVisite', 'votre.vi
 $router->map('GET', '/billeterie', 'BilleterieController#displayAccueilBilleterie', 'billeterie.accueil');
 $router->map('GET', '/billeterie/merci', 'BilleterieController#displayRemerciements', 'billeterie.merci');
 $router->map('GET', '/erreur404', 'ErrorsController#displayError404', 'erreur404');
+$router->map('GET', '/inscription', 'LoginController#displayInscription', 'inscription');
 
+
+
+$router->map('POST', '/inscription', 'LoginController#createUser');
 
 
 // $router->map('GET', '/oeuvres', 'oeuvres', 'oeuvres');
@@ -42,7 +47,7 @@ if (!$match) {
 }
 
 if ($match) {
-    // require_once './src/view/template/header.php';
+    
     list($controller, $action) = explode('#', $match['target']);
     $controller = 'App\\Controller\\' . $controller;
     $controller = new $controller($router);

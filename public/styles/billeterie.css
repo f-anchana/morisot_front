@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+}
+
+.field-container {
+    display: flex;
+}
+
+.form-step {
+    display: none; /* Masquer tous les fieldsets par défaut */
+    width: 33vw;
+    padding-right: 20px;
+}
+
+.form-step.active {
+    display: block; /* Afficher uniquement le fieldset actif */
+}
+
+.preview {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.preview h2 {
+    margin-top: 0;
+}
+
+.breadcrumb span.active {
+    font-weight: bold;
+}

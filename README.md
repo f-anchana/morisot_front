@@ -16,4 +16,18 @@ php -S localhost:8001 -t public
 
 Et cela va générer un lien localhost sans utiliser wamp
 
-## 3 : Je ne sais pas encore
+## 3 : Media
+
+Les différentes largeurs du reponsive:
+
+@media screen and (min-width: 375px)
+@media screen and (min-width: 425px)
+@media screen and (min-width: 500px)
+@media screen and (min-width: 576px)
+@media screen and (min-width: 768px)
+@media screen and (min-width: 1024px)
+@media screen and (min-width: 1080px)
+@media screen and (min-width: 1200px)
+@media screen and (min-width: 1280px)
+@media screen and (min-width: 1400px)
+@media screen and (min-width: 1920px)
