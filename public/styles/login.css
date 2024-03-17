@@ -1,0 +1,127 @@
+:root {
+  --bc-color: #EFEDE5;
+  --scd-color: #353535;
+}
+
+
+h2{
+  color: var(--bc-color);
+
+}
+.form {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card {
+  width: 350px;
+  backdrop-filter: blur(10px);
+}
+
+.form {
+  padding: 1rem;
+  flex-direction: column;
+  background-color: var(--scd-color);
+
+}
+
+.image_form_login{
+  height: 20vh;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div{
+  display: flex;
+  flex-direction: column;;
+}
+label {
+  color: var(--bc-color);
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+input {
+  padding: .5rem 3rem;
+  margin-bottom: 10px;
+  border: solid 1px #252525;
+  background-color: var(--bc-color);
+  color: #252525;
+
+}
+
+button {
+  margin: auto;
+  width: fit-content;
+   padding: .5rem 1rem;
+  border: none;
+  cursor: pointer;
+   transition: ease-in .3s;
+  border: 1px solid #252525 !important;
+  background-color: var(--bc-color);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.nav {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  padding: 25px;
+}
+
+.header .nav a {
+
+  font-size: 1.063rem;
+  text-transform: capitalize;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+
+@media (min-width:600px) and (max-width:900px) {
+
+
+
+  .nav {
+    gap: 20px;
+  }
+}
+
+
+
+@media (min-width:901px) {
+
+
+  .nav {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .header .nav a:nth-child(1) {
+    margin-right: auto;
+  }
+}

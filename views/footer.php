@@ -1,7 +1,7 @@
 <?php
 require 'header.php';
 ?>
-<footer role="contentinfo" class="footer_mobile">
+<footer role="contentinfo" class=" body footer_mobile">
     <h1>menu</h1>
 
     <nav class="footer_nav">
@@ -50,3 +50,44 @@ require 'header.php';
     </nav>
 </footer>
 
+
+
+<footer role="contentinfo" class="body desk_footer">
+
+
+    <nav class="footer_nav">
+   <div>
+   <h1>menu</h1>
+        <main class="footer_main_nav">
+            <div>
+                <a href="#">accueil</a>
+                <a href="#">Oeuvre</a>
+                <a href="#">ressources</a>
+            </div>
+            <div>
+                <a href="#">votre visite</a>
+                <a href="#">l’expérience</a>
+                <a href="#">billetterie</a>
+            </div>
+            <div>
+                <a href="#">Mention légale</a>
+                <a href="#">Mention légale</a>
+            
+            </div>
+   </div>
+        </main>
+        <section>
+            <div class="desk_socials_img">
+                <img src="img/test.jpg" alt="l'exposition">
+            </div>
+            <p>5 Bd Descartes, <br> 77420 Champs-sur-Marne</p>
+        </section>
+    </nav>
+
+    <nav class="desk_socials">
+        <p>+7 59 69 78 32</p>
+        <a href="#">youtube</a>
+        <a href="#">instagram</a>
+        <a href="#">tiktok</a>
+    </nav>
+</footer>

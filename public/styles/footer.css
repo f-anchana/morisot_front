@@ -22,7 +22,6 @@ footer h1 {
 }
 
 .socials_img img {
-    object-fit: cover;
     width: 100%;
     height: 100%;
 }
@@ -35,11 +34,68 @@ footer h1 {
     text-align: right;
 }
 
-.footer_mobile {
-    display: block;
+.desk_footer {
+    display: none;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
     .footer_mobile {
         display: none;
+    }
+
+    .desk_footer {
+        display: block;
+    }
+
+    .footer_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: solid 1px white;
+        padding-bottom: 1rem;
+    }
+
+  
+    section{
+        margin-left: auto;
+        flex: 1;
+    }
+
+    .desk_socials_img {
+        aspect-ratio: 459/188;
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+
+    }
+
+    .desk_socials_img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    section p {
+        text-align: right;
+    }
+
+    .desk_socials p {
+        width: fit-content;
+        margin-left: auto;
+    }
+
+    .desk_socials {
+        display: flex;
+        gap: 1rem;
+    }
+    .footer_main_nav {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        flex-wrap: nowrap;
+    }
+
+
+    .footer_main_nav a{
+        font-size: 1.125rem;
     }
 }
