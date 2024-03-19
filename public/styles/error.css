@@ -1,0 +1,32 @@
+body{
+    background-color: #353535;
+    color: #BEC7B6;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a{
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 50vw;
+    letter-spacing: -1rem;
+}
+
+.nbr_itl{
+    font-style: italic;
+}
+
+@media(min-width:800px){
+    h1{
+        font-size: 30vw;
+        letter-spacing: -2.5rem;
+
+    }
+}
