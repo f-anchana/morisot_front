@@ -4,9 +4,8 @@
     width: 100%;
     height: 100vh;
     background-color: black; 
-    background-image: url('../img/home-1.png');
+    background: url('../img/home-1.png')  no-repeat fixed;;
     background-size: cover;
-    background-position: center;
     color: white; 
 }
 

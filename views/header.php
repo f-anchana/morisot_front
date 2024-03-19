@@ -30,7 +30,6 @@
         <nav class="navigation-desk">
 
             <ul>
-                <li><a href="#"><img src="" alt="logo"></a></li>
                 <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
                 <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
                 <li><a href="#">L'expérience</a></li>
