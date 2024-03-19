@@ -1,0 +1,56 @@
+
+section{
+background-color: #E5E4DC;
+padding: 1rem;
+}
+
+section:first-child{
+    margin-bottom: 3rem;
+}
+
+h1{
+    text-transform: capitalize;
+font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+.button{
+    color: #EFEDE5;
+    margin-top: 1rem;
+    background-color: #353535;
+    padding: .5rem 1.2rem;
+    text-transform: uppercase;
+}
+
+.welcome{
+    margin-bottom: 1rem;
+}
+
+.btm_sec{
+    margin-bottom: 3rem;
+}
+
+.logout{
+    margin-left: 1rem;
+    background-color:  #BEC7B6;
+    color: #143C3C;
+    }
+
+    @media(min-width:600px){
+        
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+    section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logout{
+        margin: 0;
+    }
+    }
