@@ -36,7 +36,9 @@ footer h1 {
 
 .desk_footer {
     display: none;
+    padding: 2rem 3rem;
 }
+
 @media screen and (min-width: 750px) {
     .footer_mobile {
         display: none;

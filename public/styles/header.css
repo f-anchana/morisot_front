@@ -3,7 +3,7 @@
 .menu-icon {
     display: block;
     position: relative;
-    z-index: 2;
+    z-index: 4;
     width: 25px;
     cursor: pointer;
 }
@@ -16,7 +16,7 @@
     display: block;
     height: 1.5px;
     width: 100%;
-    background: rgb(255, 255, 255);
+    background: #ffffff;
     opacity: 1;
     margin-bottom: 7px;
     transition: 0.3s ease-in-out;
@@ -27,7 +27,7 @@
 }
 
 .menu-icon input:checked~span {
-    background: #423835;
+    background: var(--text-color);
     margin-bottom: 30%;
 }
 
@@ -46,29 +46,29 @@
 .menu-burger ul {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100vh;
-    background-color:#BEC7B6; 
-    z-index: 1;
-    transform: translateY(-100vh);
-}
-
-.menu-burger ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color:var(--home-color); 
+    z-index: 3;
+    padding: 0 2rem;
+    justify-content: center;
+    flex-direction: column;
 }
+
+
 
 .menu-burger li {
     margin-bottom: 20px;
 }
 
 .menu-burger a {
-    color: #423835;
+    color: var(--text-color);
     text-decoration: none;
-    font-size: 1.875rem;
+    font: 1.875rem Darker-Grotesque-SemiBold, sans-serif;
+    text-transform: uppercase;
 }
 
 .menu-icon input:checked ~ .menu-burger {
@@ -77,37 +77,85 @@
 }
 
 .logo{
-    color: #fff;
+    width: 25px;
+    z-index: 2;
 }
+
 
 .navigation{
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 0;
+    justify-content: space-between;
+    position: absolute;
     width: 100%;
     padding: 2rem;
+    color: var(--grey-color);
 }
 
 .navigation-desk {
     display: none;
 }
 
+.navigation-desk nav{
+    display: flex;
+    justify-content: space-between;
+    width: 94vw;
+    height: 45px;
+    z-index: 2;
+}
+
+
+.navigation-desk li:first-child{
+    margin-left: 20px;
+}
+
+.navigation-desk li{
+    margin-right: 20px;
+    text-transform: uppercase;
+    font: 0.75rem Moderat-Medium, sans-serif;
+}
+
+.navigation-desk ul {
+    display: flex;
+    align-items: center;
+}
+
+.language button{
+    position: absolute;
+    bottom: 3rem;
+}
+
+.billeterie div{
+    padding: 0;
+}
+
+#default-image, #hover-image {
+height: 44px;
+width: 120px;
+}
+
+
+.billet{
+    margin-right: 20px;
+}
+
+.mute{
+    width: 55px;
+}
+
 @media screen and (min-width: 1024px) {
 
-    .logo{
-        color: #000000;
-    }
+   .mobile{
+    display: none;
+   }
 
     .navigation-mobile {
         display: none;
     }
 
     .navigation-desk {
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
-    .navigation-desk ul {
-        display: flex;
-    }
 }

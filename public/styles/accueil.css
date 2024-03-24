@@ -1,14 +1,260 @@
-.home-img {
-    position: relative;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    background-color: black; 
-    background: url('../img/home-1.png')  no-repeat fixed;;
-    background-size: cover;
-    color: white; 
+.part-1 {
+    background-color: black;
 }
 
-.part-2 img{
-    width: 80vw;
+.home-img {
+    position: absolute;
+    object-position: top;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+.home-img-2,
+.home-img-3 {
+    display: none;
+}
+
+.home-info {
+    color: white;
+    height: 100vh;
+    margin: 0 2rem;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-info h1 {
+    font: 2.25rem Darker-Grotesque, sans-serif;
+    line-height: 33px;
+    padding-bottom: 4rem;
+    text-transform: lowercase;
+}
+
+.font-1 {
+    font-family: Addington-Thin-Italic, serif;
+}
+
+.font-2 {
+    font: 1.66rem Addington-Regular-Italic, serif;
+}
+
+.home-info p {
+    width: 36vw;
+    font: 1rem Moderat-Light, serif;
+    line-height: 20px;
+}
+
+.and {
+    display: block;
+    padding-left: 2rem;
+}
+
+.light {
+    padding-left: 3rem;
+}
+
+.part-2 {
+    width: 85vw;
+    margin: auto;
+    color: var(--text-color);
+}
+
+.part-2 h1 {
+    font: 1.5rem Moderat-Regular, sans-serif;
+    padding: 3rem 0 1rem 0;
+    line-height: 30px;
+    text-align: right;
+}
+
+.info p:first-child {
+    font: 1rem Moderat-Medium, sans-serif;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+
+.info p:last-child {
+    font: 1rem Moderat-Regular, sans-serif;
+    padding: 0 1rem;
+    line-height: 20px;
+}
+
+
+
+
+
+    @media screen and (min-width: 425px){
+
+        .home-info h1 {
+            font-size: 4rem;
+            line-height: 50px;
+        }
+
+        .light {
+            padding-left: 5rem;
+        }
+
+    }
+   
+    @media screen and (min-width: 576px){
+
+        .home-info{
+            margin: 0 4rem;
+        }
+
+    }
+    @media screen and (min-width: 768px){
+
+        .home-info h1 {
+            font-size: 7rem;
+            line-height: 80px;
+        }
+
+        .and {
+            padding-left: 3rem;
+        }
+
+        .light {
+            padding-left: 8rem;
+        }
+
+    }
+
+
+@media screen and (min-width: 1024px) {
+
+    .home-img {
+        display: none;
+
+    }
+
+    .home-img-2 {
+        display: block;
+        position: absolute;
+        height: 40vh;
+        width: 55vw;
+        bottom: 4rem;
+        right: 3rem;
+    }
+
+    .home-img-3 {
+        display: block;
+        position: absolute;
+        height: 8vh;
+        width: 13vw;
+        bottom: 8rem;
+        left: 3rem;
+    }
+
+    .part-1 {
+        background-color: var(--home-color);
+    }
+
+    .home-info {
+        color: var(--nav-btn-color);
+        flex-direction: row;
+        align-items: center;
+        margin: 0 10rem 0 3rem;
+        z-index: 1;
+    }
+
+    .home-info h1 {
+        font-size: 10rem;
+        line-height: 110px;
+        width: 100%;
+    }
+
+    .home-info p {
+        width: 380px;
+        margin-bottom: 13rem;
+    }
+
+    .and {
+        padding-left: 4rem;
+    }
+
+    .light {
+        padding-left: 11rem;
+    }
+
+    .part-2{
+        height: 100vh;
+    }
+
+    .part-2 h1 {
+        text-align: left;
+        padding-top: 5rem;
+        font-size: 2.5rem;
+    }
+
+    .font-2{
+        font-size: 3rem;
+    }
+
+    .morisot{
+        display: flex;
+    }
+
+    .portrait{
+        width: 35vw;
+        padding-top: 1rem;
+    }
+
+    .information{
+        padding: 2rem 5rem 5rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px){
+    .home-info h1 {
+        font-size: 11.5rem;
+        line-height: 120px;
+    }
+
+    .and {
+        padding-left: 8rem;
+    }
+
+    .light {
+        padding-left: 16rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1400px){
+    .home-info h1 {
+        font-size: 14.5rem;
+        line-height: 150px;
+    }
+
+    .and {
+        padding-left: 11rem;
+    }
+
+    .light {
+        padding-left: 21rem;
+    }
+
+    .home-info p {
+        margin-bottom: 20rem;
+    }
+
+}
+
+@media screen and (min-width: 1920px){
+
+    .home-info h1 {
+        font-size: 18.563rem;
+        line-height: 200px;
+    }
+
+    .and {
+        padding-left: 8rem;
+    }
 }
