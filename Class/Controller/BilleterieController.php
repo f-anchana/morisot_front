@@ -15,5 +15,6 @@ class BilleterieController {
 
     public function displayRemerciements() {
         echo "merci :)";
+        
     }
 }

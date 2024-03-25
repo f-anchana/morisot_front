@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
-$uri = $_SERVER['REQUEST_URI'];
+// $uri = $_SERVER['REQUEST_URI'];
 $router = new AltoRouter();
 
 
@@ -13,10 +13,12 @@ $router->map('GET', '/billeterie', 'BilleterieController#displayAccueilBilleteri
 $router->map('GET', '/billeterie/merci', 'BilleterieController#displayRemerciements', 'billeterie.merci');
 $router->map('GET', '/erreur404', 'ErrorsController#displayError404', 'erreur404');
 $router->map('GET', '/inscription', 'LoginController#displayInscription', 'inscription');
-
-
+$router->map('GET', '/connexion', 'LoginController#displayConnexion', 'connexion');
+$router->map('GET', '/confirmation', 'LoginController#displayConfirmation', 'confirmation');
+$router->map('GET', '/mon-espace', 'LoginController#displayDashboard', 'mon-espace');
 
 $router->map('POST', '/inscription', 'LoginController#createUser');
+$router->map('POST', '/connexion', 'LoginController#connectUser');
 
 
 // $router->map('GET', '/oeuvres', 'oeuvres', 'oeuvres');
@@ -42,17 +44,32 @@ $match = $router->match();
 
 if (!$match) {
     // echo "404";
-    require '../views/404.php';
+    require_once '../views/404.php';
     die;
 }
 
 if ($match) {
     // require_once './src/view/template/header.php';
+    if (is_string($match['target'])) {
     list($controller, $action) = explode('#', $match['target']);
-    $controller = 'App\\Controller\\' . $controller;
-    $controller = new $controller($router);
-    if (is_callable(array($controller, $action))) {
-        call_user_func_array(array($controller,$action), array($match['params']));
+        $controller = 'App\\Controller\\' . $controller;
+        $controller = new $controller($router);
+        if (is_callable(array($controller, $action))) {
+            call_user_func_array(array($controller,$action), array($match['params']));
+        }
+    } elseif (is_callable($match['target'])) {
+        call_user_func($match['target']);
     }
     // require_once './src/view/template/footer.php';
 }
+
+// if (is_string($match['target'])) {
+//     list($controller, $action) = explode('#', $match['target']);
+//     $controller = 'App\\Controller\\' . $controller;
+//     $controller = new $controller($router);
+//     if (is_callable(array($controller, $action))) {
+//         call_user_func_array(array($controller, $action), array($match['params']));
+//     }
+// } elseif (is_callable($match['target'])) {
+//     call_user_func($match['target']);
+// }

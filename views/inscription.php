@@ -9,23 +9,22 @@
 <body>
 
 <div class="formulaire">
-<form id="mon-formulaire" action="../API/controller.php" method='POST' onsubmit="return validateForm();">
+<form id="mon-formulaire" action="/inscription" method='POST' onsubmit="return validateForm();">
 <?php 
 if(isset($erreur)){
     echo $erreur;
 }
 ?>
 
-<h1>Pour t'inscrire</h1> <br><br>   
-
+    <h1>Inscription</h1>
     <label for="nom_user">Votre nom</label>
     <input type="text" name="nom_user" id="nom_user" required="required">
 
     <label for="prenom_user">Votre prénom</label>
-    <input type="text" name="prenom_user" id="prenom_user" required="required">4
+    <input type="text" name="prenom_user" id="prenom_user" required="required">
 
     <label for="numero">Votre numéro de téléphone</label>
-    <input type="text" name="numero" id="numero" required="required">
+    <input type="number" name="numero" id="numero" required="required">
 
     <label for='email'>Entrez votre email</label>
     <input type='email' name='email' id='email' required='required'>
@@ -45,8 +44,6 @@ if(isset($erreur)){
 
 </form>
 
-<p>Vous possédez déjà un compte ? <a href="index.php?action=login" class="connectez"> connectez-vous</a></p>
-
 </div>
 </div>
 
@@ -63,36 +60,6 @@ function validateForm() {
     return true; // Permet la soumission du formulaire
 }
 
-document.getElementById('mon-formulaire').addEventListener('submit', function(event) {
-        event.preventDefault(); // Empêche l'envoi traditionnel du formulaire
-        
-        var formData = {
-            nom_user: document.getElementById('nom_user').value,
-            prenom_user: document.getElementById('prenom_user').value,
-            numero: document.getElementById('numero').value,
-            email: document.getElementById('email').value,
-            age: document.getElementById('age').value,
-            mdp1: document.getElementById('mdp1').value,
-            mdp2: document.getElementById('mdp2').value
-        };
-
-        var jsonData = JSON.stringify(formData);
-
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', '../API/controller.php', true);
-        xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
-        xhr.onload = function() {
-            if (xhr.status >= 200 && xhr.status < 300) {
-                console.log(xhr.responseText);
-            } else {
-                console.error(xhr.statusText);
-            }
-        };
-        xhr.onerror = function() {
-            console.error('Erreur de réseau');
-        };
-        xhr.send(jsonData);
-    });
 </script>
 </body>
 </html>
