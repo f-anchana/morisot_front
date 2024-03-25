@@ -1,0 +1,120 @@
+.titre-1 {
+    text-align: center; 
+    width: 80vw;
+    margin: auto;
+}
+
+.titre-1 img{
+    width: 20vw;
+}
+
+
+.conteneur {
+    text-align: left;
+}
+
+.conteneur h1,
+.conteneur img {
+    display: inline;
+    vertical-align: middle;
+    font-family: Moderat-Regular, sans-serif;
+}
+
+
+
+
+.part-3 span, .conteneur span{
+    font-family: Addington-Regular-Italic, serif;
+}
+
+.part-3, .commentaire{
+    width: 85vw;
+    margin: auto;
+    font-family: Moderat-Regular, sans-serif;
+}
+
+.part-3 h1{
+    margin-bottom: 2rem;
+}
+
+.part-3 p{
+    line-height: 30px;
+}
+
+.part-3 img{
+    height: 300px;
+}
+
+
+
+/* commentaires */
+
+.commentaire h2, .form-group {
+    margin-bottom: 20px;
+}
+
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+button[type="submit"] {
+    color: #fff;
+    background-color: #2B211F;
+    cursor: pointer;
+}
+
+.bouton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+
+
+@media screen and (min-width: 768px){
+    .part-3{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .commentaire{
+        max-width: 650px;
+    }
+    
+}
+
+
+@media screen and (min-width: 1024px){
+.part-3 img {
+    height: 60vh;
+    width: 40vw;
+}
+
+.titre-1 {
+    width: 45vw;
+}
+
+.part-3 div{
+    padding: 5rem;
+}
+}
+
+
+@media screen and (min-width: 1200px){
+.part-3 h1, .titre-1 h1 {
+    font-size: 3rem;
+}
+
+.part-3 span, .conteneur span{
+    font-size: 3.5rem;
+}
+
+}

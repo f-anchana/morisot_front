@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.confirmation h1 {
+    font-size: 1.5rem;
+}
+
+.confirmation {
+    text-align: center;
+    font-family: Moderat-Regular, sans-serif;
+    margin: auto;
+    width: 80vw;
+}
+
+.confirmation span {
+    font: 1.66rem Addington-Regular-Italic, sans-serif;
+}
+
+.confirmation h2 {
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+.confirmation img {
+    width: 20vw;
+}
+
+.confirmation p {
+    font-size: 0.75rem;
+}
+
+
+.confirmation a {
+    width: 130px;
+    display: block;
+    margin: auto;
+}
+
+.retour {
+    padding: 32px 0 5px;
+    border-bottom: solid 1px rgb(122, 122, 122);
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .confirmation div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .confirmation h1 {
+        font-size: 2.5rem;
+    }
+
+    .confirmation span {
+        font-size: 3rem;
+    }
+
+    .confirmation h2 {
+        font-size: 1.6rem;
+    }
+
+    .confirmation {
+        width: 85vw;
+    }
+
+    .confirmation img {
+        padding-right: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 850px) {
+
+    .confirmation img {
+        height: 84px;
+        width: 239px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .confirmation img {
+        height: 64px;
+        width: 190px;
+    }
+
+    .confirmation p{
+        font-size: 1rem;
+    }
+
+    .confirmation a {
+        width: 165px;
+    }
+
+    .confirmation {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    .confirmation h1 {
+        font-size: 5rem;
+    }
+
+    .confirmation span {
+        font-size: 5.313rem;
+    }
+
+    .confirmation h2 {
+        font-size: 3.125rem;
+    }
+
+    .confirmation p {
+        font-size: 1.2rem;
+    }
+
+    .confirmation a {
+        width: 200px;
+    }
+
+    .confirmation {
+        width: 62vw;
+    }
+}
