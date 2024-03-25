@@ -49,7 +49,8 @@ if (!$match) {
 }
 
 if ($match) {
-    
+    // require_once './src/view/template/header.php';
+    if (is_string($match['target'])) {
     list($controller, $action) = explode('#', $match['target']);
         $controller = 'App\\Controller\\' . $controller;
         $controller = new $controller($router);
@@ -59,9 +60,8 @@ if ($match) {
     } elseif (is_callable($match['target'])) {
         call_user_func($match['target']);
     }
-
     // require_once './src/view/template/footer.php';
-
+}
 
 // if (is_string($match['target'])) {
 //     list($controller, $action) = explode('#', $match['target']);
