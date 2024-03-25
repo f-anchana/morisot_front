@@ -1,21 +1,20 @@
 <?php
 
-namespace App\Controller;
-
-class VisiteController {
+class ExperienceController {
     private $router;
     public function __construct($router)
     {
         $this->router = $router;
     }
 
-    public function displayVisite() {
+    public function displayExperience() {
         echo "<!DOCTYPE html>
         <html lang='fr'>";
         require '../views/head.php';
         echo "<body>";
-        require '../views/votre-visite.php';
+        require '../views/experience.php';
         echo "</body>
         </html>";
     }
+
 }
