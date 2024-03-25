@@ -44,6 +44,11 @@
 }
 
 @font-face {
+    font-family: 'Darker-Grotesque-Regular';
+    src: url('../fonts/darkergrotesque/DarkerGrotesque-Regular.woff') format('woff'), url('../fonts/darkergrotesque/DarkerGrotesque-Regular.woff2') format('woff2');
+}
+
+@font-face {
     font-family: 'Darker-Grotesque-SemiBold';
     src: url('../fonts/darkergrotesque/DarkerGrotesque-SemiBold.woff') format('woff'), url('../fonts/darkergrotesque/DarkerGrotesque-SemiBold.woff2') format('woff2');
 }
@@ -89,6 +94,11 @@
     background-color: var(--text-color);
 }
 
+h1{
+    font-family: Moderat-Regular, sans-serif;
+    /* font-size: 3rem pour 1024px; c pour me rappeler pcq ça marche pas */
+}
+
 
 body {
     margin: 0;
@@ -110,7 +120,29 @@ img {
     height: 100%;
 }
 
+/* Fil d'ariane */
+.breadcrumb-1{
+    margin: 10rem 0 4rem 2rem;
+    font-size: 1rem;
+}
 
+.breadcrumb-1 ul {
+    display: flex;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+
+.breadcrumb-1 li:first-child {
+    font-family: Darker-Grotesque-Regular, serif;
+
+}
+.breadcrumb-1 li:last-child {
+    font-family: Darker-Grotesque-SemiBold, serif;
+
+}
+
+
+/* Bouton ticket */
 .bouton div {
     display: flex;
     align-items: center;
@@ -134,5 +166,24 @@ img {
 button{
     background-color: transparent;
     border: transparent;
+    color: var(--text-color);
 }
 
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+
+    .bouton div{
+        width: 160px;
+    }
+
+    .breadcrumb-1{
+        margin: 8rem 0 4rem 4rem;
+        font-size: 1rem;
+    }
+}

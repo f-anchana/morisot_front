@@ -9,12 +9,20 @@
 
     <link rel="stylesheet" href="../public/styles/billeterie.css">
     <link rel="stylesheet" href="../public/styles/style.css">
+    <link rel="stylesheet" href="../public/styles/settings.css">
 
     <script src="../public/javascript/billeterie.js" defer></script>
 
 </head>
 
 <body>
+
+    <nav class="breadcrumb-1" aria-label="Breadcrumb">
+        <ul>
+            <li><a href="">Accueil</a></li><span>&ensp; > &ensp;</span>
+            <li>Billeterie</li>
+        </ul>
+    </nav>
 
     <div class="container">
 
@@ -30,10 +38,9 @@
 
             <div class="field-container">
                 <fieldset id="step1" class="form-step active">
-                    <legend>Étape 1: Date et Horaire</legend>
                     <label for="date">Date:</label>
                     <input type="date" id="date" name="date" min="<?php echo date('Y-m-d'); ?>" required><br><br>
-                   
+
                     <br><br>
                     <label for="time">Horaire:</label>
                     <select id="time" name="time" required>
@@ -49,7 +56,6 @@
                 </fieldset>
 
                 <fieldset id="step2" class="form-step">
-                    <legend>Étape 2: Nombre de billets</legend>
                     <label for="tickets">Nombre de billets:</label>
                     <input type="number" id="tickets" name="tickets" min="1" required>
                     <div class="error-message" style="display: none;">Veuillez remplir ce champ.</div><br><br>
@@ -58,7 +64,6 @@
                 </fieldset>
 
                 <fieldset id="step3" class="form-step">
-                    <legend>Étape 3: Coordonnées</legend>
                     <label for="name">Nom:</label>
                     <input type="text" id="name" name="name" required>
                     <label for="email">Email:</label>
@@ -70,12 +75,12 @@
                 </fieldset>
 
                 <fieldset id="step4" class="form-step">
-                    
 
 
+                    <div id="summary"></div>
 
                     <button type="button" onclick="prevStep()">Précédent</button>
-                    <button type="submit" >Réserver</button>
+                    <button type="submit">Réserver</button>
                 </fieldset>
 
             </div>
@@ -83,7 +88,7 @@
         </form>
 
         <div class="preview">
-            <h2>Aperçu du billet</h2>
+            <img src="../public/img/test.jpg" alt="">
             <div id="previewTicket"></div>
         </div>
 

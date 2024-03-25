@@ -40,7 +40,7 @@
             <a href="" class="bouton">
                 <div>
                     <img src="../img/bouton.svg" alt="">
-                    <p class="texte">Découvrir</p>
+                    <p class="ticket texte">Découvrir</p>
                 </div>
             </a>
         </div>

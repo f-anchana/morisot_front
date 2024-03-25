@@ -89,7 +89,7 @@
     position: absolute;
     width: 100%;
     padding: 2rem;
-    color: var(--grey-color);
+    color: var(--text-color);
 }
 
 .navigation-desk {

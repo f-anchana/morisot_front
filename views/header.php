@@ -16,10 +16,11 @@
             <nav class="menu-burger">
                 <ul>
                     <li><a href="#">Accueil</a></li>
+                    <li><a href="<?= $this->router->generate('oeuvres') ?>">Oeuvres</a></li>
                     <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
                     <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
                     <li><a href="#">L'expérience</a></li>
-                    <li><a href="<?= $this->router->generate('billeterie.accueil') ?>">Réserver</a></li>
+                    <li><a href="<?= $this->router->generate('billeterie.accueil') ?>">Billeterie</a></li>
                     <li class="language"><button>fr / en</button></li>
                 </ul>
             </nav>

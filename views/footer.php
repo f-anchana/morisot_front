@@ -1,37 +1,32 @@
 <footer role="contentinfo" class="footer_mobile">
-    <h1>menu</h1>
+    <h1>Menu</h1>
 
     <nav class="footer_nav">
-        <main class="footer_nav_main">
-            <a href="#">accueil</a>
-            <br>
-            <a href="#">accueil</a>
-            <br>
-            <a href="#">accueil</a>
-            <br>
-            <a href="#">accueil</a>
-            <br>
-            <a href="#">accueil</a>
-            <br>
-            <a href="#">accueil</a>
-        </main>
+        <ul class="footer_nav_main">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="<?= $this->router->generate('oeuvres') ?>">Oeuvres</a></li>
+            <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
+            <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
+            <li><a href="#">L'expérience</a></li>
+            <li><a href="<?= $this->router->generate('billeterie.accueil') ?>">Billeterie</a></li>
+        </ul>
 
         <aside class="footer_nav_aside">
             <div>
-                <a href="#">mentions légale</a>
+                <a href="#">Mentions légales 🡥</a>
             </div>
             <div>
-                <a href="#">politique de confidentialité</a>
+                <a href="#">Politique de confidentialité 🡥</a>
             </div>
             <div>
-                <a href="#">politique de prix</a>
+                <a href="#">Politique de prix 🡥</a>
             </div>
         </aside>
 
         <aside class="footer_socials">
             <section>
                 <div class="socials_img">
-                    <img src="img/test.jpg" alt="l'exposition">
+                    <img src="img/footer.png" alt="">
                 </div>
                 <p>5 Bd Descartes, <br> 77420 Champs-sur-Marne</p>
             </section>
@@ -39,9 +34,9 @@
 
         <aside>
             <p>+7 59 69 78 32</p>
-            <a href="#">youtube</a>
-            <a href="#">instagram</a>
-            <a href="#">tiktok</a>
+            <a href="#">Youtube</a>
+            <a href="#">Instagram</a>
+            <a href="#">Tiktok</a>
         </aside>
 
     </nav>
@@ -53,38 +48,37 @@
 
 
     <nav class="footer_nav">
-   <div>
-   <h1>menu</h1>
-        <main class="footer_main_nav">
-            <div>
-                <a href="#">accueil</a>
-                <a href="#">Oeuvre</a>
-                <a href="#">ressources</a>
-            </div>
-            <div>
-                <a href="#">votre visite</a>
-                <a href="#">l’expérience</a>
-                <a href="#">billetterie</a>
-            </div>
-            <div>
-                <a href="#">Mention légale</a>
-                <a href="#">Mention légale</a>
-            
-            </div>
-   </div>
-        </main>
-        <section>
-            <div class="desk_socials_img">
-                <img src="img/test.jpg" alt="l'exposition">
-            </div>
+        <div>
+            <h1>Menu</h1>
+            <main class="footer_main_nav">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="<?= $this->router->generate('oeuvres') ?>">Oeuvres</a></li>
+                    <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
+                </ul>
+                <ul>
+                    <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
+                    <li><a href="#">L'expérience</a></li>
+                    <li><a href="<?= $this->router->generate('billeterie.accueil') ?>">Billeterie</a></li>
+                </ul>
+                <div class="politique">
+                    <a href="#">Mentions légales 🡥</a>
+                    <a href="#">Politique de confidentialité 🡥</a>
+                    <a href="#">Politique de prix 🡥</a>
+                </div>
+            </main>
+        </div>
+
+        <section class="desk_socials_img">
+            <img src="img/footer.png" alt="">
             <p>5 Bd Descartes, <br> 77420 Champs-sur-Marne</p>
         </section>
     </nav>
 
     <nav class="desk_socials">
         <p>+7 59 69 78 32</p>
-        <a href="#">youtube</a>
-        <a href="#">instagram</a>
-        <a href="#">tiktok</a>
+        <a href="#">Youtube</a>
+        <a href="#">Instagram</a>
+        <a href="#">Tiktok</a>
     </nav>
 </footer>

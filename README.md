@@ -20,14 +20,10 @@ Et cela va générer un lien localhost sans utiliser wamp
 
 Les différentes largeurs du reponsive:
 
-@media screen and (min-width: 375px)
 @media screen and (min-width: 425px)
-@media screen and (min-width: 500px)
 @media screen and (min-width: 576px)
-@media screen and (min-width: 768px)
+@media screen and (min-width: 768px) 
 @media screen and (min-width: 1024px)
-@media screen and (min-width: 1080px)
 @media screen and (min-width: 1200px)
-@media screen and (min-width: 1280px)
 @media screen and (min-width: 1400px)
 @media screen and (min-width: 1920px)
