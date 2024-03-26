@@ -2,17 +2,17 @@
 <html lang="fr">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> À propos </title>
 
-    <link rel="stylesheet" href="../public/styles/experience.css">
-    <link rel="stylesheet" href="../public/styles/style.css">
-    <link rel="stylesheet" href="../public/styles/settings.css">
+    <link rel="stylesheet" href="../styles/experience.css">
 
+    <link rel="stylesheet" href="../styles/settings.css">
+    <link rel="stylesheet" href="../styles/style.css">
 
+    <script src="javascript/header.js" defer></script>
 
+    <title> À propos</title>
 </head>
 
 <body>
@@ -27,14 +27,14 @@
     <div class="titre-1">
         <div class="conteneur">
             <h1>Une découverte immersive de <span class="font-2">Berthe Morisot</span></h1>
-            <img src="../public/img/about-1.png" alt="">
+            <img src="../img/about-1.png" alt="">
         </div>
         <p>“Je la tiens comme la meilleure artiste parmi nous” - Claude Monet</p>
     </div>
 
     <section class="part-3">
 
-        <img src="../public/img/about-2.png" alt="">
+        <img src="../img/about-2.png" alt="">
 
         <div>
             <h1>Une pionnière restée dans <span class="font-2">l'Ombre</span></h1>
@@ -56,7 +56,7 @@
 
     <section class="part-3">
 
-        <img src="../public/img/about-2.png" alt="">
+        <img src="../img/about-2.png" alt="">
 
         <div>
             <h1>Un voyage dans la <span class="font-2">4e dimension …</span></h1>
@@ -71,7 +71,7 @@
 
     <section class="part-3">
 
-        <img src="../public/img/about-2.png" alt="">
+        <img src="../img/about-2.png" alt="">
 
         <div>
             <h1>Une échappée <span class="font-2">acoustique</span>,</h1>
@@ -86,7 +86,7 @@
 
 
     <section class="part-3">
-        <img src="../public/img/about-2.png" alt="">
+        <img src="../img/about-2.png" alt="">
 
         <div>
             <h1>Une illusion en <span class="font-2">couleur</span></h1>
@@ -98,13 +98,7 @@
 
     </section>
 
-    <?php
-
-require_once '../../API/model.php';
-
-if (isset($_SESSION['nom'])) {
-
-    echo "<div class='commentaire'>
+    <div class='commentaire'>
     <h2>Laissez un commentaire</h2>
     <form action='/commenter' method='POST'>
         <div class='form-group'>
@@ -113,29 +107,52 @@ if (isset($_SESSION['nom'])) {
         </div>
 
         <div class='bouton'>
-            <img src='../public/img/bouton.svg' alt=''>
-            // <button class='texte' type='submit'>Envoyer</button>
+            <img src='../img/bouton.svg' alt=''>
             <input type='hidden' name='id_user' value='" . $_SESSION['id_user'] . "'>
-            <input type='submit' name='commenter' value='Envoyer'>
+            <input class='texte' type='submit' name='commenter' value='Envoyer'>
         </div>
 
     </form>
-</div>";
-}
+</div>
+
+    <?php
+
+// require_once '../../API/model.php';
+
+// if (isset($_SESSION['nom'])) {
+
+//     echo "<div class='commentaire'>
+//     <h2>Laissez un commentaire</h2>
+//     <form action='/commenter' method='POST'>
+//         <div class='form-group'>
+//             <label for='commentaire'>Commentaire:</label>
+//             <textarea id='commentaire' name='commentaire' required></textarea>
+//         </div>
+
+//         <div class='bouton'>
+//             <img src='../public/img/bouton.svg' alt=''>
+//             // <button class='texte' type='submit'>Envoyer</button>
+//             <input type='hidden' name='id_user' value='" . $_SESSION['id_user'] . "'>
+//             <input type='submit' name='commenter' value='Envoyer'>
+//         </div>
+
+//     </form>
+// </div>";
+// }
 // var_dump($_SESSION['id_user']);
 
-$comments = getComments();
+// $comments = getComments();
 
-foreach ($comments as $comment) {
+// foreach ($comments as $comment) {
 
-    $user = getUser($comment['ext_user']);
+//     $user = getUser($comment['ext_user']);
 
-    echo "<div class='commentaire'>
-    <h2>Commentaire</h2><br>
-    <p>" . $user['prenom'] . "</p>
-    <p>" . $comment['content'] . "</p><br>
-</div>";
-}
+//     echo "<div class='commentaire'>
+//     <h2>Commentaire</h2><br>
+//     <p>" . $user['prenom'] . "</p>
+//     <p>" . $comment['content'] . "</p><br>
+// </div>";
+// }
 
 // var_dump(getComments());
 

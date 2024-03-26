@@ -2,11 +2,11 @@
 
     <div class="navigation">
 
-        <a class="logo mobile" href=""><img src="img/logo_icon.svg"></a>
+        <a class="logo mobile" href=""><img src="img/logo_icon_noir.svg"></a>
 
         <div class="navigation-mobile">
 
-            <label for="menu-icon" class="menu-icon">
+            <label for="menu-icon" class="menu-icon-bis">
                 <input id="menu-icon" type="checkbox" />
                 <span></span>
                 <span></span>

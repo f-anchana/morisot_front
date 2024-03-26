@@ -21,8 +21,6 @@
 }
 
 
-
-
 .font-2 span, .conteneur span{
     font-family: Addington-Regular-Italic, serif;
 }
@@ -66,15 +64,6 @@ button[type="submit"] {
     background-color: #2B211F;
     cursor: pointer;
 }
-
-.bouton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-}
-
-
 
 
 @media screen and (min-width: 768px){

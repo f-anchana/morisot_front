@@ -96,7 +96,6 @@
 
 h1, h2{
     font-family: Moderat-Regular, sans-serif;
-    /* font-size: 3rem pour 1024px; c pour me rappeler pcq ça marche pas */
 }
 
 h1{
@@ -122,6 +121,13 @@ body.menu-ouvert {
     overflow: hidden;
 }
 
+
+button{
+    background-color: transparent;
+    border: transparent;
+    color: var(--text-color);
+}
+
 .body {
     padding: 1rem;
 }
@@ -132,9 +138,13 @@ img {
     height: 100%;
 }
 
+.font-2 {
+    font: 1.66rem Addington-Regular-Italic, serif;
+}
+
 /* Fil d'ariane */
 .breadcrumb-1{
-    margin: 10rem 0 4rem 2rem;
+    padding: 8rem 0 4rem 2rem;
     font-size: 1rem;
 }
 
@@ -169,17 +179,236 @@ img {
     text-align: center;
     position: absolute;
     z-index: 1;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .bouton img {
-    width: 140px;
+    width: 140px !important;
 }
 
-button{
-    background-color: transparent;
-    border: transparent;
+
+/* Header */
+
+/* menu burger */
+.menu-icon, .menu-icon-bis {
+    display: block;
+    position: relative;
+    z-index: 4;
+    width: 25px;
+    cursor: pointer;
+}
+
+.menu-icon input, .menu-icon-bis input {
+    display: none;
+}
+
+.menu-icon span, .menu-icon-bis span {
+    display: block;
+    height: 1.5px;
+    width: 100%;
+    opacity: 1;
+    margin-bottom: 7px;
+    transition: 0.3s ease-in-out;
+}
+
+.menu-icon span{
+    background: #ffffff;
+}
+
+.menu-icon-bis span{
+    background: var(--text-color);
+}
+
+
+.menu-icon span, .menu-icon-bis span {
+    transform-origin: left center;
+}
+
+.menu-icon input:checked~span, .menu-icon-bis input:checked~span {
+    background: var(--text-color);
+    margin-bottom: 30%;
+}
+
+.menu-icon input:checked~span:nth-of-type(1), .menu-icon-bis input:checked~span:nth-of-type(1) {
+    transform: rotate(45deg);
+}
+
+.menu-icon input:checked~span:nth-of-type(2), .menu-icon-bis input:checked~span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.menu-icon input:checked~span:nth-of-type(3), .menu-icon-bis input:checked~span:nth-of-type(3) {
+    transform: rotate(-45deg);
+}
+
+.menu-burger ul {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:var(--home-color); 
+    z-index: 3;
+    padding: 0 2rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu-burger li {
+    margin-bottom: 20px;
+}
+
+.menu-burger a {
+    color: var(--text-color);
+    text-decoration: none;
+    font: 1.875rem Darker-Grotesque-SemiBold, sans-serif;
+    text-transform: uppercase;
+}
+
+.menu-icon input:checked ~ .menu-burger {
+    display: block;
+    transform: translateY(0);
+}
+
+.logo{
+    width: 25px;
+    z-index: 2;
+}
+
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
     color: var(--text-color);
 }
+
+.navigation-desk {
+    display: none;
+}
+
+.navigation-desk nav{
+    display: flex;
+    justify-content: space-between;
+    width: 94vw;
+    height: 45px;
+    z-index: 2;
+}
+
+.navigation-desk li:first-child{
+    margin-left: 20px;
+}
+
+.navigation-desk li{
+    margin-right: 20px;
+    text-transform: uppercase;
+    font: 0.75rem Moderat-Medium, sans-serif;
+}
+
+.navigation-desk ul {
+    display: flex;
+    align-items: center;
+}
+
+.language button{
+    position: absolute;
+    bottom: 3rem;
+}
+
+.billeterie div{
+    padding: 0;
+}
+
+#default-image, #hover-image {
+height: 44px;
+width: 120px;
+}
+
+
+.brown{
+    margin-right: 20px;
+}
+
+.mute{
+    width: 55px;
+}
+
+
+/* Footer */
+
+footer {
+    text-transform: uppercase;
+    background-color: var(--text-color);
+    color: var(--bc-color);
+    font-family: Darker-Grotesque-Regular, sans-serif;
+    margin-top: 5rem;
+}
+
+footer h1 {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font: 1.563rem Darker-Grotesque, sans-serif;
+}
+
+.footer_nav_aside div:nth-child(1) {
+    margin-top: 2rem;
+}
+
+.footer_nav_aside {
+    font-size: 1.125rem;
+    line-height: 30px;
+}
+
+.socials_img img {
+    padding-top: 1rem;
+}
+
+.footer_socials {
+    border-bottom: solid white 1px;
+}
+
+.footer_socials p {
+    text-align: right;
+}
+
+.desk_footer {
+    display: none;
+    padding: 2rem 3rem;
+}
+
+.footer_mobile {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.footer_nav_main a {
+    font-size: 1rem;
+}
+
+.footer_nav aside:last-child {
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_socials p {
+    margin: 10px 0 15px;
+}
+
+.desk_socials_img p, .desk_socials p, aside p{
+    font-family: Darker-Grotesque-Regular, sans-serif;
+}
+
+.desk_socials{
+    font-size: 1.1rem;
+}
+
 
 
 @media screen and (min-width: 768px){
@@ -198,9 +427,80 @@ button{
     }
 
     .breadcrumb-1{
-        margin: 8rem 0 4rem 4rem;
+        padding: 8rem 0 4rem 4rem;
         font-size: 1rem;
     }
+
+    .footer_mobile {
+        display: none;
+    }
+
+    .desk_footer {
+        display: block;
+    }
+
+    .footer_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: solid 1px rgb(122, 122, 122);
+        padding-bottom: 1rem;
+    }
+
+    .desk_socials_img {
+        text-align: right;
+    }
+
+
+    .desk_socials_img img {
+        width: 24vw;
+        height: 10vw;
+    }
+
+    .desk_socials p {
+        width: fit-content;
+        margin-left: auto;
+    }
+
+    .desk_socials {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .footer_main_nav {
+        display: flex;
+        gap: 3rem;
+    }
+
+   .politique{
+    display: grid;
+   }
+
+    .footer_main_nav a{
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+   .mobile{
+    display: none;
+   }
+
+    .navigation-mobile {
+        display: none;
+    }
+
+    .navigation-desk {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer_main_nav {
+        gap: 5rem;
+    }
+
 }
 
 @media screen and (min-width: 1200px){
@@ -232,3 +532,5 @@ button{
     }
 
 }
+
+
