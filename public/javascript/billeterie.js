@@ -27,7 +27,7 @@ function suivant() {
         stepActuel.classList.remove('active');
         suivant.classList.add('active');
 
-        document.querySelector('.vueGlobal').style.display = suivant.id === 'step4' ? 'none' : 'block';
+        document.querySelector('.billet').style.display = suivant.id === 'step4' ? 'none' : 'block';
     }
 }
 
@@ -40,7 +40,7 @@ function retour() {
 
         updateBreadcrumb(retour.id);
 
-        document.querySelector('.vueGlobal').style.display = retour.id === 'step4' ? 'none' : 'block';
+        document.querySelector('.billet').style.display = retour.id === 'step4' ? 'none' : 'block';
     }
 }
 
@@ -58,8 +58,8 @@ function step2() {
     const date = document.getElementById('date').value;
     const time = document.getElementById('time').value;
 
-    const vueGlobalContent = `<p>Date: ${date}</p><p>Horaire: ${time}</p>`;
-    document.getElementById('vueGlobalTicket').innerHTML = vueGlobalContent;
+    const billetContent = `<p>Date: ${date}</p><p>Horaire: ${time}</p>`;
+    document.getElementById('billetTicket').innerHTML = billetContent;
 }
 
 function step3() {
@@ -72,8 +72,8 @@ function step3() {
     const reducedPriceQuantity = parseInt(document.getElementById('reducedPriceQuantity').value);
     const totalPrice = (fullPrice * fullPriceQuantity) + (reducedPrice * reducedPriceQuantity);
 
-    const vueGlobalContent = `<p>Date: ${date}</p><p>Horaire: ${time}</p><p>Prix total des billets : ${totalPrice}$</p>`;
-    document.getElementById('vueGlobalTicket').innerHTML = vueGlobalContent;
+    const billetContent = `<p>Date: ${date}</p><p>Horaire: ${time}</p><p>Prix total des billets : ${totalPrice}$</p>`;
+    document.getElementById('billetTicket').innerHTML = billetContent;
 }
 
 

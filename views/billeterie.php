@@ -119,9 +119,9 @@
 
         </form>
 
-        <div class="vueGlobal">
+        <div class="billet">
         <img src="img/test.jpg" alt="">
-            <div id="vueGlobalTicket"></div>
+            <div id="billetTicket"></div>
         </div>
 
     </div>
