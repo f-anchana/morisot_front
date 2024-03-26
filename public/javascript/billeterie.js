@@ -1,100 +1,112 @@
-function nextStep() {
-    var currentStep = document.querySelector('.form-step.active');
-    var nextStep = currentStep.nextElementSibling;
+function suivant() {
+    const stepActuel = document.querySelector('.form-step.active');
+    const suivant = stepActuel.nextElementSibling;
 
-    // Vérifier si tous les champs obligatoires sont remplis
-    var fields = currentStep.querySelectorAll('input:required, select:required');
-    var isAllFieldsFilled = Array.from(fields).every(function(field) {
-        return field.value.trim() !== '' || (field.tagName === 'SELECT' && field.value !== '');
-    });
+    const champs = stepActuel.querySelectorAll('input:required, select:required');
+    const champsRemplis = Array.from(champs).every(field => field.value.trim() !== '' || (field.tagName === 'SELECT' && field.value !== ''));
 
-    if (!isAllFieldsFilled) {
-        // Afficher les messages d'erreur pour les champs vides
-        fields.forEach(function(field) {
-            var errorMessage = field.parentElement.querySelector('.error-message');
-            errorMessage.style.display = 'block';
+    if (!champsRemplis) {
+        champs.forEach(field => {
+            const erreur = field.parentElement.querySelector('.message');
+            erreur.style.display = 'block';
         });
-        return; // Arrêter la fonction si tous les champs ne sont pas remplis
+        return;
     }
 
-    // Vérifier si l'étape suivante existe
-    if (nextStep) {
-        currentStep.classList.remove('active');
-        nextStep.classList.add('active');
+    updateBreadcrumb(suivant.id);
 
-        // Mettre à jour l'aperçu du billet ou le résumé en fonction de l'étape
-        if (nextStep.id === 'step4') {
-            showSummary();
-            document.querySelector('.preview').style.display = 'none'; // Cacher la div avec la classe "preview"
-        } else {
-            updatePreview();
-            document.querySelector('.preview').style.display = 'block'; // Afficher la div avec la classe "preview"
-        }
-
-        // Mettre à jour le fil d'ariane
-        updateBreadcrumb(nextStep.id);
+    if (suivant.id === 'step2') {
+        step2();
+    } else if (suivant.id === 'step3') {
+        step3();
+    } else if (suivant.id === 'step4') {
+        step4();
     }
-}
 
-function prevStep() {
-    var currentStep = document.querySelector('.form-step.active');
-    var prevStep = currentStep.previousElementSibling;
-    if (prevStep) {
-        currentStep.classList.remove('active');
-        prevStep.classList.add('active');
+    if (suivant) {
+        stepActuel.classList.remove('active');
+        suivant.classList.add('active');
 
-        updatePreview();
-        updateBreadcrumb(prevStep.id);
-
-        if (prevStep.id === 'step4') {
-            document.querySelector('.preview').style.display = 'none'; // Cacher la div avec la classe "preview"
-        } else {
-            document.querySelector('.preview').style.display = 'block'; // Afficher la div avec la classe "preview"
-        }
+        document.querySelector('.billet').style.display = suivant.id === 'step4' ? 'none' : 'block';
     }
 }
 
-// Fonction pour mettre à jour le fil d'ariane
+function retour() {
+    const stepActuel = document.querySelector('.form-step.active');
+    const retour = stepActuel.previousElementSibling;
+    if (retour) {
+        stepActuel.classList.remove('active');
+        retour.classList.add('active');
+
+        updateBreadcrumb(retour.id);
+
+        document.querySelector('.billet').style.display = retour.id === 'step4' ? 'none' : 'block';
+    }
+}
+
 function updateBreadcrumb(stepId) {
-    var breadcrumbSteps = document.querySelectorAll('.breadcrumb span');
-    breadcrumbSteps.forEach(function (step) {
-        step.classList.remove('active');
-    });
+    const breadcrumbSteps = document.querySelectorAll('.breadcrumb span');
+    breadcrumbSteps.forEach(step => step.classList.remove('active'));
 
-    var breadcrumbStep = document.getElementById('breadcrumbStep' + stepId.charAt(stepId.length - 1));
+    const breadcrumbStep = document.getElementById('breadcrumbStep' + stepId.charAt(stepId.length - 1));
     if (breadcrumbStep) {
         breadcrumbStep.classList.add('active');
     }
 }
 
-function updatePreview() {
-    var previewContent = '';
+function step2() {
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
 
-    // Récupérer les valeurs de tous les champs de toutes les étapes précédentes
-    var allStepsFields = document.querySelectorAll('.form-step input, .form-step select');
-    allStepsFields.forEach(function (field) {
-        // Vérifier si le champ a une valeur non vide
-        if (field.value.trim() !== '') {
-            previewContent += '<p>' + field.name + ': ' + field.value + '</p>';
-        }
-    });
-
-    // Mettre à jour l'aperçu du billet
-    document.getElementById('previewTicket').innerHTML = previewContent;
+    const billetContent = `<p>Date: ${date}</p><p>Horaire: ${time}</p>`;
+    document.getElementById('billetTicket').innerHTML = billetContent;
 }
 
-function showSummary() {
-    var summaryContent = '';
+function step3() {
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
 
-    // Récupérer les valeurs de tous les champs de toutes les étapes précédentes
-    var allStepsFields = document.querySelectorAll('.form-step input, .form-step select');
-    allStepsFields.forEach(function (field) {
-        // Vérifier si le champ a une valeur non vide
-        if (field.value.trim() !== '') {
-            summaryContent += '<p><strong>' + field.previousElementSibling.textContent.replace(':', '') + ':</strong> ' + field.value + '</p>';
-        }
-    });
+    const fullPrice = 10;
+    const reducedPrice = 17;
+    const fullPriceQuantity = parseInt(document.getElementById('fullPriceQuantity').value);
+    const reducedPriceQuantity = parseInt(document.getElementById('reducedPriceQuantity').value);
+    const totalPrice = (fullPrice * fullPriceQuantity) + (reducedPrice * reducedPriceQuantity);
 
-    // Afficher le résumé dans la div
+    const billetContent = `<p>Date: ${date}</p><p>Horaire: ${time}</p><p>Prix total des billets : ${totalPrice}$</p>`;
+    document.getElementById('billetTicket').innerHTML = billetContent;
+}
+
+
+
+
+function step4() {
+    // Récupérer les valeurs du formulaire
+    const date = ' Le ' + document.getElementById('date').value + ' à ' + document.getElementById('time').value;
+    const fullName = document.getElementById('name').value + ' ' + document.getElementById('prénom').value;
+    const email = document.getElementById('email').value;
+    const phoneNumber = document.getElementById('téléphone').value;
+    const fullPriceQuantity = parseInt(document.getElementById('fullPriceQuantity').value);
+    const reducedPriceQuantity = parseInt(document.getElementById('reducedPriceQuantity').value);
+    const fullPrice = 10;
+    const reducedPrice = 17;
+
+    // Calculer le prix individuel et le total
+    const fullPriceTotal = fullPrice * fullPriceQuantity;
+    const reducedPriceTotal = reducedPrice * reducedPriceQuantity;
+    const totalPrice = fullPriceTotal + reducedPriceTotal;
+
+    // Générer le contenu du récapitulatif avec toutes les informations
+    const summaryContent = `
+        <h2>Récapitulatif</h2>
+        <p>Nom complet: ${fullName}</p>
+        <p>E-mail: ${email}</p>
+        <p>Numéro de téléphone: ${phoneNumber}</p>
+        <p>Date: ${date}</p>
+        <p>Quantité de billets plein tarif: ${fullPriceQuantity}</p>
+        <p>Quantité de billets tarif réduit: ${reducedPriceQuantity}</p>
+        <p>Total: ${totalPrice}$</p>
+    `;
+
+    // Mettre à jour le contenu du récapitulatif dans la div correspondante
     document.getElementById('summary').innerHTML = summaryContent;
 }
