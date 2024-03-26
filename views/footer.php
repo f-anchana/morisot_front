@@ -8,7 +8,7 @@
             <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
             <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
             <li><a href="<?= $this->router->generate('experience') ?>">L'expérience</a></li>
-            <li><a href="<?= $this->router->generate('billeterie.accueil') ?>">Billeterie</a></li>
+            <li><a href="<?= $this->router->generate('billeterie') ?>">Billeterie</a></li>
         </ul>
 
         <aside class="footer_nav_aside">
@@ -59,12 +59,12 @@
                 <ul>
                     <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
                     <li><a href="#">L'expérience</a></li>
-                    <li><a href="<?= $this->router->generate('billeterie.accueil') ?>">Billeterie</a></li>
+                    <li><a href="<?= $this->router->generate('billeterie') ?>">Billeterie</a></li>
                 </ul>
                 <div class="politique">
-                    <a href="#">Mentions légales 🡥</a>
-                    <a href="#">Politique de confidentialité 🡥</a>
-                    <a href="#">Politique de prix 🡥</a>
+                    <a href="<?= $this->router->generate('mentions-legales') ?>">Mentions légales 🡥</a>
+                    <a href="<?= $this->router->generate('politique-confidentialite') ?>">Politique de confidentialité 🡥</a>
+                    <a href="<?= $this->router->generate('politique-prix') ?>">Politique de prix 🡥</a>
                 </div>
             </main>
         </div>

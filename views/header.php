@@ -20,7 +20,7 @@
                     <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
                     <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
                     <li><a href="<?= $this->router->generate('experience') ?>">L'expérience</a></li>
-                    <li><a href="<?= $this->router->generate('billeterie.accueil') ?>">Billeterie</a></li>
+                    <li><a href="<?= $this->router->generate('billeterie') ?>">Billeterie</a></li>
                     <li class="language"><button>fr / en</button></li>
                 </ul>
             </nav>
@@ -42,7 +42,7 @@
                 <ul>
                     <li><button>fr / en</button></li>
                     <li class="mute"><button><img src="../img/nav-son1.svg" alt="son"></button></li>
-                    <li><a class="bouton billeterie" href="<?= $this->router->generate('billeterie.accueil') ?>">
+                    <li><a class="bouton billeterie" href="<?= $this->router->generate('billeterie') ?>">
                             <div id="image-container">
                                 <img id="default-image" src="../img/nav-ticket1.svg" alt="">
                                 <img id="hover-image" src="../img/nav-ticket2.svg" alt="" style="display: none;">

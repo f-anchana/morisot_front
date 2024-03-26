@@ -30,7 +30,7 @@ class LoginController
 
         $options = array(
 
-            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/inscription',
+            CURLOPT_URL => 'https://www.ombreetlumiere.eu/API/controller.php/inscription',
 
             CURLOPT_POST => true,
 
@@ -96,7 +96,7 @@ class LoginController
 
         $options = array(
 
-            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/connexion',
+            CURLOPT_URL => 'https://www.ombreetlumiere.eu/API/controller.php/connexion',
 
             CURLOPT_POST => true,
 

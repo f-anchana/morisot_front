@@ -9,7 +9,7 @@ $router->map('GET', '/', 'HomeController#displayHome', 'accueil');
 $router->map('GET', '/oeuvres', 'OeuvresController#displayOeuvres', 'oeuvres');
 $router->map('GET', '/ressources', 'RessourcesController#displayRessources', 'ressources');
 $router->map('GET', '/votre-visite', 'VisiteController#displayVisite', 'votre.visite');
-$router->map('GET', '/billeterie', 'BilleterieController#displayAccueilBilleterie', 'billeterie.accueil');
+$router->map('GET', '/billeterie', 'BilleterieController#displayAccueilBilleterie', 'billeterie');
 $router->map('GET', '/experience', 'ExperienceController#displayExperience', 'experience');
 // $router->map('GET', '/billeterie/merci', 'BilleterieController#displayRemerciements', 'billeterie.merci');
 $router->map('GET', '/erreur404', 'ErrorsController#displayError404', 'erreur404');
@@ -17,6 +17,10 @@ $router->map('GET', '/inscription', 'LoginController#displayInscription', 'inscr
 $router->map('GET', '/connexion', 'LoginController#displayConnexion', 'connexion');
 $router->map('GET', '/confirmation', 'LoginController#displayConfirmation', 'confirmation');
 $router->map('GET', '/mon-espace', 'LoginController#displayDashboard', 'mon-espace');
+$router->map('GET', '/politique-confidentialite', 'PolitiqueController#displayConfidentialite', 'politique-confidentialite');
+$router->map('GET', '/mentions-legales', 'PolitiqueController#displayMentions', 'mentions-legales');
+$router->map('GET', '/politique-prix', 'PolitiqueController#displayPrix', 'politique-prix');
+
 
 $router->map('POST', '/inscription', 'LoginController#createUser');
 $router->map('POST', '/connexion', 'LoginController#connectUser');

@@ -15,8 +15,7 @@ class BilleterieController {
         require '../views/head.php';
         echo "<body>";
         require '../views/billeterie.php';
-        echo "</body>
-        </html>";
+        require '../views/footer.php';
     }
 
     public function AddReservation() {
@@ -24,7 +23,7 @@ class BilleterieController {
 
         $options = array(
 
-            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/reserver',
+            CURLOPT_URL => 'https://www.ombreetlumiere.eu/API/controller.php/reserver',
 
             CURLOPT_POST => true,
 
