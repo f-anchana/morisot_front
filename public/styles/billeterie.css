@@ -1,19 +1,20 @@
-.container{
-  display: flex;
-  align-items: center;
-  margin: 0 4rem;
-  gap: 20px;
+.container {
+    display: flex;
+    align-items: center;
+    margin: 0 4rem;
+    gap: 20px;
 }
 
-.breadcrumb{
+.breadcrumb {
     margin: 2.5rem;
 }
 
-#reservation-form{
+#reservation-form {
     width: 100%;
 }
 
-#reservation-form, .billet{
+#reservation-form,
+.billet {
     background-color: #E5E4DC;
     height: 55vh;
 }
@@ -21,12 +22,11 @@
 .field-container {
     display: flex;
     margin: 2.5rem;
-    
+
 }
 
 .form-step {
     display: none;
-    width: 33vw;
     padding-right: 20px;
 }
 
@@ -44,10 +44,91 @@
     margin-bottom: 2rem;
 }
 
-#billetTicket{
+#billetTicket {
     margin: 0 2rem;
 }
 
 .breadcrumb span.active {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+#summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.billing-info {
+    border-left: solid black 1px;
+    padding-left: 2.5rem;
+    line-height: 30px;
+
+}
+
+.billing-info div {
+    line-height: 30px;
+}
+
+.billing-info p{
+    padding-bottom: 1.5rem;
+}
+
+th{
+    padding-right: 20rem;
+}
+
+.prix {
+    padding-right: 1rem;
+}
+
+.user-info{
+    padding-right: 10rem;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.total-row td {
+    margin-top: 1rem;
+}
+
+.reduit{
+    border-bottom: solid 1px;
+}
+
+.reduit td{
+    padding-bottom: 1rem;
+}
+
+
+.type{
+    padding-right: 20rem;
+}
+
+.total-row td:first-child {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.total-row td:last-child {
     font-weight: bold;
 }
