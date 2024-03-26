@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billeterie</title>
 
-    <link rel="stylesheet" href="../public/styles/billeterie.css">
-    <link rel="stylesheet" href="../public/styles/style.css">
-    <link rel="stylesheet" href="../public/styles/settings.css">
+    <link rel="stylesheet" href="styles/billeterie.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/settings.css">
 
-    <script src="../public/javascript/billeterie.js" defer></script>
+    <script src="javascript/billeterie.js" defer></script>
 
 </head>
 
@@ -26,7 +26,7 @@
 
     <div class="container">
 
-        <form id="reservation-form" method="POST">
+        <form id="reservation-form" method="POST" action="reservation">
 
             <div aria-label="breadcrumb" class="breadcrumb">
                 <span id="breadcrumbStep1" class="active">1 - Date et horaire</span>
@@ -120,7 +120,7 @@
         </form>
 
         <div class="vueGlobal">
-            <img src="../public/img/test.jpg" alt="">
+        <img src="img/test.jpg" alt="">
             <div id="vueGlobalTicket"></div>
         </div>
 

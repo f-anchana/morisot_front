@@ -8,7 +8,7 @@
 <body>
 
 <?php
-session_start();
+// session_start();
 if (isset($youpi)) {
     echo "<h2>" . $youpi . "</h2>";
 } if (isset($erreur)) {
@@ -18,7 +18,7 @@ if (isset($youpi)) {
 if (isset($_SESSION['nom'])) {
     echo "<h2>Votre inscription a été prise en compte " . $_SESSION['prenom']. ", veuillez vous reconnecter" . "</h2>";
 } else {
-    echo "<h2>Bienvenue utilisateur</h2>";
+    echo "";
 }
 
 ?>
