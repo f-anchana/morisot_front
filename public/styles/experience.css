@@ -23,25 +23,24 @@
 
 
 
-.part-3 span, .conteneur span{
+.font-2 span, .conteneur span{
     font-family: Addington-Regular-Italic, serif;
 }
 
-.part-3, .commentaire{
+.font-2, .commentaire{
     width: 85vw;
     margin: auto;
-    font-family: Moderat-Regular, sans-serif;
 }
 
-.part-3 h1{
+.font-2 h1{
     margin-bottom: 2rem;
 }
 
-.part-3 p{
+.font-2 p{
     line-height: 30px;
 }
 
-.part-3 img{
+.font-2 img{
     height: 300px;
 }
 
@@ -79,7 +78,7 @@ button[type="submit"] {
 
 
 @media screen and (min-width: 768px){
-    .part-3{
+    .font-2{
         display: flex;
         align-items: center;
         height: 100vh;
@@ -93,7 +92,7 @@ button[type="submit"] {
 
 
 @media screen and (min-width: 1024px){
-.part-3 img {
+.font-2 img {
     height: 60vh;
     width: 40vw;
 }
@@ -102,19 +101,7 @@ button[type="submit"] {
     width: 45vw;
 }
 
-.part-3 div{
+.font-2 div{
     padding: 5rem;
 }
-}
-
-
-@media screen and (min-width: 1200px){
-.part-3 h1, .titre-1 h1 {
-    font-size: 3rem;
-}
-
-.part-3 span, .conteneur span{
-    font-size: 3.5rem;
-}
-
 }

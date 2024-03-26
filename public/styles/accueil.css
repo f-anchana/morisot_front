@@ -44,8 +44,7 @@
 
 .home-info p {
     width: 36vw;
-    font: 1rem Moderat-Light, serif;
-    line-height: 20px;
+    font-family: Moderat-Light, serif;
 }
 
 .and {
@@ -64,7 +63,6 @@
 }
 
 .part-2 h1 {
-    font: 1.5rem Moderat-Regular, sans-serif;
     padding: 3rem 0 1rem 0;
     line-height: 30px;
     text-align: right;
@@ -80,7 +78,6 @@
 .info p:last-child {
     font: 1rem Moderat-Regular, sans-serif;
     padding: 0 1rem;
-    line-height: 20px;
 }
 
 
@@ -143,11 +140,6 @@
     .part-2 h1 {
         text-align: left;
         padding-top: 5rem;
-        font-size: 2.5rem;
-    }
-
-    .font-2 {
-        font-size: 3rem;
     }
 
     .morisot {
@@ -249,14 +241,6 @@
         padding-left: 16rem;
     }
 
-    .part-2 h1 {
-        font-size: 3rem;
-    }
-
-    .font-2{
-        font-size: 3.5rem;
-    }
-
     .information{
         padding-top: 5rem;
     }
@@ -292,20 +276,6 @@
 
     .and {
         padding-left: 8rem;
-    }
-
-
-    .part-2 h1 {
-        font-size: 5rem;
-    }
-
-    .font-2{
-        font-size: 5.313rem;
-    }
-
-    .info p:last-child, .info p:first-child {
-        font-size: 1.563rem;
-        line-height: 30px;
     }
 
     .information{

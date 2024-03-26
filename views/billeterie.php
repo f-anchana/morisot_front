@@ -24,6 +24,8 @@
         </ul>
     </nav>
 
+    <h1>Book your <span class="font-2">ticket</span></h1>
+
     <div class="container">
 
         <form id="reservation-form" method="POST" action="/reserver">

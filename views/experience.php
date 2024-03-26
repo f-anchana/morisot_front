@@ -26,7 +26,7 @@
 
     <div class="titre-1">
         <div class="conteneur">
-            <h1>Une découverte immersive de <span>Berthe Morisot</span></h1>
+            <h1>Une découverte immersive de <span class="font-2">Berthe Morisot</span></h1>
             <img src="../public/img/about-1.png" alt="">
         </div>
         <p>“Je la tiens comme la meilleure artiste parmi nous” - Claude Monet</p>
@@ -37,7 +37,7 @@
         <img src="../public/img/about-2.png" alt="">
 
         <div>
-            <h1>Une pionnière restée dans <span>l'Ombre</span></h1>
+            <h1>Une pionnière restée dans <span class="font-2">l'Ombre</span></h1>
             <p>Il y a 150 ans, le 15 avril 1874, une exposition réunissait à Paris des artistes, peintres, sculpteurs,
                 graveurs. Tous étaient exclus parce que leur style était considéré comme incomplet et mondain. Ce
                 collectif a été identifié comme les impressionnistes, des figures éminentes telles que Renoir, Degas,
@@ -59,7 +59,7 @@
         <img src="../public/img/about-2.png" alt="">
 
         <div>
-            <h1>Un voyage dans la <span>4e dimension …</span></h1>
+            <h1>Un voyage dans la <span class="font-2">4e dimension …</span></h1>
             <p>À travers la réalité virtuelle, vous deviendrez un véritable voyageur, capable de pénétrer et d'explorer
                 l’univers artistique de Berthe Morisot de manière intime. Vous aurez l'opportunité de vous promener à
                 travers ses paysages, de vous approcher de ses personnages, et de ressentir l'énergie de ses œuvres. 
@@ -74,7 +74,7 @@
         <img src="../public/img/about-2.png" alt="">
 
         <div>
-            <h1>Une échappée <span>acoustique</span>,</h1>
+            <h1>Une échappée <span class="font-2">acoustique</span>,</h1>
             <p>Votre voyage débutera dans une chambre reconstituée dans l'esthétique parisienne du 19e siècle. Au son
                 d'une
                 musique envoûtante, une image scintillante prendra vie. Approchez-vous pour entendre les sons qui
@@ -89,7 +89,7 @@
         <img src="../public/img/about-2.png" alt="">
 
         <div>
-            <h1>Une illusion en <span>couleur</span></h1>
+            <h1>Une illusion en <span class="font-2">couleur</span></h1>
             <p>Entre ombre et lumière, découvrez les différents aspects de son œuvre où chaque nuance renferme une
                 histoire, explorez les secrets de son génie artistique alors que vous naviguez entre les nuances des ses
                 œuvres. 

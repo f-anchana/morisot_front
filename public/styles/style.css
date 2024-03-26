@@ -94,9 +94,21 @@
     background-color: var(--text-color);
 }
 
-h1{
+h1, h2{
     font-family: Moderat-Regular, sans-serif;
     /* font-size: 3rem pour 1024px; c pour me rappeler pcq ça marche pas */
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+
+
+p{
+    font-size: 1rem;
+    font-family: Moderat-Regular, sans-serif;
+    line-height: 20px;
 }
 
 
@@ -170,13 +182,16 @@ button{
 }
 
 
-
-
-
-
-
-
 @media screen and (min-width: 768px){
+
+    h1{
+        font-size: 2.5rem;
+        line-height: 80px;
+    }
+
+    .font-2 {
+        font-size: 3rem;
+    }
 
     .bouton div{
         width: 160px;
@@ -186,4 +201,34 @@ button{
         margin: 8rem 0 4rem 4rem;
         font-size: 1rem;
     }
+}
+
+@media screen and (min-width: 1200px){
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .font-2{
+        font-size: 3.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .font-2{
+        font-size: 5.313rem;
+    }
+
+    p {
+        font-size: 1.563rem;
+        line-height: 30px;
+    }
+
 }
