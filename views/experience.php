@@ -100,7 +100,10 @@
 
     <?php
 
+require_once '../../API/model.php';
+
 if (isset($_SESSION['nom'])) {
+
     echo "<div class='commentaire'>
     <h2>Laissez un commentaire</h2>
     <form action='/commenter' method='POST'>
@@ -119,7 +122,23 @@ if (isset($_SESSION['nom'])) {
     </form>
 </div>";
 }
-var_dump($_SESSION['email']);
+// var_dump($_SESSION['id_user']);
+
+$comments = getComments();
+
+foreach ($comments as $comment) {
+
+    $user = getUser($comment['ext_user']);
+
+    echo "<div class='commentaire'>
+    <h2>Commentaire</h2><br>
+    <p>" . $user['prenom'] . "</p>
+    <p>" . $comment['content'] . "</p><br>
+</div>";
+}
+
+// var_dump(getComments());
+
 ?>
 <!--             <input type='hidden' name='id_user' value='" . $_SESSION['id'] . "'>
  -->

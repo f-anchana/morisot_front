@@ -19,14 +19,14 @@
 
     <nav class="breadcrumb-1" aria-label="Breadcrumb">
         <ul>
-            <li><a href="">Accueil</a></li><span>&ensp; > &ensp;</span>
+            <li><a href="/">Accueil</a></li><span>&ensp; > &ensp;</span>
             <li>Billeterie</li>
         </ul>
     </nav>
 
     <div class="container">
 
-        <form id="reservation-form" method="POST" action="reservation">
+        <form id="reservation-form" method="POST" action="/reserver">
 
             <div aria-label="breadcrumb" class="breadcrumb">
                 <span id="breadcrumbStep1" class="active">1 - Date et horaire</span>
@@ -55,7 +55,6 @@
                         <option value="16:00">16:00</option>
                         <option value="17:00">17:00</option>
                         <option value="18:00">18:00</option>
-                        <!-- Ajoutez d'autres options  -->
                     </select><br><br>
                     <div class="message" style="display: none;">Veuillez remplir tous les champs.</div>
                     <br><br>
@@ -88,17 +87,17 @@
 
                 <fieldset id="step3" class="form-step">
                     <label for="name">Nom:</label>
-                    <input type="text" id="name" name="name" required class="form-field">
+                    <input type="text" id="name" name="nom_client" required class="form-field">
 
                     <label for="prénom">Prénom:</label>
-                    <input type="text" id="prénom" name="prénom" required class="form-field">
+                    <input type="text" id="prénom" name="prenom_client" required class="form-field">
 
                     <label for="téléphone">Téléphone:</label>
-                    <input type="tel" id="téléphone" name="téléphone" pattern="[0-9]{10}" placeholder="7 59 21 36 47"
+                    <input type="tel" id="téléphone" name="tel_client" pattern="[0-9]{10}" placeholder="7 59 21 36 47"
                         required maxlength="10" class="form-field">
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required class="form-field">
+                    <input type="email" id="email" name="email_client" required class="form-field">
 
                     <div class="message" style="display: none;">Veuillez remplir les champs.</div><br><br>
                     <button type="button" onclick="retour()">Précédent</button>
@@ -112,7 +111,8 @@
 
 
                     <button type="button" onclick="retour()">Précédent</button>
-                    <button type="submit">Réserver</button>
+                    <!-- <button type="submit">Réserver</button> -->
+                    <input type="submit" name='reserver' value="Réserver">
                 </fieldset>
 
             </div>

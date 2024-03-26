@@ -24,6 +24,6 @@
             *si rien n’arrive après 20 minutes , veillez à vérifier vos spams, puis nous contacter
         </p>
 
-        <a href=""><p class="retour">Retour à l'accueil</p></a>
+        <a href="/"><p class="retour">Retour à l'accueil</p></a>
     </div>
 </body>
