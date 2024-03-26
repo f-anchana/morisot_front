@@ -128,8 +128,6 @@ class LoginController
                 $_SESSION['prenom'] = $user['prenom'];
                 $_SESSION['email'] = $_POST['email'];
 
-                echo $_SESSION['id_user'];
-
                 header('Location: /mon-espace');
                 exit();
             } else {
@@ -175,41 +173,6 @@ class LoginController
         exit();
     }
 
-    public function AddComment()
-    {
-        $params = json_encode(['commentaire' => ($_POST['commentaire'])]);
-
-        $options = array(
-
-            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/commenter',
-
-            CURLOPT_POST => true,
-
-            CURLOPT_POSTFIELDS => $params,
-            CURLOPT_HTTPHEADER => array(
-                'Content-Type: application/json'
-            )
-        );
-
-        $ch = curl_init();
-
-        curl_setopt_array($ch, ($options));
-
-        $response = curl_exec($ch);
-        curl_close($ch);
-
-        // Vérifier la réponse de l'API
-        if ($response) {
-            // Le commentaire a été ajouté
-            $youpi = "Le commentaire a été ajouté.";
-            require '../views/experience.php';
-        } else {
-            // Le commentaire n'a pas été ajouté
-            $erreur = "Le commentaire n'a pas été ajouté. Veuillez réessayer.";
-            require '../views/experience.php';
-        }
-
-        return $response;
-    }
+   
 
 }

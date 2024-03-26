@@ -21,8 +21,9 @@ $router->map('GET', '/mon-espace', 'LoginController#displayDashboard', 'mon-espa
 $router->map('POST', '/inscription', 'LoginController#createUser');
 $router->map('POST', '/connexion', 'LoginController#connectUser');
 $router->map('POST', '/deconnexion', 'LoginController#disconnectUser');
-$router->map('POST', '/billeterie', 'BilleterieController#AddReservation', 'reservation');
-$router->map('POST', '/commenter', 'LoginController#AddComment', 'commenter');
+$router->map('POST', '/reserver', 'BilleterieController#AddReservation', 'reserver');
+$router->map('POST', '/commenter', 'ExperienceController#AddComment', 'commenter');
+
 
 
 
