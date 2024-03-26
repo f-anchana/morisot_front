@@ -11,7 +11,6 @@ $router->map('GET', '/ressources', 'RessourcesController#displayRessources', 're
 $router->map('GET', '/votre-visite', 'VisiteController#displayVisite', 'votre.visite');
 $router->map('GET', '/billeterie', 'BilleterieController#displayAccueilBilleterie', 'billeterie');
 $router->map('GET', '/experience', 'ExperienceController#displayExperience', 'experience');
-// $router->map('GET', '/billeterie/merci', 'BilleterieController#displayRemerciements', 'billeterie.merci');
 $router->map('GET', '/erreur404', 'ErrorsController#displayError404', 'erreur404');
 $router->map('GET', '/inscription', 'LoginController#displayInscription', 'inscription');
 $router->map('GET', '/connexion', 'LoginController#displayConnexion', 'connexion');
@@ -20,6 +19,7 @@ $router->map('GET', '/mon-espace', 'LoginController#displayDashboard', 'mon-espa
 $router->map('GET', '/politique-confidentialite', 'PolitiqueController#displayConfidentialite', 'politique-confidentialite');
 $router->map('GET', '/mentions-legales', 'PolitiqueController#displayMentions', 'mentions-legales');
 $router->map('GET', '/politique-prix', 'PolitiqueController#displayPrix', 'politique-prix');
+$router->map('GET', '/Unveiling-the-truth', 'RessourcesController#displayUnveiling', 'Unveiling-the-truth');
 
 
 $router->map('POST', '/inscription', 'LoginController#createUser');

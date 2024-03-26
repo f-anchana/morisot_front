@@ -4,8 +4,10 @@
 
 
     <div class="media-body">
-        <h2>Les ressources</h2>
-        <p>Retrouvez ici toutes les ressources disponibles pour vous aider à préparer votre visite au musée.</p>
+        <a href="/Unveiling-the-truth">
+        <img src="img/test.jpg" alt="">
+        <p>Unveiling the truth</p>
+        </a>
     </div>
 
 
