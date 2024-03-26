@@ -13,7 +13,7 @@
     width: 100%;
 }
 
-#reservation-form, .preview{
+#reservation-form, .vueGlobal{
     background-color: #E5E4DC;
     height: 55vh;
 }
@@ -34,17 +34,17 @@
     display: block;
 }
 
-.preview {
+.vueGlobal {
     width: 300px;
 }
 
-.preview img {
+.vueGlobal img {
     width: 300px;
     height: 200px;
     margin-bottom: 2rem;
 }
 
-#previewTicket{
+#vueGlobalTicket{
     margin: 0 2rem;
 }
 

@@ -39,11 +39,11 @@
             <div class="field-container">
                 <fieldset id="step1" class="form-step active">
                     <label for="date">Date:</label>
-                    <input type="date" id="date" name="date" min="<?php echo date('Y-m-d'); ?>" required><br><br>
+                    <input type="date" id="date" name="date" min="<?php echo date('Y-m-d'); ?>" required
+                        class="form-field"><br><br>
 
-                    <br><br>
                     <label for="time">Horaire:</label>
-                    <select id="time" name="time" required>
+                    <select id="time" name="time" required class="form-field">
                         <option value="">Sélectionnez un horaire</option>
                         <option value="09:00">09:00</option>
                         <option value="10:00">10:00</option>
@@ -57,28 +57,52 @@
                         <option value="18:00">18:00</option>
                         <!-- Ajoutez d'autres options  -->
                     </select><br><br>
-                    <div class="error-message" style="display: none;">Veuillez remplir tous les champs.</div>
+                    <div class="message" style="display: none;">Veuillez remplir tous les champs.</div>
                     <br><br>
-                    <button type="button" onclick="nextStep()">Suivant</button>
+                    <button type="button" onclick="suivant()">Suivant</button>
                 </fieldset>
 
                 <fieldset id="step2" class="form-step">
-                    <label for="tickets">Nombre de billets:</label>
-                    <input type="number" id="tickets" name="tickets" min="1" required>
-                    <div class="error-message" style="display: none;">Veuillez remplir ce champ.</div><br><br>
-                    <button type="button" onclick="prevStep()">Précédent</button>
-                    <button type="button" onclick="nextStep()">Suivant</button>
+                    <table>
+                        <tr>
+                            <th>Type de billet</th>
+                            <th>Prix ($)</th>
+                            <th>Quantité</th>
+                        </tr>
+                        <tr>
+                            <td>Billet plein tarif</td>
+                            <td>10</td>
+                            <td><input type="number" id="fullPriceQuantity" min="0" value="0" class="form-field"></td>
+                        </tr>
+                        <tr>
+                            <td>Billet tarif réduit</td>
+                            <td>17</td>
+                            <td><input type="number" id="reducedPriceQuantity" min="0" value="0" class="form-field">
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="message" style="display: none;">Veuillez remplir ce champ.</div><br><br>
+                    <button type="button" onclick="retour()">Précédent</button>
+                    <button type="button" onclick="suivant()">Suivant</button>
                 </fieldset>
 
                 <fieldset id="step3" class="form-step">
                     <label for="name">Nom:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <div class="error-message" style="display: none;">Veuillez remplir les champs.</div><br><br>
+                    <input type="text" id="name" name="name" required class="form-field">
 
-                    <button type="button" onclick="prevStep()">Précédent</button>
-                    <button type="button" onclick="nextStep()">Suivant</button>
+                    <label for="prénom">Prénom:</label>
+                    <input type="text" id="prénom" name="prénom" required class="form-field">
+
+                    <label for="téléphone">Téléphone:</label>
+                    <input type="tel" id="téléphone" name="téléphone" pattern="[0-9]{10}" placeholder="7 59 21 36 47"
+                        required maxlength="10" class="form-field">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required class="form-field">
+
+                    <div class="message" style="display: none;">Veuillez remplir les champs.</div><br><br>
+                    <button type="button" onclick="retour()">Précédent</button>
+                    <button type="button" onclick="suivant()">Suivant</button>
                 </fieldset>
 
                 <fieldset id="step4" class="form-step">
@@ -86,7 +110,8 @@
 
                     <div id="summary"></div>
 
-                    <button type="button" onclick="prevStep()">Précédent</button>
+
+                    <button type="button" onclick="retour()">Précédent</button>
                     <button type="submit">Réserver</button>
                 </fieldset>
 
@@ -94,9 +119,9 @@
 
         </form>
 
-        <div class="preview">
+        <div class="vueGlobal">
             <img src="../public/img/test.jpg" alt="">
-            <div id="previewTicket"></div>
+            <div id="vueGlobalTicket"></div>
         </div>
 
     </div>
