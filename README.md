@@ -27,3 +27,10 @@ Les différentes largeurs du reponsive:
 @media screen and (min-width: 1200px)
 @media screen and (min-width: 1400px)
 @media screen and (min-width: 1920px)
+
+
+
+
+## STYLISER MES MESSAGES PITIEEEEEEE
+dans connexion
+et dans mon espace mais pas encore fini 
