@@ -128,6 +128,8 @@ class LoginController
                 $_SESSION['prenom'] = $user['prenom'];
                 $_SESSION['email'] = $_POST['email'];
 
+                echo $_SESSION['id_user'];
+
                 header('Location: /mon-espace');
                 exit();
             } else {

@@ -11,6 +11,11 @@
 session_start();
 
 if (isset($_SESSION['nom'])) {
+    var_dump($_SESSION['id_user']);
+    var_dump($_SESSION['nom']);
+    var_dump($_SESSION['prenom']);
+    var_dump($_SESSION['email']);
+
     echo "<h2>Bienvenue " . $_SESSION['nom'] . " " . $_SESSION['prenom'] . "</h2>";
 } else {
     echo "<h2>Bienvenue utilisateur</h2>";

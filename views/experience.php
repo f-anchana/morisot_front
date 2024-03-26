@@ -101,6 +101,7 @@
     <?php
 
 if (isset($_SESSION['nom'])) {
+
     echo "<div class='commentaire'>
     <h2>Laissez un commentaire</h2>
     <form action='/commenter' method='POST'>
@@ -119,7 +120,7 @@ if (isset($_SESSION['nom'])) {
     </form>
 </div>";
 }
-var_dump($_SESSION['email']);
+var_dump($_SESSION['id_user']);
 ?>
 <!--             <input type='hidden' name='id_user' value='" . $_SESSION['id'] . "'>
  -->
