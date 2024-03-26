@@ -1,7 +1,6 @@
 function suivant() {
     const stepActuel = document.querySelector('.form-step.active');
     const suivant = stepActuel.nextElementSibling;
-
     const champs = stepActuel.querySelectorAll('input:required, select:required');
     const champsRemplis = Array.from(champs).every(field => field.value.trim() !== '' || (field.tagName === 'SELECT' && field.value !== ''));
 
@@ -13,7 +12,7 @@ function suivant() {
         return;
     }
 
-    updateBreadcrumb(suivant.id);
+    updateAriane(suivant.id);
 
     if (suivant.id === 'step2') {
         step2();
@@ -38,13 +37,13 @@ function retour() {
         stepActuel.classList.remove('active');
         retour.classList.add('active');
 
-        updateBreadcrumb(retour.id);
+        updateAriane(retour.id);
 
         document.querySelector('.billet').style.display = retour.id === 'step4' ? 'none' : 'block';
     }
 }
 
-function updateBreadcrumb(stepId) {
+function updateAriane(stepId) {
     const breadcrumbSteps = document.querySelectorAll('.breadcrumb span');
     breadcrumbSteps.forEach(step => step.classList.remove('active'));
 
@@ -66,13 +65,13 @@ function step3() {
     const date = document.getElementById('date').value;
     const time = document.getElementById('time').value;
 
-    const fullPrice = 10;
-    const reducedPrice = 17;
-    const fullPriceQuantity = parseInt(document.getElementById('fullPriceQuantity').value);
-    const reducedPriceQuantity = parseInt(document.getElementById('reducedPriceQuantity').value);
-    const totalPrice = (fullPrice * fullPriceQuantity) + (reducedPrice * reducedPriceQuantity);
+    const pleinTarif = 10;
+    const tarifReduit = 17;
+    const ptQuantity = parseInt(document.getElementById('ptQuantity').value);
+    const trQuantity = parseInt(document.getElementById('trQuantity').value);
+    const total = (pleinTarif * ptQuantity) + (tarifReduit * trQuantity);
 
-    const billetContent = `<p>Date: ${date}</p><p>Horaire: ${time}</p><p>Prix total des billets : ${totalPrice}$</p>`;
+    const billetContent = `<p>Date: ${date}</p><p>Horaire: ${time}</p><p>Prix total des billets : ${total}$</p>`;
     document.getElementById('billetTicket').innerHTML = billetContent;
 }
 
@@ -80,33 +79,58 @@ function step3() {
 
 
 function step4() {
-    // Récupérer les valeurs du formulaire
+
+    // Valeurs du formulaire
     const date = ' Le ' + document.getElementById('date').value + ' à ' + document.getElementById('time').value;
-    const fullName = document.getElementById('name').value + ' ' + document.getElementById('prénom').value;
+    const nom = document.getElementById('name').value + ' ' + document.getElementById('prénom').value;
     const email = document.getElementById('email').value;
-    const phoneNumber = document.getElementById('téléphone').value;
-    const fullPriceQuantity = parseInt(document.getElementById('fullPriceQuantity').value);
-    const reducedPriceQuantity = parseInt(document.getElementById('reducedPriceQuantity').value);
-    const fullPrice = 10;
-    const reducedPrice = 17;
+    const tel = document.getElementById('téléphone').value;
+    const ptQuantity = parseInt(document.getElementById('ptQuantity').value);
+    const trQuantity = parseInt(document.getElementById('trQuantity').value);
+    const pleinTarif = 10;
+    const tarifReduit = 17;
 
-    // Calculer le prix individuel et le total
-    const fullPriceTotal = fullPrice * fullPriceQuantity;
-    const reducedPriceTotal = reducedPrice * reducedPriceQuantity;
-    const totalPrice = fullPriceTotal + reducedPriceTotal;
+    // Calcul du prix
+    const pleinTarifTotal = pleinTarif * ptQuantity;
+    const tarifReduitTotal = tarifReduit * trQuantity;
+    const total = pleinTarifTotal + tarifReduitTotal;
 
-    // Générer le contenu du récapitulatif avec toutes les informations
+    // Génération du contenu en appelant les const dans une div pour faciliter la stylisation en css
     const summaryContent = `
-        <h2>Récapitulatif</h2>
-        <p>Nom complet: ${fullName}</p>
-        <p>E-mail: ${email}</p>
-        <p>Numéro de téléphone: ${phoneNumber}</p>
-        <p>Date: ${date}</p>
-        <p>Quantité de billets plein tarif: ${fullPriceQuantity}</p>
-        <p>Quantité de billets tarif réduit: ${reducedPriceQuantity}</p>
-        <p>Total: ${totalPrice}$</p>
+    <div class="user-info">
+    <p>Nom: ${nom}</p>
+    <p>E-mail: ${email}</p>
+    <p>Tél: ${tel}</p>
+</div>
+
+<div class="billing-info">
+    <p>Date: ${date}</p>
+    <div>
+        <table>
+            <tr>
+                <th class="type">Type</th>
+                <th class="prix">Prix</th>
+                <th>Quantité</th>
+            </tr>
+            <tr>
+                <td>Plein tarif</td>
+                <td>10$</td>
+                <td>x${ptQuantity}</td>
+            </tr>
+            <tr class="reduit">
+                <td>Tarif réduit</td>
+                <td>17$</td>
+                <td>x${trQuantity}</td>
+            </tr>
+            <tr class="total-row">
+                <td>Total</td>
+                <td>${total}$</td>
+            </tr>
+        </table>
+    </div>
+</div>
     `;
 
-    // Mettre à jour le contenu du récapitulatif dans la div correspondante
+    // MAJ dans le contenu du récapitulatif
     document.getElementById('summary').innerHTML = summaryContent;
 }
