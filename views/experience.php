@@ -19,7 +19,7 @@
 
     <nav class="breadcrumb-1" aria-label="Breadcrumb">
         <ul>
-            <li><a href="">Accueil</a></li><span>&ensp; > &ensp;</span>
+            <li><a href="/">Accueil</a></li><span>&ensp; > &ensp;</span>
             <li>L'expérience</li>
         </ul>
     </nav>
@@ -98,25 +98,33 @@
 
     </section>
 
-    <div class="commentaire">
-        <h2>Laissez un commentaire</h2>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom" required>
-            </div>
-            <div class="form-group">
-                <label for="commentaire">Commentaire:</label>
-                <textarea id="commentaire" name="commentaire" required></textarea>
-            </div>
+    <?php
 
-                <div class="bouton">
-                    <img src="../public/img/bouton.svg" alt="">
-                    <button class="texte" type="submit">Envoyer</button>
-                </div>
-            
-        </form>
-    </div>
+if (isset($_SESSION['nom'])) {
+    echo "<div class='commentaire'>
+    <h2>Laissez un commentaire</h2>
+    <form action='/commenter' method='POST'>
+        <div class='form-group'>
+            <label for='commentaire'>Commentaire:</label>
+            <textarea id='commentaire' name='commentaire' required></textarea>
+        </div>
+
+        <div class='bouton'>
+            <img src='../public/img/bouton.svg' alt=''>
+            // <button class='texte' type='submit'>Envoyer</button>
+            <input type='hidden' name='id_user' value='" . $_SESSION['id_user'] . "'>
+            <input type='submit' name='commenter' value='Envoyer'>
+        </div>
+
+    </form>
+</div>";
+}
+var_dump($_SESSION['email']);
+?>
+<!--             <input type='hidden' name='id_user' value='" . $_SESSION['id'] . "'>
+ -->
+
+
 
 
 

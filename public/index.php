@@ -20,9 +20,14 @@ $router->map('GET', '/mon-espace', 'LoginController#displayDashboard', 'mon-espa
 
 $router->map('POST', '/inscription', 'LoginController#createUser');
 $router->map('POST', '/connexion', 'LoginController#connectUser');
+$router->map('POST', '/deconnexion', 'LoginController#disconnectUser');
+$router->map('POST', '/billeterie', 'BilleterieController#AddReservation', 'reservation');
+$router->map('POST', '/commenter', 'LoginController#AddComment', 'commenter');
 
 
-// $router->map('GET', '/oeuvres', 'oeuvres', 'oeuvres');
+
+
+// $router->map('GET', '/oeuvres', 'oeuvres', 'oeuvres'.);
 //le 4e paramètre est le nom de la route pour la fonction generate / le 3e est le nom de la page
 
 
