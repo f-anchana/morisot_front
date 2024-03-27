@@ -14,13 +14,7 @@ class LoginController
 
     public function displayInscription()
     {
-        echo "<!DOCTYPE html>
-        <html lang='fr'>";
-        require '../views/head.php';
-        echo "<body>";
         require '../views/inscription.php';
-        echo "</body>
-        </html>";
     }
     public function createUser()
     {
@@ -81,13 +75,7 @@ class LoginController
 
     public function displayConnexion()
     {
-        echo "<!DOCTYPE html>
-        <html lang='fr'>";
-        require '../views/head.php';
-        echo "<body>";
         require '../views/connexion.php';
-        echo "</body>
-        </html>";
     }
 
     public function connectUser()
@@ -145,24 +133,12 @@ class LoginController
 
     public function displayConfirmation()
     {
-        echo "<!DOCTYPE html>
-        <html lang='fr'>";
-        require '../views/head.php';
-        echo "<body>";
         require '../views/confirmation.php';
-        echo "</body>
-        </html>";
     }
 
     public function displayDashboard()
     {
-        echo "<!DOCTYPE html>
-        <html lang='fr'>";
-        require '../views/head.php';
-        echo "<body>";
         require '../views/mon-espace.php';
-        echo "</body>
-        </html>";
     }
 
     public function disconnectUser()

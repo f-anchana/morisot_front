@@ -2,7 +2,7 @@
 
     <div class="navigation">
 
-        <a class="logo mobile" href=""><img src="img/logo_icon.svg"></a>
+        <a class="logo mobile" href="/"><img src="img/logo_icon.svg"></a>
 
         <div class="navigation-mobile">
 
@@ -30,7 +30,7 @@
 
         <div class="navigation-desk">
 
-            <a class="logo desk" href=""><img src="img/logo_icon_noir.svg"></a>
+            <a class="logo desk" href="/"><img src="img/logo_icon_noir.svg"></a>
 
             <nav>
                 <ul>

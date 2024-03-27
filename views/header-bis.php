@@ -2,7 +2,7 @@
 
     <div class="navigation">
 
-        <a class="logo mobile" href=""><img src="img/logo_icon_noir.svg"></a>
+        <a class="logo mobile" href="/"><img src="img/logo_icon_noir.svg"></a>
 
         <div class="navigation-mobile">
 
@@ -15,7 +15,7 @@
 
             <nav class="menu-burger">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
+                    <li><a href="/">Accueil</a></li>
                     <li><a href="<?= $this->router->generate('oeuvres') ?>">Oeuvres</a></li>
                     <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
                     <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
@@ -30,7 +30,7 @@
 
         <div class="navigation-desk">
 
-            <a class="logo desk" href=""><img src="img/logo_icon_noir.svg"></a>
+            <a class="logo desk" href="/"><img src="img/logo_icon_noir.svg"></a>
 
             <nav>
                 <ul>
@@ -40,6 +40,7 @@
                 </ul>
 
                 <ul>
+                    <li><a href="<?= $this->router->generate('connexion') ?>"><img class="icon" src="../img/icon.svg" alt="connexion"></a></li>
                     <li><button>fr / en</button></li>
                     <li class="mute"><button><img src="../img/nav-son1.svg" alt="son"></button></li>
                     <li><a class="bouton billeterie" href="<?= $this->router->generate('billeterie') ?>">

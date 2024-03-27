@@ -58,7 +58,7 @@
                     </p>
                 </div>
 
-                <a href="" class="bouton">
+                <a href="<?= $this->router->generate('experience') ?>" class="bouton">
                     <div>
                         <img src="../img/bouton.svg" alt="">
                         <p class="ticket texte">Découvrir</p>

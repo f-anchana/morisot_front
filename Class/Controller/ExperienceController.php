@@ -13,13 +13,8 @@ class ExperienceController {
 
     public function displayExperience() {
         session_start();
-        echo "<!DOCTYPE html>
-        <html lang='fr'>";
-        require '../views/head.php';
-        echo "<body>";
         require '../views/experience.php';
-        echo "</body>
-        </html>";
+
     }
 
     public function AddComment()

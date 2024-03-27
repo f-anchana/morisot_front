@@ -10,12 +10,6 @@ class VisiteController {
     }
 
     public function displayVisite() {
-        echo "<!DOCTYPE html>
-        <html lang='fr'>";
-        require '../views/head.php';
-        echo "<body>";
         require '../views/votre-visite.php';
-        echo "</body>
-        </html>";
     }
 }

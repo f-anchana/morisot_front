@@ -17,6 +17,9 @@
 
 <body>
 
+    <?php require '../views/header-bis.php'; ?>
+
+
     <nav class="breadcrumb-1" aria-label="Breadcrumb">
         <ul>
             <li><a href="/">Accueil</a></li><span>&ensp; > &ensp;</span>
@@ -29,12 +32,12 @@
             <h1>Une découverte immersive de <span class="font-2">Berthe Morisot</span></h1>
             <img src="../img/about-1.png" alt="">
         </div>
-        <p>“Je la tiens comme la meilleure artiste parmi nous” - Claude Monet</p>
+        <p>“Je la tiens comme la meilleure artiste parmi nous” <span class="claude">- Claude Monet</span></p>
     </div>
 
     <section class="part-3">
 
-        <img src="../img/about-2.png" alt="">
+        <img src="../img/exp1.png" alt="">
 
         <div>
             <h1>Une pionnière restée dans <span class="font-2">l'Ombre</span></h1>
@@ -56,8 +59,6 @@
 
     <section class="part-3">
 
-        <img src="../img/about-2.png" alt="">
-
         <div>
             <h1>Un voyage dans la <span class="font-2">4e dimension …</span></h1>
             <p>À travers la réalité virtuelle, vous deviendrez un véritable voyageur, capable de pénétrer et d'explorer
@@ -66,12 +67,14 @@
             </p>
         </div>
 
+        <img src="../img/exp2.png" alt="">
+
     </section>
 
 
     <section class="part-3">
 
-        <img src="../img/about-2.png" alt="">
+        <img src="../img/exp3.png" alt="">
 
         <div>
             <h1>Une échappée <span class="font-2">acoustique</span>,</h1>
@@ -86,7 +89,6 @@
 
 
     <section class="part-3">
-        <img src="../img/about-2.png" alt="">
 
         <div>
             <h1>Une illusion en <span class="font-2">couleur</span></h1>
@@ -96,73 +98,84 @@
             </p>
         </div>
 
+        <img src="../img/exp4.png" alt="">
+
     </section>
 
+    <div class="video">
+        <h1>Comment fonctionne l'exposition ? </h1>
+        <img src="../img/about-2.png" alt="">
+    </div>
+
     <div class='commentaire'>
-    <h2>Laissez un commentaire</h2>
-    <form action='/commenter' method='POST'>
-        <div class='form-group'>
-            <label for='commentaire'>Commentaire:</label>
-            <textarea id='commentaire' name='commentaire' required></textarea>
-        </div>
+        <h2>Laissez un commentaire</h2>
+        <form action='/commenter' method='POST'>
+            <div class='form-group'>
+                <label for='commentaire'>Commentaire:</label>
+                <textarea id='commentaire' name='commentaire' required></textarea>
+            </div>
 
-        <div class='bouton'>
-            <img src='../img/bouton.svg' alt=''>
-            <input type='hidden' name='id_user' value='" . $_SESSION['id_user'] . "'>
-            <input class='texte' type='submit' name='commenter' value='Envoyer'>
-        </div>
+            <div class='bouton'>
+                <img src='../img/bouton.svg' alt=''>
+                <input type='hidden' name='id_user' value='" . $_SESSION[' id_user'] . "'>
+                <input class='texte' type='submit' name='commenter' value='Envoyer'>
+            </div>
 
-    </form>
+        </form>
+    </div>
 </div>
+
+
+
 
     <?php
 
-// require_once '../../API/model.php';
-
-// if (isset($_SESSION['nom'])) {
-
-//     echo "<div class='commentaire'>
+    // require_once '../../API/model.php';
+    
+    // if (isset($_SESSION['nom'])) {
+    
+    //     echo "<div class='commentaire'>
 //     <h2>Laissez un commentaire</h2>
 //     <form action='/commenter' method='POST'>
 //         <div class='form-group'>
 //             <label for='commentaire'>Commentaire:</label>
 //             <textarea id='commentaire' name='commentaire' required></textarea>
 //         </div>
-
-//         <div class='bouton'>
+    
+    //         <div class='bouton'>
 //             <img src='../public/img/bouton.svg' alt=''>
 //             // <button class='texte' type='submit'>Envoyer</button>
 //             <input type='hidden' name='id_user' value='" . $_SESSION['id_user'] . "'>
 //             <input type='submit' name='commenter' value='Envoyer'>
 //         </div>
-
-//     </form>
+    
+    //     </form>
 // </div>";
 // }
 // var_dump($_SESSION['id_user']);
-
-// $comments = getComments();
-
-// foreach ($comments as $comment) {
-
-//     $user = getUser($comment['ext_user']);
-
-//     echo "<div class='commentaire'>
+    
+    // $comments = getComments();
+    
+    // foreach ($comments as $comment) {
+    
+    //     $user = getUser($comment['ext_user']);
+    
+    //     echo "<div class='commentaire'>
 //     <h2>Commentaire</h2><br>
 //     <p>" . $user['prenom'] . "</p>
 //     <p>" . $comment['content'] . "</p><br>
 // </div>";
 // }
-
-// var_dump(getComments());
-
-?>
+    
+    // var_dump(getComments());
+    
+    ?>
 <!--             <input type='hidden' name='id_user' value='" . $_SESSION['id'] . "'>
  -->
 
 
 
-
+ <?php require '../views/footer.php'; ?>
 
 
 

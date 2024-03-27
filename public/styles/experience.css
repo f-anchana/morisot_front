@@ -1,10 +1,11 @@
 .titre-1 {
-    text-align: center; 
+    text-align: center;
     width: 80vw;
     margin: auto;
 }
 
-.titre-1 img{
+
+.titre-1 img {
     width: 20vw;
 }
 
@@ -17,36 +18,69 @@
 .conteneur img {
     display: inline;
     vertical-align: middle;
+    line-height: normal;
     font-family: Moderat-Regular, sans-serif;
 }
 
+.titre-1 p {
+    font-family: Addington-Thin-Italic, serif;
+    text-align: right;
+}
 
-.part-3 span, .conteneur span{
+
+.part-3 span,
+.conteneur span {
     font-family: Addington-Regular-Italic, serif;
 }
 
-.part-3, .commentaire{
+.part-3,
+.commentaire {
     width: 85vw;
     margin: auto;
 }
 
-.part-3 h1{
+.part-3 h1 {
     margin-bottom: 2rem;
+    line-height: normal;
 }
 
-.part-3 p{
+.part-3 p {
     line-height: 30px;
 }
 
-.part-3 img{
+.part-3 img {
     height: 300px;
+    padding-top: 4rem;
 }
 
+.bouton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video{
+    margin: auto;
+    width: 85vw;
+}
+
+.video img{
+    height: 80vh;
+}
+
+.commentaire {
+    padding-top: 5rem;
+}
+
+.claude {
+    font-family: Addington-Regular-Italic, serif;
+}
 
 
 /* commentaires */
 
-.commentaire h2, .form-group {
+.commentaire h2,
+.form-group {
     margin-bottom: 20px;
 }
 
@@ -65,32 +99,89 @@ button[type="submit"] {
     cursor: pointer;
 }
 
+@media screen and (min-width: 375px) {
+    .titre-1 {
+        width: 300px;
+    }
 
-@media screen and (min-width: 768px){
-    .part-3{
+    .titre-1 img {
+        width: 108px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .part-3 {
         display: flex;
         align-items: center;
-        height: 100vh;
+        height: 90vh;
     }
 
-    .commentaire{
+    .commentaire {
         max-width: 650px;
     }
-    
+
+    .titre-1 {
+        width: 500px;
+
+    }
+
+    .titre-1 img {
+        width: 160px;
+        padding-left: 10px;
+    }
+
+
 }
 
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
+    .part-3 img {
+        height: 60vh;
+        width: 40vw;
+    }
+
+    .part-3 div {
+        padding: 5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .titre-1 {
+        width: 590px;
+    }
+
+    .titre-1 img {
+        width: 200px;
+    }
+
+    .titre-1 p{
+        font-size: 1.539rem;
+        padding-top: 10px;
+    }
+
+}
+
+
+@media screen and (min-width: 1900px) {
+    .titre-1 {
+        width: 970px;
+    }
+
+    .titre-1 img {
+        width: 350px;
+    }
+
+    .titre-1 p{
+        font-size: 2.5rem;
+        padding-top: 20px;
+    }
+
 .part-3 img {
-    height: 60vh;
-    width: 40vw;
+    height: 70vh;
 }
 
-.titre-1 {
-    width: 45vw;
-}
-
-.part-3 div{
-    padding: 5rem;
-}
 }
