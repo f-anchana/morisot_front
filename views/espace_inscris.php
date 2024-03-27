@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<link rel="stylesheet" href="../public/styles/settings.css">
-<link rel="stylesheet" href="../public/styles/style.css">
-<link rel="stylesheet" href="../public/styles/espace_inscris.css">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espace personnel</title>
+
+    <link rel="stylesheet" href="/styles/espace_inscris.css">
+
+    <link rel="stylesheet" href="/styles/settings.css">
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <script src="javascript/header.js" defer></script>
+
+    <title>Mon espace</title>
 </head>
 
 <body>
+
+    <?php require '../views/header-bis.php'; ?>
+
     <main>
         <section>
             <div>
@@ -39,6 +46,9 @@
         <a href="#" class="button logout">deconnexion</a>
 
     </main>
+
+    <?php require '../views/footer.php';?>
+
 </body>
 
 </html>

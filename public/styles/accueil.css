@@ -17,7 +17,6 @@
 }
 
 .home-info {
-    color: white;
     height: 100vh;
     margin: 0 2rem;
     display: flex;
@@ -29,6 +28,7 @@
 
 .home-info h1 {
     font: 2.25rem Darker-Grotesque, sans-serif;
+    color: white;
     line-height: 33px;
     padding-bottom: 4rem;
     text-transform: lowercase;
@@ -38,14 +38,10 @@
     font-family: Addington-Thin-Italic, serif;
 }
 
-.font-2 {
-    font: 1.66rem Addington-Regular-Italic, serif;
-}
-
 .home-info p {
     width: 36vw;
-    font: 1rem Moderat-Light, serif;
-    line-height: 20px;
+    color: white;
+    font-family: Moderat-Light, serif;
 }
 
 .and {
@@ -64,7 +60,6 @@
 }
 
 .part-2 h1 {
-    font: 1.5rem Moderat-Regular, sans-serif;
     padding: 3rem 0 1rem 0;
     line-height: 30px;
     text-align: right;
@@ -80,7 +75,6 @@
 .info p:last-child {
     font: 1rem Moderat-Regular, sans-serif;
     padding: 0 1rem;
-    line-height: 20px;
 }
 
 
@@ -143,11 +137,6 @@
     .part-2 h1 {
         text-align: left;
         padding-top: 5rem;
-        font-size: 2.5rem;
-    }
-
-    .font-2 {
-        font-size: 3rem;
     }
 
     .morisot {
@@ -197,7 +186,6 @@
     }
 
     .home-info {
-        color: var(--nav-btn-color);
         flex-direction: row;
         align-items: center;
         margin: 0 10rem 0 3rem;
@@ -205,6 +193,7 @@
     }
 
     .home-info h1 {
+        color: var(--nav-btn-color);
         font-size: 10rem;
         line-height: 110px;
         width: 100%;
@@ -249,14 +238,6 @@
         padding-left: 16rem;
     }
 
-    .part-2 h1 {
-        font-size: 3rem;
-    }
-
-    .font-2{
-        font-size: 3.5rem;
-    }
-
     .information{
         padding-top: 5rem;
     }
@@ -292,20 +273,6 @@
 
     .and {
         padding-left: 8rem;
-    }
-
-
-    .part-2 h1 {
-        font-size: 5rem;
-    }
-
-    .font-2{
-        font-size: 5.313rem;
-    }
-
-    .info p:last-child, .info p:first-child {
-        font-size: 1.563rem;
-        line-height: 30px;
     }
 
     .information{

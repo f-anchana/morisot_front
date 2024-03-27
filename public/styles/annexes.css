@@ -1,42 +1,19 @@
-/* titre */
-.title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+.container {
+    margin-left: 4rem;
+    padding-top: 13rem;
+    width: 60vw;
+  }
+
+  .container h1{
+   line-height: normal;
+   padding-bottom: 1rem;
 }
 
-
-.title_img{
-    aspect-ratio: 74/33;
-    width: 25%;
-    height: 25%;    
+.container h2{
+    font-family: Moderat-Medium, sans-serif;
+    padding-bottom: 10px;
 }
 
-.title_img img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.title h1{ 
-font-size: 1.875rem !important;
-}
-
-
-/* le main */
-.main section h2{
-    text-transform: capitalize;
-}
-.main section p {
-    text-indent: 2.5rem;
-
-}
-
-
-@media (min-width:800px){
-    .title{
-        background-color: red;
-        border: 1px solid green;
-    }
+.container p, .container ul li{
+    font:1.125rem Addington-Regular-Italic, serif;
 }

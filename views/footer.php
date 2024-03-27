@@ -58,7 +58,7 @@
                 </ul>
                 <ul>
                     <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
-                    <li><a href="#">L'expérience</a></li>
+                    <li><a href="<?= $this->router->generate('experience') ?>">L'expérience</a></li>
                     <li><a href="<?= $this->router->generate('billeterie') ?>">Billeterie</a></li>
                 </ul>
                 <div class="politique">

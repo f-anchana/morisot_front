@@ -13,13 +13,7 @@ class BilleterieController {
     }
 
     public function displayAccueilBilleterie() {
-        echo "<!DOCTYPE html>
-        <html lang='fr'>";
-        require '../views/head.php';
-        echo "<body>";
         require '../views/billeterie.php';
-        echo "</body>
-        </html>";
     }
 
    public function AddReservation() {
