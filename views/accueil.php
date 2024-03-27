@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/styles/settings.css">
     <link rel="stylesheet" href="/styles/style.css">
 
-    <!--     <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/x-icon">
- -->
+    <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/svg">
+
 
     <script src="javascript/header.js" defer></script>
 
@@ -72,6 +72,6 @@
 
     </section>
 
-    <?php require '../views/footer.php';?>
+    <?php require '../views/footer.php'; ?>
 
 </body>

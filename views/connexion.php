@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/svg">
+
+    <title>Se connecter</title>
 </head>
 <body>
 

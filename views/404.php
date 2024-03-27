@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/settings.css">
 
-    <title>Erreur</title>
+    <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/svg">
+
+
+    <title>Erreur 404</title>
 </head>
 
 <body>

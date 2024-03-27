@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="/styles/settings.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/svg">
+
 
     <title>Confirmation de réservation</title>
 </head>

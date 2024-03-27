@@ -139,7 +139,7 @@ class LoginController
 
     public function displayDashboard()
     {
-        require '../views/mon-espace.php';
+        require '../views/espace_inscris.php';
     }
 
     public function disconnectUser()

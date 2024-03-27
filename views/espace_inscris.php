@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="/styles/settings.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/svg">
+
 
     <script src="javascript/header.js" defer></script>
 
@@ -17,15 +19,32 @@
 
 <body>
 
-    <?php require '../views/header-bis.php'; ?>
+    <?php
+    session_start();
+    require '../views/header-bis.php'; ?>
 
     <main>
         <section>
             <div>
                 <h1>espace personnel</h1>
-                <h2>Mme Maria Ouedraogo</h2>
+
+
+                <?php
+                if (isset($_SESSION['nom'])) {
+
+
+                    echo "<h2>Bienvenue " . $_SESSION['prenom'] . " " . $_SESSION['nom'] . "</h2>";
+                } else {
+                    header('Location: /connexion');
+                }
+
+                ?>
+
+                <!-- <h2>Mme Maria Ouedraogo</h2> -->
                 <p class="welcome">
-                    Bienvenue dans votre espace personnel. Vous pouvez y suivre vos commandes, accéder à vos offres personnelles, imprimer vos billets et modifier vos coordonnées ou vos inscriptions aux newsletters.</p>
+                    Bienvenue dans votre espace personnel. Vous pouvez y suivre vos commandes, accéder à vos offres
+                    personnelles, imprimer vos billets et modifier vos coordonnées ou vos inscriptions aux newsletters.
+                </p>
             </div>
             <a href="" class="button">modifier mes données</a>
         </section>
@@ -43,11 +62,12 @@
             <a href="" class="button ">tous voir</a>
 
         </section>
-        <a href="#" class="button logout">deconnexion</a>
+        <!-- <a href="<= $this->router->generate('deconnexion') ?>" class="button logout">deconnexion</a> -->
+        <a href="/deconnexion" class="button logout">deconnexion</a>
 
     </main>
 
-    <?php require '../views/footer.php';?>
+    <?php require '../views/footer.php'; ?>
 
 </body>
 

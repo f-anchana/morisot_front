@@ -20,11 +20,12 @@ $router->map('GET', '/politique-confidentialite', 'PolitiqueController#displayCo
 $router->map('GET', '/mentions-legales', 'PolitiqueController#displayMentions', 'mentions-legales');
 $router->map('GET', '/politique-prix', 'PolitiqueController#displayPrix', 'politique-prix');
 $router->map('GET', '/Unveiling-the-truth', 'RessourcesController#displayUnveiling', 'Unveiling-the-truth');
+$router->map('GET', '/deconnexion', 'LoginController#disconnectUser');
+
 
 
 $router->map('POST', '/inscription', 'LoginController#createUser');
 $router->map('POST', '/connexion', 'LoginController#connectUser');
-$router->map('POST', '/deconnexion', 'LoginController#disconnectUser');
 $router->map('POST', '/reserver', 'BilleterieController#AddReservation', 'reserver');
 $router->map('POST', '/commenter', 'ExperienceController#AddComment', 'commenter');
 
