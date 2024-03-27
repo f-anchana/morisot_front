@@ -41,7 +41,7 @@ class BilleterieController {
             // La réservation a été ajoutée
             $youpi = "La réservation a été ajoutée.";
 
-            // SendReservation($_POST['nom_client'], $_POST['prenom_client'], $_POST['email_client'], $_POST['tel_client'], $_POST['date'], $_POST['time']);
+            SendReservation($_POST['nom_client'], $_POST['prenom_client'], $_POST['email_client'], $_POST['tel_client'], $_POST['date'], $_POST['time'], $_POST['prix_total'], $_POST['nbr_billets']);
 
             var_dump($response);
             header('Location: /confirmation');
