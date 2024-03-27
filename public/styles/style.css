@@ -412,6 +412,7 @@ footer h1 {
 
 .desk_socials_img p, .desk_socials p, aside p{
     font-family: Darker-Grotesque-Regular, sans-serif;
+    color: var(--bc-color);
 }
 
 .desk_socials{
