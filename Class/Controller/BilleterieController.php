@@ -17,11 +17,11 @@ class BilleterieController {
     }
 
    public function AddReservation() {
-        $params = json_encode(['nom_client' => ($_POST['nom_client']), 'prenom_client' => ($_POST['prenom_client']) ,'email_client' => ($_POST['email_client']) ,'numero_client' => ($_POST['tel_client']), 'date_choisi' => ($_POST['date']), 'horaire_choisi' => ($_POST['time'])]);
+        $params = json_encode(['nom_client' => ($_POST['nom_client']), 'prenom_client' => ($_POST['prenom_client']) ,'email_client' => ($_POST['email_client']) ,'numero_client' => ($_POST['tel_client']), 'date_choisi' => ($_POST['date']), 'horaire_choisi' => ($_POST['time']), 'prix_tota' => ($_POST['prix_total']), 'nbr_billets' => ($_POST['nbr_billets'])]);
 
         $options = array(
 
-            CURLOPT_URL => 'https://www.api.ombreetlumiere.eu/controller.php/reserver',
+            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/reserver',
 
             CURLOPT_POST => true,
 
@@ -41,11 +41,7 @@ class BilleterieController {
             // La réservation a été ajoutée
             $youpi = "La réservation a été ajoutée.";
 
-            if (checkUser($_POST['email_client'])) {
-                $requete = "INSERT ext_user INTO utilisateurs WHERE ext_user = :ext_user";
-            }
-
-            SendReservation($_POST['nom_client'], $_POST['prenom_client'], $_POST['email_client'], $_POST['tel_client'], $_POST['date'], $_POST['time']);
+            // SendReservation($_POST['nom_client'], $_POST['prenom_client'], $_POST['email_client'], $_POST['tel_client'], $_POST['date'], $_POST['time']);
 
             var_dump($response);
             header('Location: /confirmation');

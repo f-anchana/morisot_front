@@ -115,6 +115,8 @@
                     </fieldset>
 
                     <fieldset id="step3" class="form-step">
+                        <input type="hidden" id="prixTotal" name="prix_total" value="">
+                        <input type="hidden" id="nbrBillets" name="nbr_billets" value="">
 
                         <div class="kelis">
                             <div>
@@ -161,15 +163,15 @@
                         <div id="summary"></div>
 
                         <div class="space_btn">
-                        <div class='bouton'>
-                            <img src='../img/preview.svg' alt=''>
-                            <button class='texte preview' type="button" onclick="retour()">Précédent</button>
-                        </div>
+                            <div class='bouton'>
+                                <img src='../img/preview.svg' alt=''>
+                                <button class='texte preview' type="button" onclick="retour()">Précédent</button>
+                            </div>
 
-                        <div class='bouton'>
-                            <img src='../img/next.svg' alt=''>
-                            <input class='texte' type="submit" name='reserver' value="Réserver">
-                        </div>
+                            <div class='bouton'>
+                                <img src='../img/next.svg' alt=''>
+                                <input class='texte' type="submit" name='reserver' value="Réserver">
+                            </div>
                         </div>
 
                     </fieldset>
@@ -184,7 +186,7 @@
             </div>
 
 
-            <div class="field-container">
+            <!-- <div class="field-container">
                 <fieldset id="step1" class="form-step active">
                     <label for="date">Date:</label>
                     <input type="date" id="date" name="date" min="<?php echo date('Y-m-d'); ?>" required
@@ -262,21 +264,20 @@
 
 
                     <button type="button" onclick="retour()">Précédent</button>
-                    <!-- <button type="submit">Réserver</button> -->
                     <input type="submit" name='reserver' value="Réserver">
                 </fieldset>
 
-            </div>
+            </div> -->
 
-        </form>
+            </form>
 
-        <div class="billet">
-            <img src="img/test.jpg" alt="">
-            <div id="billetTicket"></div>
+            <!-- <div class="billet">
+                <img src="img/test.jpg" alt="">
+                <div id="billetTicket"></div>
+            </div> -->
         </div>
-    </div>
 
-    <?php require '../views/footer.php'; ?>
+        <?php require '../views/footer.php'; ?>
 
 
 </body>
