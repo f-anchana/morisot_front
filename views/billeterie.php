@@ -29,17 +29,17 @@
 
 
     <div class="billeterie">
-        <h1>Book your <span class="font-2">ticket</span></h1>
+        <h1>Réservez votre <span class="font-2">billet</span></h1>
 
         <div class="container">
 
             <form id="reservation-form" method="POST" action="/reserver">
 
                 <div aria-label="breadcrumb" class="breadcrumb">
-                    <span id="breadcrumbStep1" class="active">1 - Date et horaire</span>
-                    <span id="breadcrumbStep2">/ 2 - Nombre de billets</span>
-                    <span id="breadcrumbStep3">/ 3 - Coordonnées</span>
-                    <span id="breadcrumbStep4">/ 4 - Récapitulatif</span>
+                    <p id="breadcrumbStep1" class="active">1 - Date et horaire</p>
+                    <p id="breadcrumbStep2">&ensp;/ 2 - Nombre de billets</p>
+                    <p id="breadcrumbStep3">&ensp;/ 3 - Coordonnées</p>
+                    <p id="breadcrumbStep4">&ensp;/ 4 - Récapitulatif</p>
                 </div>
 
 
@@ -50,7 +50,7 @@
                             class="form-field"><br><br>
 
                         <label for="time">Horaire</label><br>
-                        <select id="time" name="time" required class="form-field">
+                        <select id="time" name="time" required class="form-field quantity">
                             <option value="">Sélectionnez un horaire</option>
                             <option value="09:00">09:00</option>
                             <option value="10:00">10:00</option>
@@ -76,29 +76,33 @@
                     <fieldset id="step2" class="form-step">
                         <table>
                             <tr>
-                                <th>Type de billet</th>
+                                <th></th>
                                 <th>Prix ($)</th>
                                 <th>Quantité</th>
                             </tr>
-                            <tr>
+                            <tr class="reduit-1">
                                 <td>Billet plein tarif</td>
                                 <td>10</td>
-                                <td><input type="number" id="ptQuantity" min="0" value="0" class="form-field"></td>
-                            </tr>
-                            <tr>
-                                <td>Billet tarif réduit</td>
-                                <td>17</td>
-                                <td><input type="number" id="trQuantity" min="0" value="0" class="form-field">
+                                <td>
+                                    <input type="number" id="ptQuantity" min="0" max="5" value="0" required
+                                        class="form-field quantite">
                                 </td>
                             </tr>
-                        </table>
+                            <tr class="reduit-1">
+                                <td>Billet tarif réduit</td>
+                                <td>17</td>
+                                <td><input type="number" id="trQuantity" min="0" max="5" value="0" required
+                                        class="form-field quantite">
+                                </td>
+                            </tr>
+                        </table><br><br>
 
-                        <div class="message" style="display: none;">Veuillez remplir ce champ.</div><br><br>
+                        <div class="message" style="display: none;">Veuillez remplir tous les champs.</div><br><br>
 
                         <div class="space_btn">
                             <div class='bouton'>
                                 <img src='../img/preview.svg' alt=''>
-                                <button class='texte' type="button" onclick="retour()">Précédent</button>
+                                <button class='texte preview' type="button" onclick="retour()">Précédent</button>
                             </div>
 
                             <div class='bouton'>
@@ -109,24 +113,38 @@
                     </fieldset>
 
                     <fieldset id="step3" class="form-step">
-                        <label for="name">Nom:</label>
-                        <input type="text" id="name" name="nom_client" required class="form-field">
 
-                        <label for="prénom">Prénom:</label>
-                        <input type="text" id="prénom" name="prenom_client" required class="form-field">
+                        <div class="kelis">
+                            <div>
+                                <label for="name">Nom</label><br>
+                                <input type="text" id="name" name="nom_client" required class="form-field">
+                            </div>
+                            <div>
+                                <label for="prénom">Prénom</label><br>
+                                <input type="text" id="prénom" name="prenom_client" required class="form-field">
+                            </div>
+                        </div>
 
-                        <label for="téléphone">Téléphone:</label>
-                        <input type="tel" id="téléphone" name="tel_client" pattern="[0-9]{10}"
-                            placeholder="7 59 21 36 47" required maxlength="10" class="form-field">
+                        <div class="kelis">
+                            <div>
+                                <label for="téléphone">Téléphone</label><br><br>
+                                <input type="tel" id="téléphone" name="tel_client" pattern="[0-9]{10}" maxlength="10"
+                                    required class="form-field">
+                            </div>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email_client" required class="form-field">
+                            <div>
+                                <label for="email">Mail</label><br><br>
+                                <input type="email" id="email" name="email_client" required class="form-field">
+                            </div>
+                        </div>
+                        <br><br>
 
-                        <div class="message" style="display: none;">Veuillez remplir les champs.</div><br><br>
+                        <div class="message" style="display: none;">Veuillez remplir les champs.</div>
+
                         <div class="space_btn">
                             <div class='bouton'>
-                                <img src='../img/preview.svg' alt=''> 
-                                <button class='texte' type="button" onclick="retour()">Précédent</button>
+                                <img src='../img/preview.svg' alt=''>
+                                <button class='texte preview' type="button" onclick="retour()">Précédent</button>
                             </div>
 
                             <div class='bouton'>
@@ -138,14 +156,20 @@
 
                     <fieldset id="step4" class="form-step">
 
-
                         <div id="summary"></div>
 
+                        <div class="space_btn">
                         <div class='bouton'>
-                            <img src='../img/preview.svg' alt=''> 
-                            <button class='texte' type="button" onclick="retour()">Précédent</button>
-                        </div> 
-                        <input type="submit" name='reserver' value="Réserver">
+                            <img src='../img/preview.svg' alt=''>
+                            <button class='texte preview' type="button" onclick="retour()">Précédent</button>
+                        </div>
+
+                        <div class='bouton'>
+                            <img src='../img/next.svg' alt=''>
+                            <input class='texte' type="submit" name='reserver' value="Réserver">
+                        </div>
+                        </div>
+
                     </fieldset>
 
                 </div>

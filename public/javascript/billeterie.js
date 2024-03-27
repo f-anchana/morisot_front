@@ -2,14 +2,28 @@ function suivant() {
     const stepActuel = document.querySelector('.form-step.active');
     const suivant = stepActuel.nextElementSibling;
     const champs = stepActuel.querySelectorAll('input:required, select:required');
-    const champsRemplis = Array.from(champs).every(field => field.value.trim() !== '' || (field.tagName === 'SELECT' && field.value !== ''));
+    const champsRemplis = Array.from(champs).every(field => field.value.trim() !== '');
 
     if (!champsRemplis) {
-        champs.forEach(field => {
-            const erreur = field.parentElement.querySelector('.message');
-            erreur.style.display = 'block';
-        });
+        stepActuel.querySelector('.message').style.display = 'block';
         return;
+    }
+
+    if (suivant.id === 'step3') {
+        const ptQuantity = parseInt(document.getElementById('ptQuantity').value);
+        const trQuantity = parseInt(document.getElementById('trQuantity').value);
+
+
+        const totalQuantity = ptQuantity + trQuantity;
+        if (totalQuantity > 10) {
+            alert("Le nombre total de billets ne peut pas dépasser 10.");
+            return;
+        }
+
+        if (ptQuantity === 0 && trQuantity === 0) {
+            alert("Veuillez choisir au moins un billet.");
+            return;
+        }
     }
 
     updateAriane(suivant.id);
@@ -44,7 +58,7 @@ function retour() {
 }
 
 function updateAriane(stepId) {
-    const breadcrumbSteps = document.querySelectorAll('.breadcrumb span');
+    const breadcrumbSteps = document.querySelectorAll('.breadcrumb p');
     breadcrumbSteps.forEach(step => step.classList.remove('active'));
 
     const breadcrumbStep = document.getElementById('breadcrumbStep' + stepId.charAt(stepId.length - 1));
@@ -57,7 +71,7 @@ function step2() {
     const date = document.getElementById('date').value;
     const time = document.getElementById('time').value;
 
-    const billetContent = `<p>Date: ${date}</p><p>Horaire: ${time}</p>`;
+    const billetContent = `<p>Date: le ${date} à ${time}</p>`;
     document.getElementById('billetTicket').innerHTML = billetContent;
 }
 
@@ -71,7 +85,7 @@ function step3() {
     const trQuantity = parseInt(document.getElementById('trQuantity').value);
     const total = (pleinTarif * ptQuantity) + (tarifReduit * trQuantity);
 
-    const billetContent = `<p>Date: ${date}</p><p>Horaire: ${time}</p><p>Prix total des billets : ${total}$</p>`;
+    const billetContent = `<p>Date: le ${date} à ${time}</p><p>Prix total des billets : ${total}$</p>`;
     document.getElementById('billetTicket').innerHTML = billetContent;
 }
 

@@ -12,7 +12,7 @@
 
     <script src="javascript/header.js" defer></script>
 
-    <title> À propos</title>
+    <title>À propos</title>
 </head>
 
 <body>

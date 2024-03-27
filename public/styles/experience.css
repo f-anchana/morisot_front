@@ -21,24 +21,24 @@
 }
 
 
-.font-2 span, .conteneur span{
+.part-3 span, .conteneur span{
     font-family: Addington-Regular-Italic, serif;
 }
 
-.font-2, .commentaire{
+.part-3, .commentaire{
     width: 85vw;
     margin: auto;
 }
 
-.font-2 h1{
+.part-3 h1{
     margin-bottom: 2rem;
 }
 
-.font-2 p{
+.part-3 p{
     line-height: 30px;
 }
 
-.font-2 img{
+.part-3 img{
     height: 300px;
 }
 
@@ -67,7 +67,7 @@ button[type="submit"] {
 
 
 @media screen and (min-width: 768px){
-    .font-2{
+    .part-3{
         display: flex;
         align-items: center;
         height: 100vh;
@@ -81,7 +81,7 @@ button[type="submit"] {
 
 
 @media screen and (min-width: 1024px){
-.font-2 img {
+.part-3 img {
     height: 60vh;
     width: 40vw;
 }
@@ -90,7 +90,7 @@ button[type="submit"] {
     width: 45vw;
 }
 
-.font-2 div{
+.part-3 div{
     padding: 5rem;
 }
 }

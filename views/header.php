@@ -40,6 +40,8 @@
                 </ul>
 
                 <ul>
+                <li><a href="<?= $this->router->generate('connexion') ?>"><img class="icon" src="../img/icon.svg" alt="connexion"></a></li>
+
                     <li><button>fr / en</button></li>
                     <li class="mute"><button><img src="../img/nav-son1.svg" alt="son"></button></li>
                     <li><a class="bouton billeterie" href="<?= $this->router->generate('billeterie') ?>">

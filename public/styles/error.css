@@ -1,6 +1,5 @@
 body{
-    background-color: var(--text-color) !important;
-    color: var(--bc-color);
+    background-color: var(--grey-color) !important;
 }
 
 .err404 {
@@ -11,6 +10,10 @@ body{
     height: 100vh;
 }
 
+.err404 p{
+    color: var( --home-color);
+}
+
 .retour-accueil{
     text-decoration: underline;
 }
@@ -18,6 +21,7 @@ body{
 .err404_h1{
     font-size: 50vw;
     letter-spacing: -1rem;
+    color: var( --home-color);
 }
 
 .nbr_itl{

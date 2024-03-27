@@ -4,7 +4,17 @@
 }
 
 .breadcrumb {
-    margin: 2.5rem;
+    padding: 2.5rem;
+}
+
+.breadcrumb p {
+    font-family: Moderat-Medium-Italic, sans-serif !important;
+    display: inline-block;
+    color: #959595;
+}
+
+.preview {
+    color: var(--text-color) !important;
 }
 
 #reservation-form {
@@ -14,13 +24,10 @@
 #reservation-form,
 .billet {
     background-color: #E5E4DC;
-    height: 55vh;
 }
 
 .field-container {
-    display: flex;
     margin: 2.5rem;
-
 }
 
 .form-step {
@@ -33,22 +40,32 @@
 }
 
 
-.form-field{
+.form-field {
     width: 100%;
+    background-color: transparent;
+    border: solid 1px var(--text-color);
+    height: 35px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
-.billet {
-    display: none;
-    width: 300px;
+.quantite {
+    width: 85px;
+    margin-bottom: 10px;
 }
 
-.billeterie h1{
-    padding-left: 2rem;
+
+.quantity {
+    width: 190px;
+}
+
+.billeterie h1 {
+    padding: 0.75rem 2rem;
 }
 
 .billet img {
-    width: 300px;
-    height: 200px;
+    width: 320px;
+    height: 270px;
     margin-bottom: 2rem;
 }
 
@@ -56,21 +73,8 @@
     margin: 0 2rem;
 }
 
-.breadcrumb span.active {
-    font-weight: bold;
-}
-
-
-#summary {
-    display: flex;
-    justify-content: space-between;
-}
-
-.billing-info {
-    border-left: solid black 1px;
-    padding-left: 2.5rem;
-    line-height: 30px;
-
+.breadcrumb p.active {
+    color: var(--text-color);
 }
 
 .billing-info div {
@@ -81,18 +85,9 @@
     padding-bottom: 1.5rem;
 }
 
-th {
-    padding-right: 20rem;
-}
-
 .prix {
     padding-right: 1rem;
 }
-
-.user-info {
-    padding-right: 10rem;
-}
-
 
 table {
     width: 100%;
@@ -111,17 +106,13 @@ td {
     margin-top: 1rem;
 }
 
-.reduit {
+.reduit,
+.reduit-1 {
     border-bottom: solid 1px;
 }
 
 .reduit td {
     padding-bottom: 1rem;
-}
-
-
-.type {
-    padding-right: 20rem;
 }
 
 .total-row td:first-child {
@@ -137,17 +128,55 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
-    width: 140px;
+    padding: 1rem;
 }
 
-.space_btn{
-    display: flex;
-    justify-content: space-between;
+@media screen and (min-width: 425px) {
+    .space_btn {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+    .billet {
+        display: none;
+        width: 300px;
+    }
 }
 
 
 @media screen and (min-width: 768px) {
+
+    .kelis {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .billeterie h1 {
+        padding-left: 4rem;
+    }
+
+    .bouton {
+        width: 140px;
+        padding: 0;
+    }
+
+
+    #reservation-form,
+    .billet {
+        height: 500px;
+    }
+
+    .kelis div {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    
     .container {
         display: flex;
         align-items: center;
@@ -156,11 +185,51 @@ td {
         width: inherit;
     }
 
+    
+    #summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
     .billet {
         display: block;
     }
 
-    .billeterie h1{
-        padding-left: 4rem;
+    .type {
+        padding-right: 20rem;
+    }
+
+    .billing-info {
+        border-left: solid black 1px;
+        padding-left: 2.5rem;
+        line-height: 30px;
+    }
+
+    .user-info {
+        padding-right: 10rem;
+    }
+
+    .user-info p{
+        line-height: 30px;
+    }
+
+    .space_btn {
+        padding-top: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .type {
+        padding-right: 25rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .type {
+        padding-right: 30rem;
     }
 }
