@@ -2,7 +2,7 @@
 
     <div class="navigation">
 
-        <a class="logo mobile" href="/"><img src="img/logo_icon_noir.svg"></a>
+        <a class="logo mobile" href="/home"><img src="img/logo_icon_noir.svg"></a>
 
         <div class="navigation-mobile">
 
@@ -15,13 +15,12 @@
 
             <nav class="menu-burger">
                 <ul>
-                    <li><a href="/">Accueil</a></li>
-                    <li><a href="<?= $this->router->generate('oeuvres') ?>">Oeuvres</a></li>
-                    <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
-                    <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
-                    <li><a href="<?= $this->router->generate('experience') ?>">L'expérience</a></li>
-                    <li><a href="<?= $this->router->generate('billeterie') ?>">Billeterie</a></li>
-                    <li class="language"><button>fr / en</button></li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="<?= $this->router->generate('resources') ?>">Resources</a></li>
+                    <li><a href="<?= $this->router->generate('your.visit') ?>">Your Visit</a></li>
+                    <li><a href="<?= $this->router->generate('experience') ?>">The Experience</a></li>
+                    <li><a href="<?= $this->router->generate('ticketing') ?>">Ticketing</a></li>
+                    <li class="language"><a class="lower" href="/" >fr / en</a></li>
                 </ul>
             </nav>
 
@@ -30,24 +29,23 @@
 
         <div class="navigation-desk">
 
-            <a class="logo desk" href="/"><img src="img/logo_icon_noir.svg"></a>
+            <a class="logo desk" href="/home"><img src="img/logo_icon_noir.svg"></a>
 
             <nav>
                 <ul>
-                    <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
-                    <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
-                    <li><a href="<?= $this->router->generate('experience') ?>">L'expérience</a></li>
+                    <li><a href="<?= $this->router->generate('resources') ?>">Resources</a></li>
+                    <li><a href="<?= $this->router->generate('your.visit') ?>">Your Visit</a></li>
+                    <li><a href="<?= $this->router->generate('experience') ?>">The Experience</a></li>
                 </ul>
 
                 <ul>
                     <li><a href="<?= $this->router->generate('connexion') ?>"><img class="icon" src="../img/icon.svg" alt="connexion"></a></li>
-                    <li><button>fr / en</button></li>
-                    <li class="mute"><button><img src="../img/nav-son1.svg" alt="son"></button></li>
+                    <li class="language"><a class="lower" href="/" >fr / en</a></li>
                     <li><a class="bouton billeterie" href="<?= $this->router->generate('billeterie') ?>">
                             <div id="image-container">
                                 <img id="default-image" src="../img/nav-ticket1.svg" alt="">
-                                <img id="hover-image" src="../img/nav-ticket2.svg" alt="" style="display: none;">
-                                <p class="brown texte">Billeterie</p>
+                                <li><a href="<?= $this->router->generate('ticketing') ?>">Ticketing</a></li>
+                                <p class="brown text">Ticketing</p>
                             </div>
                         </a>
                     </li>

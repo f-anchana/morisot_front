@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription chef</title>
+    <title>Registration</title>
 
 </head>
 <body>
@@ -16,26 +16,26 @@ if(isset($erreur)){
 }
 ?>
 
-    <h1>Inscription</h1>
-    <label for="nom_user">Votre nom</label>
+    <h1>Registration</h1>
+    <label for="nom_user">Last name</label>
     <input type="text" name="nom_user" id="nom_user" required="required">
 
-    <label for="prenom_user">Votre prénom</label>
+    <label for="prenom_user">First Name</label>
     <input type="text" name="prenom_user" id="prenom_user" required="required">
 
-    <label for="numero">Votre numéro de téléphone</label>
+    <label for="numero">Phone number</label>
     <input type="number" name="numero" id="numero" required="required">
 
-    <label for='email'>Entrez votre email</label>
+    <label for='email'>Email</label>
     <input type='email' name='email' id='email' required='required'>
 
     <label for="age">Age</label>
     <input type="number" name="age" id="age" required="required" min="1">
 
-    <label for='mdp1'>Définissez un mot de passe</label>
+    <label for='mdp1'>Set a password</label>
     <input type='password' name='mdp1' id='mdp1' required='required'>
 
-    <label for='mdp2'>Vérifier votre mot de passe</label>
+    <label for='mdp2'>Verify your password</label>
     <input type='password' name='mdp2' id='mdp2' required='required'>
     <p id="error-message" style="color: red;"></p>
 

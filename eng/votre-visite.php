@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 
     <script src="javascript/header.js" defer></script>
 
-    <title>Podcast</title>
+    <title>Your visit</title>
 </head>
 
 <body>
@@ -21,8 +21,8 @@
 
    <nav class="breadcrumb-1" aria-label="Breadcrumb">
         <ul>
-            <li><a href="/">Accueil</a></li><span>&ensp; > &ensp;</span>
-            <li>Votre visite</li>
+            <li><a href="/home">Home</a></li><span>&ensp; > &ensp;</span>
+            <li>Your visit</li>
         </ul>
     </nav>
 

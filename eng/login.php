@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../public/styles/style.css">
     <link rel="stylesheet" href="../public/styles/login.css">
 
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
 
@@ -17,17 +17,17 @@
     <img src="../public/img/test.jpg" alt="">
   </div>
         <div class="form">
-        <h2>Connexion</h2>
+        <h2>Login</h2>
           <form method='POST' action='index.php?action=traiteconnexion'>
            <div>
-           <label for="">identifiant</label>
+           <label for="">Username</label>
             <input type="text" id="username" name='l' placeholder="Enter your username">
       
-            <label for="">mot de passe</label>
+            <label for="">Password</label>
             <input type="password" id="" name='mdp_connexion' placeholder="Enter your password">
            </div>
       
-            <button type="submit">connexion</button>
+            <button type="submit">Login</button>
         </div>
           </form>
         

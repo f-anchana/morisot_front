@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
 
     <script src="javascript/header.js" defer></script>
 
-    <title>Mon espace</title>
+    <title>My Account</title>
 </head>
 
 <body>
@@ -26,13 +26,13 @@
     <main>
         <section>
             <div>
-                <h1>espace personnel</h1>
+                <h1>Personal Space</h1>
 
 
                 <?php
                 if (isset($_SESSION['nom'])) {
                     // var_dump($_SESSION['email']);
-
+                
                     echo "<h2>Bienvenue " . $_SESSION['prenom'] . " " . $_SESSION['nom'] . "</h2>";
                 } else {
                     header('Location: /connexion');
@@ -42,27 +42,27 @@
 
                 <!-- <h2>Mme Maria Ouedraogo</h2> -->
                 <p class="welcome">
-                    Bienvenue dans votre espace personnel. Vous pouvez y suivre vos commandes, accéder à vos offres
-                    personnelles, imprimer vos billets et modifier vos coordonnées ou vos inscriptions aux newsletters.
+                    Welcome to your personal space. Here you can track your orders, access your personal offers,
+                    print your tickets, and modify your contact information or newsletter subscriptions.
                 </p>
             </div>
-            <a href="" class="button">modifier mes données</a>
+            <a href="" class="button">Edit my profile</a>
         </section>
 
         <section class="btm_sec">
             <div>
-                <h1>Votre dernière réservation</h1>
+                <h1>Your Last Reservation</h1>
                 <div>
                     <p>31.03.2024</p>
-                    <p>16$</p>
+                    <p>$16</p>
                     <p>13h00</p>
-                    <p class="welcome">Ombre et lumière</p>
+                    <p class="welcome">Shadow and Light</p>
                 </div>
             </div>
-            <a href="/mes-reservations" class="button">tous voir</a>
+            <a href="/mes-reservations" class="button">View All</a>
 
         </section>
-        <a href="/deconnexion" class="button logout">deconnexion</a>
+        <a href="/deconnexion" class="button logout">Logout</a>
 
     </main>
 

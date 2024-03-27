@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="eng">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
 
     <script src="javascript/header.js" defer></script>
 
-    <title>Ombre et Lumière</title>
+    <title>Shadow and Light</title>
 </head>
 
 <body>
@@ -26,9 +26,9 @@
 
         <div class='home-info'>
             <h1>Shadows <span class="and">and</span><span class="light">li<span class="font-1">ghts</span></span></h1>
-            <p>Découvrez l'art de Berthe Morisot entre ombre et lumière : une exposition captivante qui éclaire votre
-                esprit et joue avec vos sens
-            </p>
+            <p>Discover the art of Berthe Morisot between shadow and light: a captivating exhibition that enlightens
+                your
+                mind and plays with your senses.</p>
         </div>
 
         <img class="home-img" src="../img/home-1.png" alt="">
@@ -40,7 +40,7 @@
 
     <section class="part-2">
 
-        <h1>Une expérience immersive <span class="font-2">multisensorielle</span></h1>
+        <h1>An immersive <span class="font-2">multisensory</span> experience</h1>
 
         <div class="morisot">
             <img class="portrait" src="img/home-2.png" alt="">
@@ -48,23 +48,18 @@
             <div class="information">
 
                 <div class="info">
-                    <p>31 mars . 30 avril / 2024</p>
-                    <p>Découvrez Berthe Morisot, une artiste éminente du mouvement impressionniste, dans une expérience
-                        en
-                        réalité
-                        virtuelle inédite où vos sens fusionne avec la réalité. Traversez les portes de son univers,
-                        vivez
-                        des
-                        moments
-                        clefs de son parcours et laissez vous emporter par de douces mélodies dans la quatrième
-                        dimension.
-                    </p>
+                    <p>March 31 - April 30, 2024</p>
+                    <p>Discover Berthe Morisot, a prominent artist of the Impressionist movement, in a unique virtual
+                        reality
+                        experience where your senses merge with reality. Step into her universe, experience key moments
+                        of her
+                        journey, and let yourself be carried away by gentle melodies in the fourth dimension.</p>
                 </div>
 
                 <a href="<?= $this->router->generate('experience') ?>" class="bouton">
                     <div>
                         <img src="../img/bouton.svg" alt="">
-                        <p class="ticket texte">Découvrir</p>
+                        <p class="ticket texte">Discover</p>
                     </div>
                 </a>
             </div>

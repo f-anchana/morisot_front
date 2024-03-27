@@ -3,8 +3,7 @@
 
     <nav class="footer_nav">
         <ul class="footer_nav_main">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="<?= $this->router->generate('oeuvres') ?>">Oeuvres</a></li>
+            <li><a href="/">Accueil</a></li>
             <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
             <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
             <li><a href="<?= $this->router->generate('experience') ?>">L'expérience</a></li>
@@ -52,8 +51,7 @@
             <h1>Menu</h1>
             <main class="footer_main_nav">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="<?= $this->router->generate('oeuvres') ?>">Oeuvres</a></li>
+                    <li><a href="/">Accueil</a></li>
                     <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
                 </ul>
                 <ul>

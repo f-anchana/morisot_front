@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,20 +12,20 @@
     <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/svg">
 
 
-    <title>Confirmation de réservation</title>
+    <title>Reservation Confirmation</title>
 </head>
 
 <body>
     <div class="confirmation">
-        <h1>Merci pour votre <span>réservation !</span></h1>
+    <h1>Thank you for your <span>booking!</span></h1>
         <div>
             <img src="../img/confirmation.png" alt="">
-            <h2>Cette dernière est en cours de traitement</h2>
+            <h2>This is currently being processed</h2>
         </div>
-        <p>Vous recevrez très bientôt un récapitulatif de votre commande ainsi que votre reçu et vos e-billets
-            *si rien n’arrive après 20 minutes , veillez à vérifier vos spams, puis nous contacter
+        <p>You will soon receive a summary of your order along with your receipt and e-tickets.
+            *If nothing arrives after 20 minutes, please check your spam folder, then contact us.
         </p>
 
-        <a href="/"><p class="retour">Retour à l'accueil</p></a>
+        <a href="/"><p class="retour">Back to Homepage</p></a>
     </div>
 </body>

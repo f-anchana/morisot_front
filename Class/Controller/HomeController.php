@@ -13,4 +13,8 @@ class HomeController {
         // require '../views/header.php';
         require '../views/accueil.php';
     }
+    public function displayHomeEng() {
+        // require '../views/header.php';
+        require '../eng/accueil.php';
+    }
 }

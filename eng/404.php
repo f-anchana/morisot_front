@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,14 +13,14 @@
     <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/svg">
 
 
-    <title>Erreur 404</title>
+    <title>Error 404</title>
 </head>
 
 <body>
     <main class="err404">
         <h1 class="err404_h1">4 <span class="nbr_itl">0</span> 4</h1>
 
-        <p>Vous avez l'air perdu, retournez à <a class="retour-accueil" href="/">l' accueil</a></p>
+        <p>You seem lost, go back to <a class="retour-accueil" href="/">home</a></p>
 
     </main>
 </body>

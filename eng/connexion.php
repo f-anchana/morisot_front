@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/svg">
 
-    <title>Se connecter</title>
+    <title>Login</title>
 </head>
 <body>
 
@@ -34,7 +34,7 @@ if (isset($_SESSION['nom'])) {
 <label for="email">Email</label>
 <input type="email" name="email" id="email" required="required">
 
-<label for="mdp">Mot de passe</label>
+<label for="mdp">Password</label>
 <input type="password" name="mdp" id="mdp" required="required">
 
 

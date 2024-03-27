@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
 
    <nav class="breadcrumb-1" aria-label="Breadcrumb">
         <ul>
-            <li><a href="/">Accueil</a></li><span>&ensp; > &ensp;</span>
+            <li><a href="/home">Home</a></li><span>&ensp; > &ensp;</span>
             <li class="pt"><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li><span>&ensp; > &ensp;</span>
             <li>Podcast</li>
         </ul>

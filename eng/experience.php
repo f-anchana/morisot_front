@@ -14,7 +14,7 @@
 
     <script src="javascript/header.js" defer></script>
 
-    <title>À propos</title>
+    <title>About</title>
 </head>
 
 <body>
@@ -24,17 +24,17 @@
 
     <nav class="breadcrumb-1" aria-label="Breadcrumb">
         <ul>
-            <li><a href="/">Accueil</a></li><span>&ensp; > &ensp;</span>
-            <li>L'expérience</li>
+            <li><a href="/">Home</a></li><span>&ensp; > &ensp;</span>
+            <li>The Experience</li>
         </ul>
     </nav>
 
     <div class="titre-1">
         <div class="conteneur">
-            <h1>Une découverte immersive de <span class="font-2">Berthe Morisot</span></h1>
+            <h1>An Immersive Discovery of <span class="font-2">Berthe Morisot</span></h1>
             <img src="../img/about-1.png" alt="">
         </div>
-        <p>“Je la tiens comme la meilleure artiste parmi nous” <span class="claude">- Claude Monet</span></p>
+        <p>“I consider her to be the best artist among us” <span class="claude">- Claude Monet</span></p>
     </div>
 
     <section class="part-3">
@@ -42,17 +42,19 @@
         <img src="../img/exp1.png" alt="">
 
         <div>
-            <h1>Une pionnière restée dans <span class="font-2">l'Ombre</span></h1>
-            <p>Il y a 150 ans, le 15 avril 1874, une exposition réunissait à Paris des artistes, peintres, sculpteurs,
-                graveurs. Tous étaient exclus parce que leur style était considéré comme incomplet et mondain. Ce
-                collectif a été identifié comme les impressionnistes, des figures éminentes telles que Renoir, Degas,
-                Monet et Sisley ont participé à cette exposition, aux côtés de la seule femme du groupe, Berthe Morisot.
+            <h1>A Pioneer in the <span class="font-2">Shadows</span></h1>
+            <p>150 years ago, on April 15, 1874, an exhibition in Paris brought together artists, painters, sculptors,
+                engravers. All were excluded because their style was considered incomplete and mundane. This collective
+                was identified as the impressionists, prominent figures such as Renoir, Degas,
+                Monet, and Sisley participated in this exhibition, alongside the only woman in the group, Berthe
+                Morisot.
             </p>
             <br>
-            <p> Cette femme peintre audacieuse, a contribué à l'essor de l'impressionnisme malgré les obstacles du 19e
-                siècle. Nous vous proposons un tête à tête cette figure exceptionnelle, injustement oubliée par
-                l'histoire. Notre exposition est une invitation à découvrir son style, ses intentions et les influences
-                marquantes qui ont façonné son parcours.
+            <p>This bold female painter contributed to the rise of impressionism despite the obstacles of the 19th
+                century. We offer you a tête-à-tête with this exceptional figure, unjustly forgotten by
+                history. Our exhibition is an invitation to discover her style, her intentions, and the significant
+                influences
+                that shaped her journey.
             </p>
         </div>
 
@@ -62,10 +64,10 @@
     <section class="part-3">
 
         <div>
-            <h1>Un voyage dans la <span class="font-2">4e dimension …</span></h1>
-            <p>À travers la réalité virtuelle, vous deviendrez un véritable voyageur, capable de pénétrer et d'explorer
-                l’univers artistique de Berthe Morisot de manière intime. Vous aurez l'opportunité de vous promener à
-                travers ses paysages, de vous approcher de ses personnages, et de ressentir l'énergie de ses œuvres. 
+            <h1>A Journey into the <span class="font-2">Fourth Dimension...</span></h1>
+            <p>Through virtual reality, you will become a true traveler, capable of entering and exploring
+                Berthe Morisot's artistic universe intimately. You will have the opportunity to wander through her
+                landscapes, approach her characters, and feel the energy of her works.
             </p>
         </div>
 
@@ -79,12 +81,10 @@
         <img src="../img/exp3.png" alt="">
 
         <div>
-            <h1>Une échappée <span class="font-2">acoustique</span>,</h1>
-            <p>Votre voyage débutera dans une chambre reconstituée dans l'esthétique parisienne du 19e siècle. Au son
-                d'une
-                musique envoûtante, une image scintillante prendra vie. Approchez-vous pour entendre les sons qui
-                émanent de
-                l'œuvre, ils vous ouvriront les portes dans le monde de Morisot. 
+            <h1>An Acoustic <span class="font-2">Escape</span>,</h1>
+            <p>Your journey will begin in a room reconstructed in the 19th-century Parisian aesthetic. To the sound
+                of enchanting music, a shimmering image will come to life. Approach to hear the sounds emanating from
+                the work, they will open the doors to Morisot's world for you.
             </p>
         </div>
     </section>
@@ -92,11 +92,11 @@
 
     <section class="part-3">
 
-        <div>
-            <h1>Une illusion en <span class="font-2">couleur</span></h1>
-            <p>Entre ombre et lumière, découvrez les différents aspects de son œuvre où chaque nuance renferme une
-                histoire, explorez les secrets de son génie artistique alors que vous naviguez entre les nuances des ses
-                œuvres. 
+    <div>
+            <h1>An Illusion in <span class="font-2">Color</span></h1>
+            <p>Between shadow and light, discover the different aspects of her work where each shade contains a
+                story, explore the secrets of her artistic genius as you navigate between the nuances of her
+                works.
             </p>
         </div>
 
@@ -105,15 +105,15 @@
     </section>
 
     <div class="video">
-        <h1>Comment fonctionne l'exposition ? </h1>
+        <h1>How Does the Exhibition Work? </h1>
         <img src="../img/about-2.png" alt="">
     </div>
 
     <div class='commentaire'>
-        <h2>Laissez un commentaire</h2>
+        <h2>Share your thoughts</h2>
         <form action='/commenter' method='POST'>
             <div class='form-group'>
-                <label for='commentaire'>Commentaire:</label>
+                <label for='commentaire'>Comment:</label>
                 <textarea id='commentaire' name='commentaire' required></textarea>
             </div>
 

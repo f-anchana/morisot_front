@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/settings.css">
     <link rel="stylesheet" href="/styles/mes-reservations.css">
-    <title>Mes Réservations</title>
+    <title>Reservations</title>
 </head>
 
 <body>
@@ -33,19 +33,19 @@
                 </div>
                 <div class="reservation-buttons">
                     <button onclick='afficherPopupConfirmation(<?php echo $reservation["id_resa"]; ?>)'>Supprimer</button>
-                    <button>Modifier</button>
+                    <button>Edit</button>
                 </div>
 
                 <div class='popup-visible' id='popup-<?php echo $reservation["id_resa"]; ?>'>
                     <img src='/img/scream.webp' alt='' class=''>
                     <div class='mention'>
-                        <p>Êtes-vous sûr.e ?</p>
+                        <p>Are you sure?</p>
                         <div class="liens">
                             <form action='/supprimer_reservation' method='POST'>
                                 <input type='hidden' name='id_resa' value='<?php echo $reservation["id_resa"]; ?>'>
-                                <button type='submit' class='btn-supprimer'>Supprimer</button>
+                                <button type='submit' class='btn-supprimer'>Delete</button>
                             </form>
-                            <a href='javascript:void(0);' class='btn-annuler' onclick='annulerSuppression()'>Annuler</a>
+                            <a href='javascript:void(0);' class='btn-annuler' onclick='annulerSuppression()'>Cancel</a>
                         </div>
                     </div>
                 </div>

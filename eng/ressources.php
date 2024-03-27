@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -21,14 +21,14 @@
 
    <nav class="breadcrumb-1" aria-label="Breadcrumb">
         <ul>
-            <li><a href="/">Accueil</a></li><span>&ensp; > &ensp;</span>
-            <li>Ressources</li>
+            <li><a href="/home">Home</a></li><span>&ensp; > &ensp;</span>
+            <li>Resources</li>
         </ul>
     </nav>
 
     <section>
-    <h1>Ressources</h1>
-    <a href="/">Accueil</a>
+    <h1>Resources</h1>
+    <a href="/home">Home</a>
 
 
     <div class="media-body">

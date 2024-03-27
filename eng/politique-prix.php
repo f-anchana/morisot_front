@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,131 +12,129 @@
 
     <script src="javascript/header.js" defer></script>
 
-    <title>Conditions Générales de Vente</title>
+    <title>Terms and Conditions of Sale</title>
 </head>
 
 <body>
     <?php require '../views/header-bis.php'; ?>
 
     <div class="container">
-    <h1>Conditions Générales de Vente</h1>
+        <h1>Terms and Conditions of Sale</h1>
 
-    <p><strong>Article 2 : OBJET - CHAMP D’APPLICATION</strong><br>
-        Les présentes Conditions Générales de Vente ont pour objet de définir les droits et obligations des parties dans
-        le cadre de la vente par la Société aux individuels, sur le Site web d’ Ombre et lumière. Les présentes
-        Conditions Générales de Vente ne s’appliquent pas aux achats effectués sur place.
-    </p><br>
+        <p><strong>Article 2: OBJECT - SCOPE OF APPLICATION</strong><br>
+            These General Terms and Conditions of Sale define the rights and obligations of the parties within the scope
+            of the sale by the Company to individuals, on the Ombre et lumière website. These General Terms and
+            Conditions of Sale do not apply to purchases made on-site.
+        </p><br>
 
-    <p><strong>Article 3 : ACCEPTATION DES CONDITIONS GÉNÉRALES DE VENTE ET MODIFICATIONS</strong><br>
-        L’Acheteur reconnaît avoir pris connaissance des Conditions Générales de Vente préalablement à la validation de
-        son achat. Tout achat de Billet vaut acceptation des Conditions Générales de Vente sans exception. En
-        conséquence, l’Acheteur déclare et reconnaît en avoir une parfaite connaissance et renonce de ce fait à se
-        prévaloir de tout autre document.<br>
-        La Société se réserve la possibilité d’adapter ou de modifier à tout moment les présentes Conditions Générales
-        de Vente. Les modifications ou versions ultérieures des Conditions Générales de Vente seront diffusées sur le(s)
-        Site(s) par voie d’annonce ou fournies sur demande à l’Acheteur et ne seront applicables qu’aux seules ventes
-        postérieures à leur communication.
-    </p><br>
+        <p><strong>Article 3: ACCEPTANCE OF THE GENERAL TERMS AND CONDITIONS OF SALE AND MODIFICATIONS</strong><br>
+            The Buyer acknowledges having read the General Terms and Conditions of Sale prior to validating his/her
+            purchase. Any purchase of Ticket constitutes acceptance of the General Terms and Conditions of Sale without
+            exception. Accordingly, the Buyer declares and acknowledges that he/she has perfect knowledge of them and
+            waives any other document.
+            <br>The Company reserves the right to adapt or modify these General Terms and Conditions of Sale at any
+            time. Any modifications or subsequent versions of the General Terms and Conditions of Sale will be
+            disseminated on the Website(s) by means of an announcement or provided upon request to the Buyer and will
+            only apply to sales made after their communication.
+        </p><br>
 
-    <p><strong>Article 4: OFFRE PROPOSÉE À LA VENTE</strong><br>
-        4.1 Billets Exposition : donne accès à l’exposition Ombre et lumière proposé par la Société.
-    </p><br>
+        <p><strong>Article 4: OFFER FOR SALE</strong><br>
+            4.1 Exhibition Tickets: provide access to the Ombre et lumière exhibition offered by the Company.
+        </p><br>
 
-    <p><strong>Article 5 : TARIFS</strong><br>
-        L’Acheteur reconnaît avoir eu connaissance de la tarification en vigueur au jour de la commande et accessible
-        sur le Site <a href="https://www.pinaultcollection.com/fr/boursedecommerce/infos-pratiques">ici</a>. En cas de
-        modification des conditions tarifaires, ces dernières seront sans effet sur les commandes déjà passées. Le prix
-        des Billets est indiqué en euros et toutes taxes comprises. Pour toute demande d’un billet gratuit, se référer
-        aux règles d’octroi des gratuités indiquées dans la tarification en vigueur le jour de la commande.
-        L’utilisation d’un Billet à tarif préférentiel est subordonnée à la présentation du justificatif associé. À
-        défaut, le solde du Billet devra être réglé à l’espace billetterie.
-    </p><br>
+        <p><strong>Article 5: PRICES</strong><br>
+            The Buyer acknowledges having been informed of the pricing in effect on the day of the order and accessible
+            on the Site <a href="https://www.pinaultcollection.com/fr/boursedecommerce/infos-pratiques">here</a>. In
+            the event of a modification of the pricing conditions, these will have no effect on orders already placed.
+            The price of the Tickets is indicated in euros and all taxes included. For any request for a free ticket,
+            please refer to the rules for granting free tickets indicated in the pricing in effect on the day of the
+            order.
+            The use of a preferential rate Ticket is subject to presentation of the associated supporting document.
+            Failing this, the balance of the Ticket must be paid at the ticket office.
+        </p><br>
 
-    <p><strong>Article 6 : MODALITÉS D’ACHAT</strong><br>
-        L’Acheteur passe commande d’un ou plusieurs Billets sur le Site. La procédure de passation de commande en ligne
-        comporte les étapes suivantes :<br>
-        - L’Acheteur choisit la Prestation qu’il souhaite acheter, le nombre d'entrées souhaitées par Tarif.<br>
-        - L’Acheteur choisit, le cas échéant, le jour et l’heure de la Prestation mis à sa disposition.<br>
-        - L’Acheteur a ensuite deux possibilités :
-        <br>&emsp;- créer un Compte Client par l’entrée de son adresse électronique et d’un mot de passe dans un premier
-        temps puis de données personnelles obligatoires telles que la civilité, le nom, le prénom et code postal qui lui
-        permettra d’accéder à son historique de commande, ses Billets passés ou à venir, de les imprimer, de modifier
-        ses coordonnées ou ses inscriptions aux newsletters.
-        <br>&emsp;- ne pas créer de Compte Client et choisir le mode invité. Il est alors invité à saisir son nom,
-        prénom ainsi que son adresse e-mail afin de recevoir ses Billets ou toutes autres informations liées à son achat
-        (modification de programmation, retard, annulation etc.).<br>
-        Un récapitulatif reprenant l'ensemble de la commande s'affiche, l’Acheteur vérifie alors sa commande et confirme
-        avoir pris connaissance des présentes Conditions Générales de Vente. Au moment de la vérification de la commande
-        et après avoir accepté les Conditions Généralesde Vente dans les conditions visées ci-dessus, l’Acheteur est
-        redirigé vers un serveur de paiement sécurisé. Dès la validation de son achat, l’Acheteur pourra imprimer le ou
-        les Billets qu’il aura reçus en pdf dans un courriel dédié à l'adresse e-mail indiquée ou il pourra réimprimer
-        ultérieurement le ou les Billets en se connectant sur son Compte. Il est de la responsabilité de l’Acheteur de
-        s'assurer que les coordonnées et informations communiquées lors de la réservation sont correctes.
-    </p><br>
+        <p><strong>Article 6: PURCHASE TERMS</strong><br>
+            The Buyer places an order for one or more Tickets on the Site. The online ordering procedure consists of the
+            following steps:
+            <br>- The Buyer chooses the Service he/she wishes to purchase, the number of entries desired per Rate.
+            <br>- The Buyer chooses, if applicable, the day and time of the Service made available to him/her.
+            <br>- The Buyer then has two possibilities:
+            <br>&emsp;- create a Customer Account by entering his/her email address and a password in the first step
+            and then mandatory personal data such as civility, name, first name and postal code which will allow him/her
+            to access his/her order history, his/her past or future Tickets, print them, modify his/her contact
+            information or newsletter subscriptions.
+            <br>&emsp;- not create a Customer Account and choose the guest mode. He/she is then invited to enter his/her
+            last name, first name and email address in order to receive his/her Tickets or any other information related
+            to his/her purchase (programming change, delay, cancellation, etc.).
+            <br>A summary showing the entire order is displayed, the Buyer then checks his/her order and confirms having
+            read the General Terms and Conditions of Sale. At the time of order verification and after accepting the
+            General Terms and Conditions of Sale in the conditions set forth above, the Buyer is redirected to a secure
+            payment server. Upon validation of his/her purchase, the Buyer can print the Ticket(s) he/she has received
+            in pdf format in a dedicated email to the email address indicated or he/she can reprint the Ticket(s) later
+            by logging into his/her Account. It is the responsibility of the Buyer to ensure that the contact details
+            and information provided during the reservation are correct.
+        </p><br>
 
-    <p><strong>Article 8: CONFIRMATION DE COMMANDE</strong><br>
-        Le courriel de confirmation accuse réception de la commande. Le courriel « récapitulatif de commande » contient
-        en complément le(s) Billet(s) en PDF.
-    </p><br>
+        <p><strong>Article 8: ORDER CONFIRMATION</strong><br>
+            The confirmation email acknowledges receipt of the order. The "order summary" email contains the Ticket(s)
+            in PDF format in addition.
+        </p><br>
 
-    <p><strong>Article 9 : DÉLIVRANCE DES BILLETS</strong><br>
-        L'impression de la page de confirmation ou du courriel de confirmation d'achat envoyé par la Société ne
-        constitue pas un Billet. Ce document ne peut en aucun cas servir de Billet et permettre l'accès aux Prestations
-        à la Bourse de Commerce. Les Billets imprimables sont disponibles dès la validation de l’achat et peuvent être
-        imprimés par l’Acheteur jusqu'à sa date de visite en conservant le mail.
-    </p><br>
+        <p><strong>Article 9: DELIVERY OF TICKETS</strong><br>
+            Printing the confirmation page or the purchase confirmation email sent by the Company does not constitute a
+            Ticket. This document cannot under any circumstances serve as a Ticket and allow access to the Services at
+            the Bourse de Commerce. Printable Tickets are available as soon as the purchase is validated and can be
+            printed by the Buyer until the date of his/her visit by keeping the email.
+        </p><br>
 
-    <p><strong>Article 10 : CONDITIONS D’UTILISATION DES BILLETS</strong><br>
-        Chaque Billet délivré n'est valable que pour la date et l'horaire indiqué sur celui-ci ou sur une période
-        définie. Chaque Billet donne droit à une entrée pour une personne.
-    </p><br>
+        <p><strong>Article 10: TICKET USE CONDITIONS</strong><br>
+            Each Ticket issued is valid only for the date and time indicated on it or for a defined period. Each Ticket
+            entitles one person to entry.
+        </p><br>
 
-    <p>...</p>
+        <p>...</p>
 
-    <p><strong>Article 11 : CONDITIONS DE REMBOURSEMENT ET D'ÉCHANGES DES BILLETS</strong><br>
-        En application de l’article L.221-28 du Code de la Consommation, l’Acheteur ne bénéficie pas du délai de
-        rétractation pour les achats de Billets.
-    </p><br>
+        <p><strong>Article 11: TICKET REFUND AND EXCHANGE CONDITIONS</strong><br>
+            In accordance with Article L.221-28 of the Consumer Code, the Buyer does not have the right of withdrawal
+            for Ticket purchases.
+        </p><br>
 
-    <p>...</p>
+        <p>...</p>
 
-    <p><strong>Article 12 : RESPONSABILITÉ</strong><br>
-        La Société n'est pas en mesure de garantir à l’Acheteur que le Site répond exactement à ses attentes ni
-        qu'aucune erreur n'apparaît au cours de l'utilisation du Site. Le Site est accessible 7 jours sur 7 et 24 heures
-        sur 24, sous réserve de sa fermeture pour maintenance ou réparation ou en Cas de Force Majeure ou de tout
-        événement échappant au contrôle de la Société. La responsabilité de la Société ne saurait être engagée en cas de
-        perte ou dommage subi par l’Acheteur ou tout tiers à la suite d'une défaillance d'accès au Site, du réseau de
-        l'Internet, des moyens de télécommunications et, plus généralement, due à un Cas de Force Majeure, lors d'une
-        visite du Site ou lors de la passation d'une commande.
-    </p><br>
-
-    <p>...</p>
-
-    <p><strong>Article 13 : CONSERVATION ET ARCHIVAGE</strong><br>
-        Les registres informatisés, conservés dans les systèmes informatiques de la Société ou de tout prestataire de
-        service de ce dernier, dans des conditions raisonnables de sécurité, seront considérés comme des preuves du
-        contrat de vente, de sa date, des commandes et des paiements intervenus. L'archivage des commandes et des
-        factures est effectué sur un support fiable et durable de manière à correspondre à une copie fidèle,
-        conformément à l'article 1379 du Code Civil.
+        <p><strong>Article 12: LIABILITY</strong><br>
+        The Company cannot guarantee to the Buyer that the Site exactly meets his/her expectations or that no errors
+        occur during the use of the Site. The Site is accessible 7 days a week, 24 hours a day, subject to closure for
+        maintenance or repair or in case of Force Majeure or any event beyond the control of the Company. The Company's
+        liability cannot be engaged in case of loss or damage suffered by the Buyer or any third party due to a failure
+        of access to the Site, the Internet network, telecommunications means, and more generally, due to Force Majeure,
+        during a visit to the Site or when placing an order.
     </p><br>
 
     <p>...</p>
 
-    <p><strong>Article 14 : PROTECTION DE VOS DONNÉES PERSONNELLES</strong><br>
-        Les modalités de traitement des données à caractère personnel de l’Acheteur dans le cadre de l’exécution des
-        présentes Conditions Générales de Vente sont prévues dans la Politique de Protection des Données à Caractère
-        Personnel disponible sur le Site et accessibles via le lien suivant : <a
-            href="<?= $this->router->generate('politique-confidentialite') ?>">politique de confidentialité</a>.
+    <p><strong>Article 13: STORAGE AND ARCHIVING</strong><br>
+        The computerized records kept in the computer systems of the Company or any service provider thereof, under
+        reasonable security conditions, will be considered as evidence of the sales contract, its date, the orders, and
+        payments made. The archiving of orders and invoices is carried out on a reliable and durable medium so as to
+        correspond to a faithful copy, in accordance with Article 1379 of the Civil Code.
     </p><br>
 
     <p>...</p>
 
-    <p><strong>Article 15 : LANGUES, DROIT APPLICABLE ET LITIGES</strong><br>
-        Les présentes conditions générales sont établies en langue française. En cas de doute, d'incompréhension ou de
-        contradiction avec une traduction dans une langue étrangère, la version française fera foi. Les ventes de
-        Billetterie visées aux présentes Conditions Générales de Vente sont soumises à la loi française. En cas de
-        réclamation, une solution amiable sera recherchée avant tout recours judiciaire devant les tribunaux compétents
-        du ressort de la Cour d’Appel de Paris.
+    <p><strong>Article 14: PROTECTION OF YOUR PERSONAL DATA</strong><br>
+        The processing modalities of the Buyer's personal data in the context of the execution of these General Terms and
+        Conditions of Sale are provided for in the Personal Data Protection Policy available on the Site and accessible
+        via the following link: <a href="<?= $this->router->generate('privacy-policy') ?>">privacy policy</a>.
+    </p><br>
+
+    <p>...</p>
+
+    <p><strong>Article 15: LANGUAGES, APPLICABLE LAW, AND DISPUTES</strong><br>
+        These general conditions are established in French. In case of doubt, misunderstanding, or contradiction with a
+        translation into a foreign language, the French version shall prevail. The ticketing sales covered by these
+        General Terms and Conditions of Sale are subject to French law. In case of complaint, an amicable solution will
+        be sought before any legal action before the competent courts within the jurisdiction of the Paris Court of
+        Appeal.
     </p><br>
     </div>
 
