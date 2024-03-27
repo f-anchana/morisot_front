@@ -71,14 +71,17 @@
                         <tr>
                             <td>Billet plein tarif</td>
                             <td>10</td>
-                            <td><input type="number" id="ptQuantity" min="0" value="0" class="form-field"></td>
+                            <td><input type="number" id="ptQuantity" min="0" value="0" class="form-field" max="10"></td>
                         </tr>
                         <tr>
                             <td>Billet tarif réduit</td>
                             <td>17</td>
-                            <td><input type="number" id="trQuantity" min="0" value="0" class="form-field">
+                            <td><input type="number" id="trQuantity" min="0" value="0" class="form-field" max="10">
                             </td>
                         </tr>
+                        <input type="hidden" id="prixTotal" name="prix_total" value="">
+                        <input type="hidden" id="nbrBillets" name="nbr_billets" value="">
+
                     </table>
                     <div class="message" style="display: none;">Veuillez remplir ce champ.</div><br><br>
                     <button type="button" onclick="retour()">Précédent</button>
@@ -120,7 +123,7 @@
         </form>
 
         <div class="billet">
-        <img src="img/test.jpg" alt="">
+            <img src="img/test.jpg" alt="">
             <div id="billetTicket"></div>
         </div>
 

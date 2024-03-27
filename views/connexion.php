@@ -8,7 +8,7 @@
 <body>
 
 <?php
-// session_start();
+session_start();
 if (isset($youpi)) {
     echo "<h2>" . $youpi . "</h2>";
 } if (isset($erreur)) {

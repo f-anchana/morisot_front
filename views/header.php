@@ -15,7 +15,7 @@
 
             <nav class="menu-burger">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
+                    <li><a href="/">Accueil</a></li>
                     <li><a href="<?= $this->router->generate('oeuvres') ?>">Oeuvres</a></li>
                     <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
                     <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>

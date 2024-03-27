@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/styles/accueil.css"> 
     <link rel="stylesheet" href="styles/header.css"> 
     <link rel="stylesheet" href="/styles/footer.css">    
-
+    <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/x-icon">
 
     <script src="javascript/header.js" defer></script>
 

@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, repellat voluptatibus eius qui perspiciatis ratione earum a ex nihil enim assumenda quisquam laborum sapiente sint iure tempore est veniam? Eius.
+
+<?php
+require '../views/header.php';
+
+?>
+
 </body>
 </html>

@@ -73,6 +73,13 @@ function step3() {
 
     const billetContent = `<p>Date: ${date}</p><p>Horaire: ${time}</p><p>Prix total des billets : ${total}$</p>`;
     document.getElementById('billetTicket').innerHTML = billetContent;
+    // Après avoir calculé le total et obtenu les quantités de billets
+    const prixTotalField = document.getElementById('prixTotal');
+    const nbrBilletsField = document.getElementById('nbrBillets');
+
+    prixTotalField.value = total;
+    nbrBilletsField.value = ptQuantity + trQuantity;
+
 }
 
 

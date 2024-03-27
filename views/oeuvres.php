@@ -5,11 +5,11 @@
    <meta charset="UTF-8">
    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-   <link rel="stylesheet" href="../public/styles/settings.css">
-   <link rel="stylesheet" href="../public/styles/style.css">
-   <link rel="stylesheet" href="../public/styles/oeuvres.css">
+   <link rel="stylesheet" href="styles/settings.css">
+   <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="styles/oeuvres.css">
 
-   <title>ouvres</title>
+   <title>oeuvres</title>
 </head>
 
 <body>
@@ -17,35 +17,35 @@
       <div class="kids">
          <div class="babies one">
             <div class="img">
-               <img src='../public/img/test.jpg' alt=''>
+               <img src='img/test.jpg' alt=''>
             </div>
          </div>
          <div class="babies two">
-            <img src='../public/img/test.jpg' alt=''>
+            <img src='img/test.jpg' alt=''>
          </div>
       </div>
       <div class="kids ">
          <div class="babies three">
-            <img src='../public/img/test.jpg' alt=''>
+            <img src='img/test.jpg' alt=''>
          </div>
          <div class="babies four">
-            <img src='../public/img/test.jpg' alt=''>
+            <img src='img/test.jpg' alt=''>
          </div>
       </div>
       <div class="kids">
          <div class="babies five">
-            <img src='../public/img/test.jpg' alt=''>
+            <img src='img/test.jpg' alt=''>
          </div>
          <div class="babies six">
-            <img src='../public/img/test.jpg' alt=''>
+            <img src='img/test.jpg' alt=''>
          </div>
       </div>
       <div class="kids">
          <div class="babies seven">
-            <img src='../public/img/test.jpg' alt=''>
+            <img src='img/test.jpg' alt=''>
          </div>
          <div class="babies eight">
-            <img src='../public/img/test.jpg' alt=''>
+            <img src='img/test.jpg' alt=''>
          </div>
       </div>
    </div>

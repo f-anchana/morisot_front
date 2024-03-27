@@ -30,7 +30,7 @@ class LoginController
 
         $options = array(
 
-            CURLOPT_URL => 'https://www.ombreetlumiere.eu/API/controller.php/inscription',
+            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/inscription',
 
             CURLOPT_POST => true,
 
@@ -96,7 +96,7 @@ class LoginController
 
         $options = array(
 
-            CURLOPT_URL => 'https://www.ombreetlumiere.eu/API/controller.php/connexion',
+            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/connexion',
 
             CURLOPT_POST => true,
 
@@ -133,7 +133,8 @@ class LoginController
             } else {
                 // La connexion a échoué
                 $erreur = "La connexion a échoué. Veuillez réessayer.";
-                require '../views/connexion.php';
+                // require '../views/connexion.php';
+                header ('Location: /connexion');
             }
 
             return $response;

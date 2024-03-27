@@ -27,14 +27,14 @@
     <div class="titre-1">
         <div class="conteneur">
             <h1>Une découverte immersive de <span>Berthe Morisot</span></h1>
-            <img src="../public/img/about-1.png" alt="">
+            <img src="img/about-1.png" alt="">
         </div>
         <p>“Je la tiens comme la meilleure artiste parmi nous” - Claude Monet</p>
     </div>
 
     <section class="part-3">
 
-        <img src="../public/img/about-2.png" alt="">
+        <img src="img/about-2.png" alt="">
 
         <div>
             <h1>Une pionnière restée dans <span>l'Ombre</span></h1>
@@ -56,7 +56,7 @@
 
     <section class="part-3">
 
-        <img src="../public/img/about-2.png" alt="">
+        <img src="img/about-2.png" alt="">
 
         <div>
             <h1>Un voyage dans la <span>4e dimension …</span></h1>
@@ -71,7 +71,7 @@
 
     <section class="part-3">
 
-        <img src="../public/img/about-2.png" alt="">
+        <img src="img/about-2.png" alt="">
 
         <div>
             <h1>Une échappée <span>acoustique</span>,</h1>
@@ -86,7 +86,7 @@
 
 
     <section class="part-3">
-        <img src="../public/img/about-2.png" alt="">
+        <img src="img/about-2.png" alt="">
 
         <div>
             <h1>Une illusion en <span>couleur</span></h1>
@@ -113,7 +113,7 @@ if (isset($_SESSION['nom'])) {
         </div>
 
         <div class='bouton'>
-            <img src='../public/img/bouton.svg' alt=''>
+            <img src='img/bouton.svg' alt=''>
             // <button class='texte' type='submit'>Envoyer</button>
             <input type='hidden' name='id_user' value='" . $_SESSION['id_user'] . "'>
             <input type='submit' name='commenter' value='Envoyer'>
