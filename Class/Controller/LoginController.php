@@ -130,6 +130,8 @@ class LoginController
             $erreur = "Une erreur s'est produit. Veuillez réessayer ultérieuerement.";
             require '../views/connexion.php';
         }
+        return $response;
+
     }
 
     public function displayConfirmation()
@@ -149,6 +151,39 @@ class LoginController
         header('Location: /');
         exit();
     }
+
+
+    public function displayReservations()
+    {
+        // Démarrer la session
+        session_start();
+    
+        // Vérifier si l'email est défini dans la session
+        if (isset($_SESSION['email'])) {
+            // Récupérer l'email de l'utilisateur connecté
+            $email = $_SESSION['email'];
+    
+            // Appeler la fonction pour récupérer les réservations de l'utilisateur
+            $reservations = getReservationByPerson($email);
+    
+            // Vérifier si des réservations ont été trouvées
+            if ($reservations) {
+                // Afficher les réservations
+                require '../views/mes-reservations.php';
+            } else {
+                // Afficher un message d'erreur
+                $erreur = "Aucune réservation trouvée.";
+                require '../views/mes-reservations.php';
+            }
+        } else {
+            // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
+            header('Location: /connexion');
+        }
+    }
+    
+
+
+
 
    
 

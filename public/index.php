@@ -24,10 +24,15 @@ $router->map('GET', '/deconnexion', 'LoginController#disconnectUser');
 
 
 
+$router->map('GET', '/mes-reservations', 'LoginController#displayReservations', 'mes-reservations');
+
+
+
 $router->map('POST', '/inscription', 'LoginController#createUser');
 $router->map('POST', '/connexion', 'LoginController#connectUser');
 $router->map('POST', '/reserver', 'BilleterieController#AddReservation', 'reserver');
 $router->map('POST', '/commenter', 'ExperienceController#AddComment', 'commenter');
+$router->map('POST', '/supprimer_reservation', 'BilleterieController#DeleteReservation', 'supprimer_reservation');
 
 
 

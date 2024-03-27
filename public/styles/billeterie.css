@@ -131,23 +131,21 @@ td {
     padding: 1rem;
 }
 
-@media screen and (min-width: 425px) {
-    .space_btn {
-        display: flex;
-        justify-content: space-between;
-    }
-
-}
 
 @media screen and (min-width: 0px) and (max-width: 1024px) {
     .billet {
-        display: none;
+        display: none !important;
         width: 300px;
     }
 }
 
 
 @media screen and (min-width: 768px) {
+
+    .space_btn {
+        display: flex;
+        justify-content: space-between;
+    }
 
     .kelis {
         display: flex;

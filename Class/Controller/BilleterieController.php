@@ -54,4 +54,9 @@ class BilleterieController {
         curl_close($ch);
         return $response;
     }
+
+    public function DeleteReservation($id)
+    {
+        
+    }
 }

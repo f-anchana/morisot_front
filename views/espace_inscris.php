@@ -31,7 +31,7 @@
 
                 <?php
                 if (isset($_SESSION['nom'])) {
-
+                    // var_dump($_SESSION['email']);
 
                     echo "<h2>Bienvenue " . $_SESSION['prenom'] . " " . $_SESSION['nom'] . "</h2>";
                 } else {
@@ -59,10 +59,9 @@
                     <p class="welcome">Ombre et lumière</p>
                 </div>
             </div>
-            <a href="" class="button ">tous voir</a>
+            <a href="/mes-reservations" class="button">tous voir</a>
 
         </section>
-        <!-- <a href="<= $this->router->generate('deconnexion') ?>" class="button logout">deconnexion</a> -->
         <a href="/deconnexion" class="button logout">deconnexion</a>
 
     </main>

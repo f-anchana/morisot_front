@@ -17,11 +17,15 @@ if (isset($youpi)) {
     echo "<h2>" . $erreur . "</h2>";
 }
 
+// if (isset($_SESSION['nom'])) {
+//     echo "<h2>Votre inscription a été prise en compte " . $_SESSION['prenom']. ", veuillez vous reconnecter" . "</h2>";
+// } else {
+//     echo "";
+// }
+
 if (isset($_SESSION['nom'])) {
-    echo "<h2>Votre inscription a été prise en compte " . $_SESSION['prenom']. ", veuillez vous reconnecter" . "</h2>";
-} else {
-    echo "";
-}
+    header('Location: /mon-espace');
+} 
 
 ?>
 
