@@ -193,7 +193,7 @@
         </div>
     
             <div class='bouton'>
-            <img src='../public/img/bouton.svg' alt=''>
+            <img src='../img/bouton.svg' alt=''>
             // <button class='texte' type='submit'>Envoyer</button>
             <input type='hidden' name='id_user' value='" . $_SESSION['id_user'] . "'>
             <input type='submit' name='commenter' value='Envoyer'>

@@ -51,7 +51,7 @@ $router->map('GET', '/my-bookings', 'LoginController#displayBookings', 'my-booki
 
 
 $router->map('POST', '/login', 'LoginController#connectUserEng');
-$router->map('POST', '/comment', 'ExperienceController#AddComment');
+$router->map('POST', '/comment', 'ExperienceController#AddCommentEng', 'comment');
 $router->map('POST', '/signup', 'LoginController#createUserEng');
 $router->map('POST', '/booking', 'BilleterieController#AddBooking');
 

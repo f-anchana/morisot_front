@@ -188,15 +188,15 @@
     if (isset($_SESSION['nom'])) {
     
         echo "<div class='commentaire'>
-    <h2>Laissez un commentaire</h2>
-    <form action='/commenter' method='POST'>
+    <h2>Share your thoughts</h2>
+    <form action='/comment' method='POST'>
         <div class='form-group'>
-            <label for='commentaire'>Commentaire:</label>
+            <label for='commentaire'>Comment:</label>
             <textarea id='commentaire' name='commentaire' required></textarea>
         </div>
     
             <div class='bouton'>
-            <img src='../public/img/bouton.svg' alt=''>
+            <img src='img/bouton.svg' alt=''>
             // <button class='texte' type='submit'>Envoyer</button>
             <input type='hidden' name='id_user' value='" . $_SESSION['id_user'] . "'>
             <input type='submit' name='commenter' value='Envoyer'>
