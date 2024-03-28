@@ -17,9 +17,9 @@
 
 <body>
 
-   <?php require '../eng/header-bis.php'; ?>
+    <?php require '../eng/header-bis.php'; ?>
 
-   <nav class="breadcrumb-1" aria-label="Breadcrumb">
+    <nav class="breadcrumb-1" aria-label="Breadcrumb">
         <ul>
             <li><a href="/home">Home</a></li><span>&ensp; > &ensp;</span>
             <li>Resources</li>
@@ -27,30 +27,25 @@
     </nav>
 
     <section>
-    <h1>Resources</h1>
-    <a href="/home">Home</a>
+
+        <h1 class="event">Resources</h1>
+
+        <div class="media-body">
+            <a href="/Unveiling-the-truth">
+                <img src="img/podcast.png" alt="">
+                <h2>Unveiling the truth</h2>
+                <p>Podcast</p>
+            </a>
+        </div>
+
+    </section>
 
 
-    <div class="media-body">
-        <a href="/Unveiling-the-truth">
-        <img src="img/test.jpg" alt="">
-        <p>Unveiling the truth</p>
-        </a>
-    </div>
 
 
-</section>
-
-
-
-
-   <?php require '../eng/footer.php'; ?>
+    <?php require '../eng/footer.php'; ?>
 
 
 </body>
 
 </html>
-
-
-
-

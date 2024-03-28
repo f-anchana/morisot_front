@@ -165,7 +165,7 @@
             <div class='bouton'>
                 <img src='../img/bouton.svg' alt=''>
                 <input type='hidden' name='id_user' value='" . $_SESSION[' id_user'] . "'>
-                <input class='texte' type='submit' name='commenter' value='Envoyer'>
+                <input class='texte' type='submit' name='commenter' value='Comment'>
             </div>
 
         </form>
