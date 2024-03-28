@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/svg">
 
-    <script src="javascript/connexion.js" defer></script>
+
+    <script src="javascript/inscription.js" defer></script>
 
     <title>Registration</title>
 </head>
@@ -68,23 +69,6 @@
 
         </div>
     </div>
-
-
-
-    <script>
-        // Fonction JS qui vérifie que les mots de passes sont les mêmes
-        function validateForm() {
-            var password1 = document.getElementById('mdp1').value;
-            var password2 = document.getElementById('mdp2').value;
-
-            if (password1 !== password2) {
-                document.getElementById('error-message').textContent = "Les mots de passe ne correspondent pas. Veuillez réessayez";
-                return false; // Empêche la soumission du formulaire
-            }
-            return true; // Permet la soumission du formulaire
-        }
-
-    </script>
 
     <?php require '../views/footer.php'; ?>
 
