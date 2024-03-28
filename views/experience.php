@@ -176,7 +176,7 @@
 <!-- </div> -->
 
 
-
+<div class='commentaire'>
 
     <?php
 
@@ -184,7 +184,7 @@
     
     if (isset($_SESSION['nom'])) {
     
-        echo "<div class='commentaire'>
+        echo "
     <h2>Laissez un commentaire</h2>
     <form action='/commenter' method='POST'>
         <div class='form-group'>
@@ -200,8 +200,16 @@
         </div>
     
         </form>
-</div>";
+";
+}else{
+    echo "    <h2>Commentaire</h2><br>
+    ";
 }
+
+?>
+</div>
+
+<?php
     
     $comments = getComments();
     
@@ -210,7 +218,6 @@
         $user = getUser($comment['ext_user']);
     
         echo "<div class='commentaire'>
-    <h2>Commentaire</h2><br>
     <p>" . $user['prenom'] . "</p>
     <p>" . $comment['content'] . "</p><br>
 </div>";
