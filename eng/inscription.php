@@ -24,7 +24,7 @@ if(isset($erreur)){
     <input type="text" name="prenom_user" id="prenom_user" required="required">
 
     <label for="numero">Phone number</label>
-    <input type="tel" name="numero" id="numero" required="required">
+    <input type="number" name="numero" id="numero" required="required">
 
     <label for='email'>Email</label>
     <input type='email' name='email' id='email' required='required'>
