@@ -104,10 +104,58 @@
 
     </section>
 
+    <section class="oeuvres">
+    <div class="parent">
+         <div class="kids">
+            <div class="babies one">
+               <div class="img">
+                  <img src='../img/o-1.png' alt=''>
+               </div>
+            </div>
+            <div class="babies two">
+               <img src='../img/o-2.png' alt=''>
+            </div>
+         </div>
+         <div class="kids ">
+            <div class="babies three">
+               <img src='../img/o-3.png' alt=''>
+            </div>
+            <div class="babies four">
+               <img src='../img/o-4.png' alt=''>
+            </div>
+         </div>
+         <div class="kids">
+            <div class="babies five">
+               <img src='../img/o-5.png' alt=''>
+            </div>
+            <div class="babies six">
+               <img src='../img/o-6.png' alt=''>
+            </div>
+         </div>
+         <div class="kids">
+            <div class="babies seven">
+               <img src='../img/o-7.png' alt=''>
+            </div>
+            <div class="babies eight">
+               <img src='../img/o-8.png' alt=''>
+            </div>
+         </div>
+      </div>
+
+
+    </section>
+
     <div class="video">
         <h1>Comment fonctionne l'exposition ? </h1>
-        <img src="../img/about-2.png" alt="">
+        
+            <video controls>
+                <source src="chemin_vers_video.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
+
+
+    
 
     <div class='commentaire'>
         <h2>Laissez un commentaire</h2>
