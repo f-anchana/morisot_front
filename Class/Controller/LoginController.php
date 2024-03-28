@@ -16,6 +16,10 @@ class LoginController
     {
         require '../views/inscription.php';
     }
+    public function displaySignUp()
+    {
+        require '../eng/inscription.php';
+    }
     public function createUser()
     {
 
@@ -76,6 +80,10 @@ class LoginController
     public function displayConnexion()
     {
         require '../views/connexion.php';
+    }
+    public function displayConnect()
+    {
+        require '../eng/connexion.php';
     }
 
     public function connectUser()
@@ -138,10 +146,18 @@ class LoginController
     {
         require '../views/confirmation.php';
     }
+    public function displayConfirm()
+    {
+        require '../eng/confirmation.php';
+    }
 
     public function displayDashboard()
     {
         require '../views/espace_inscris.php';
+    }
+    public function displayDashboarddd()
+    {
+        require '../eng/espace_inscris.php';
     }
 
     public function disconnectUser()
@@ -149,6 +165,13 @@ class LoginController
         session_start();
         session_destroy();
         header('Location: /');
+        exit();
+    }
+    public function Usernonconnect()
+    {
+        session_start();
+        session_destroy();
+        header('Location: /home');
         exit();
     }
 
@@ -178,6 +201,34 @@ class LoginController
         } else {
             // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
             header('Location: /connexion');
+        }
+    }
+
+    public function displayBookings()
+    {
+        // Démarrer la session
+        session_start();
+    
+        // Vérifier si l'email est défini dans la session
+        if (isset($_SESSION['email'])) {
+            // Récupérer l'email de l'utilisateur connecté
+            $email = $_SESSION['email'];
+    
+            // Appeler la fonction pour récupérer les réservations de l'utilisateur
+            $reservations = getReservationByPerson($email);
+    
+            // Vérifier si des réservations ont été trouvées
+            if ($reservations) {
+                // Afficher les réservations
+                require '../eng/mes-reservations.php';
+            } else {
+                // Afficher un message d'erreur
+                $erreur = "Aucune réservation trouvée.";
+                require '../eng/mes-reservations.php';
+            }
+        } else {
+            // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
+            header('Location: /login');
         }
     }
     

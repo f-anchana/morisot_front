@@ -26,6 +26,6 @@
             *If nothing arrives after 20 minutes, please check your spam folder, then contact us.
         </p>
 
-        <a href="/"><p class="retour">Back to Homepage</p></a>
+        <a href="/home"><p class="retour">Back to Homepage</p></a>
     </div>
 </body>

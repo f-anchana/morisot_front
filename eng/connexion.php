@@ -29,7 +29,7 @@ if (isset($_SESSION['nom'])) {
 
 ?>
 
-<form action="/connexion" method="POST">
+<form action="/login" method="POST">
 
 <label for="email">Email</label>
 <input type="email" name="email" id="email" required="required">

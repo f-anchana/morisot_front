@@ -12,4 +12,7 @@ class VisiteController {
     public function displayVisite() {
         require '../views/votre-visite.php';
     }
+    public function displayTheVisite() {
+        require '../eng/votre-visite.php';
+    }
 }

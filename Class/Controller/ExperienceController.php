@@ -14,7 +14,10 @@ class ExperienceController {
     public function displayExperience() {
         session_start();
         require '../views/experience.php';
-
+    }
+    public function displayTheExperience() {
+        session_start();
+        require '../eng/experience.php';
     }
 
     public function AddComment()

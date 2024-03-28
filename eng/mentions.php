@@ -17,7 +17,7 @@
 
 <body>
 
-    <?php require '../views/header-bis.php'; ?>
+    <?php require '../eng/header-bis.php'; ?>
 
     <div class="container">
         <h1>Legal Notice</h1><br>
@@ -57,7 +57,7 @@
         </p><br>
     </div>
 
-    <?php require '../views/footer.php'; ?>
+    <?php require '../eng/footer.php'; ?>
 
 </body>
 

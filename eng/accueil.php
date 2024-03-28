@@ -20,7 +20,7 @@
 
 <body>
 
-    <?php require '../views/header.php'; ?>
+    <?php require '../eng/header.php'; ?>
 
     <section class="part-1">
 
@@ -67,6 +67,6 @@
 
     </section>
 
-    <?php require '../views/footer.php'; ?>
+    <?php require '../eng/footer.php'; ?>
 
 </body>

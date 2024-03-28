@@ -18,7 +18,7 @@
                     <li><a href="/home">Home</a></li>
                     <li><a href="<?= $this->router->generate('resources') ?>">Resources</a></li>
                     <li><a href="<?= $this->router->generate('your.visit') ?>">Your Visit</a></li>
-                    <li><a href="<?= $this->router->generate('experience') ?>">The Experience</a></li>
+                    <li><a href="<?= $this->router->generate('the.experience') ?>">The Experience</a></li>
                     <li><a href="<?= $this->router->generate('ticketing') ?>">Ticketing</a></li>
                     <li class="language"><a class="lower" href="/" >fr / en</a></li>
                 </ul>
@@ -33,15 +33,15 @@
 
             <nav>
                 <ul>
-                    <li><a href="<?= $this->router->generate('resources') ?>">Resources</a></li>
+                    <li><a href="<?= $this->router->generate('resources') ?>">Event</a></li>
                     <li><a href="<?= $this->router->generate('your.visit') ?>">Your Visit</a></li>
-                    <li><a href="<?= $this->router->generate('experience') ?>">The Experience</a></li>
+                    <li><a href="<?= $this->router->generate('the.experience') ?>">The Experience</a></li>
                 </ul>
 
                 <ul>
-                    <li><a href="<?= $this->router->generate('connexion') ?>"><img class="icon" src="../img/icon.svg" alt="connexion"></a></li>
+                    <li><a href="<?= $this->router->generate('login') ?>"><img class="icon" src="../img/icon.svg" alt="login"></a></li>
                     <li class="language"><a class="lower" href="/" >fr / en</a></li>
-                    <li><a class="bouton billeterie" href="<?= $this->router->generate('billeterie') ?>">
+                    <li><a class="bouton billeterie" href="<?= $this->router->generate('ticketing') ?>">
                             <div id="image-container">
                                 <img id="default-image" src="../img/nav-ticket1.svg" alt="">
                                 <img id="hover-image" src="../img/nav-ticket2.svg" alt="" style="display: none;">
