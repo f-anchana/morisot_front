@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,10 +12,10 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/svg">
 
-
     <script src="javascript/connexion.js" defer></script>
 
     <title>Se connecter</title>
+
 </head>
 
 <body>
@@ -43,14 +44,16 @@
 
     ?>
 
-
-
     <div class="container">
+
         <div class="card">
+
             <div class="image_form_login">
                 <img src="../img/test.jpg" alt="">
             </div>
+
             <div class="form">
+
                 <h1>Connexion</h1>
                 <form action='/connexion' method='POST'>
 
@@ -70,7 +73,9 @@
                     <p>Vous n'avez pas de compte ? <a href="/inscription">Inscrivez</a> vous</p>
 
                 </form>
+
             </div>
+            
         </div>
     </div>
 

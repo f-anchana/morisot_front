@@ -12,7 +12,7 @@
 
     <script src="javascript/header.js" defer></script>
 
-    <title>Ressources</title>
+    <title>Resources</title>
 </head>
 
 <body>
