@@ -192,11 +192,10 @@
             <textarea id='commentaire' name='commentaire' required></textarea>
         </div>
     
-            <div class='bouton'>
+        <div class='bouton'>
             <img src='../img/bouton.svg' alt=''>
-            // <button class='texte' type='submit'>Envoyer</button>
             <input type='hidden' name='id_user' value='" . $_SESSION['id_user'] . "'>
-            <input type='submit' name='commenter' value='Envoyer'>
+            <input class='texte' type='submit' name='commenter' value='Envoyer'>
         </div>
     
         </form>
