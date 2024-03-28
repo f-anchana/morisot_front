@@ -19,7 +19,7 @@
 
 <body>
 
-    <?php require '../views/header-bis.php'; ?>
+    <?php require '../eng/header-bis.php'; ?>
 
 
     <?php
@@ -67,7 +67,7 @@
 
                     <input type="submit" name="connexion" value="Sign in">
 
-                    <p>You don't have an account? <a href="/inscription">Sign up</a></p>
+                    <p>You don't have an account? <a href="/signup">Sign up</a></p>
 
                 </form>
             </div>
@@ -76,7 +76,7 @@
 
 
 
-    <?php require '../views/footer.php'; ?>
+    <?php require '../eng/footer.php'; ?>
 
 </body>
 
