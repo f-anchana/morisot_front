@@ -31,14 +31,8 @@
         echo "<h2>" . $erreur . "</h2>";
     }
 
-    // if (isset($_SESSION['nom'])) {
-//     echo "<h2>Votre inscription a été prise en compte " . $_SESSION['prenom']. ", veuillez vous reconnecter" . "</h2>";
-// } else {
-//     echo "";
-// }
-    
     if (isset($_SESSION['nom'])) {
-        header('Location: /mon-espace');
+        header('Location: /my-dashboard');
     }
 
     ?>
@@ -52,7 +46,7 @@
             </div>
             <div class="form">
                 <h1>Login</h1>
-                <form action='/connexion' method='POST'>
+                <form action='/login' method='POST'>
 
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" required="required">

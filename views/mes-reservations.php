@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/settings.css">
     <link rel="stylesheet" href="/styles/mes-reservations.css">
+    <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/svg">
+
     <title>Mes Réservations</title>
 </head>
 
