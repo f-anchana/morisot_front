@@ -1,4 +1,4 @@
-## Restauration du site de Réservation et VR (si possible)
+## Restauration du site de Réservation, API et VR
 
 1ère étape : 
 Il faut d'abord configurer un nom de domaine sur l'hébergeur de notre choix (nom de domaine acheté ou sous domaine configuré)
@@ -19,10 +19,7 @@ Ne pas oublier de configurer la connexion avec la base de données dans le fichi
 Lancer le site et tout est bon !
 Ne pas oublier de générer un certificat SSL pour la sécurité de la navigation.
 
-En ce qui concerne l'API, refaire la procédure mais sur un sous domaine si vous le souhaitez.
-
-## Restauration du site de VR
-...
+En ce qui concerne l'API et le site VR, refaire la procédure sur un nom de domaine à part ou sous domaine si vous le souhaitez.
 
 ## Restauration du site backoffice - Déployement avec Vercel
 
@@ -36,5 +33,16 @@ Effectuer les commandes suivantes :
 - Le déployer avec la commande suivante si c'est la première fois avec la commande : vercel
 - Pour mettre à jour les modifications du site, le faire avec la commande suivante : vercel --prod
 
-## Restauration du site de WordPress
-Récuperation des dossiers et de la base donnée:  Compressez le dossier wordpress contenant notre site. Puis téléchargez le fichier zip contenant les fichiers WordPress depuis O2switch. Il faut exporter la base de données de notre site WordPress à partir d'o2switch.  Comment importer notre site Wordpress chez un nouvel herbergeur :  1. Connectez-vous chez votre nouvel hébergeur puis aller dans le gestionnaire de fichiers de votre hébergeur. Téléversez le fichier zip contenant les fichiers WordPress dans le répertoire racine de votre nouveau serveur.  2.Extrayez-le dans le répertoire souhaité. Cela devrait créer un répertoire contenant tous les fichiers WordPress.  4.Importez la base de données que vous avez exportée de votre ancien hébergeur vers la nouvelle base de données que vous venez de créer. Via PhpMyadmin  5.Une fois l'installation terminée, vérifiez que votre site WordPress fonctionne correctement sur le nouveau serveur. 
+## Procédure de restauration du site de WordPress
+
+- D'abord compresser le dossier de notre site WordPress
+- Télécharger le site depuis notre hébergeur.
+- Ensuite, il faut exporter la base de données du site WordPress depuis PHPMyAdmin.
+- Pour le restaurer chez un autre hébergeur, déjà s'authentifier à l'espace administration de l'hébergeur choisi.
+- Configurer un nom de domaine ou sous domaine si ce n'est pas déjà fait (acheté ou sous domaine)
+- Puis, aller dans le gestionnaire de fichiers et déposer, extraire les fichiers de notre site wordpress
+- Configurer la base de données si on en possède une
+- Importer la base de données qu'on a exporté précédemment sur PHPMyAdmin.
+- Testez, et voilà !
+
+Le README complet concernant le site WordPress est dans le fichier Readme-Getthevision.pdf

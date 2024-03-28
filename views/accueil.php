@@ -27,7 +27,7 @@
     <section class="part-1">
 
         <div class='home-info'>
-            <h1>Shadows <span class="and">and</span><span class="light">li<span class="font-1">ghts</span></span></h1>
+            <h1>Shadow <span class="and">and</span><span class="light">li<span class="font-1">ght</span></span></h1>
             <p>Découvrez l'art de Berthe Morisot entre ombre et lumière : une exposition captivante qui éclaire votre
                 esprit et joue avec vos sens
             </p>
