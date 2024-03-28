@@ -23,20 +23,20 @@
     session_start();
     require '../views/header-bis.php'; ?>
 
-    <main>
-        <section>
+    <main class="espace">
+        <section >
             <div>
-                <h1>espace personnel</h1>
+                <h1>Espace <span class="font-2">personnel</span></h1>
 
 
                 <?php
-                if (isset($_SESSION['nom'])) {
-                    // var_dump($_SESSION['email']);
+                // if (isset($_SESSION['nom'])) {
+                //     // var_dump($_SESSION['email']);
 
-                    echo "<h2>Bienvenue " . $_SESSION['prenom'] . " " . $_SESSION['nom'] . "</h2>";
-                } else {
-                    header('Location: /connexion');
-                }
+                //     echo "<h2>Bienvenue " . $_SESSION['prenom'] . " " . $_SESSION['nom'] . "</h2>";
+                // } else {
+                //     header('Location: /connexion');
+                // }
 
                 ?>
 
@@ -51,7 +51,7 @@
 
         <section class="btm_sec">
             <div>
-                <h1>Votre dernière réservation</h1>
+                <h1>Votre dernière <span class="font-2">réservation</span></h1>
                 <div>
                     <p>31.03.2024</p>
                     <p>16$</p>
@@ -59,10 +59,16 @@
                     <p class="welcome">Ombre et lumière</p>
                 </div>
             </div>
-            <a href="/mes-reservations" class="button">tous voir</a>
+            <a href="/mes-reservations" class="button">Voir</a>
 
         </section>
-        <a href="/deconnexion" class="button logout">deconnexion</a>
+
+        <a href="/deconnexion" class="bouton">
+            <div>
+                <img src="../img/bouton.svg" alt="">
+                <p class="ticket texte">Déconnexion</p>
+            </div>
+        </a>
 
     </main>
 

@@ -4,9 +4,9 @@
 
         if (passwordField.type === "password") {
             passwordField.type = "text";
-            showPasswordButton.textContent = "Masquer le mot de passe";
+            showPasswordButton.textContent = "Masquer";
         } else {
             passwordField.type = "password";
-            showPasswordButton.textContent = "Afficher le mot de passe";
+            showPasswordButton.textContent = "Afficher";
         }
     }

@@ -6,7 +6,6 @@ $router = new AltoRouter();
 
 
 $router->map('GET', '/', 'HomeController#displayHome', 'accueil');
-$router->map('GET', '/oeuvres', 'OeuvresController#displayOeuvres', 'oeuvres');
 $router->map('GET', '/ressources', 'RessourcesController#displayRessources', 'ressources');
 $router->map('GET', '/votre-visite', 'VisiteController#displayVisite', 'votre.visite');
 $router->map('GET', '/billeterie', 'BilleterieController#displayAccueilBilleterie', 'billeterie');

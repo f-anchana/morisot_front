@@ -14,7 +14,7 @@
 
     <script src="javascript/connexion.js" defer></script>
 
-    <title>Se connecter</title>
+    <title>Registration</title>
 </head>
 <body>
 
@@ -30,31 +30,38 @@
         }
         ?>
 
-        <h1>Inscription</h1>
-        <label for="nom_user">Votre nom</label>
+        <h1>Registration</h1>
+
+        <div class="mdp">
+        <div>
+        <label for="nom_user">Your name</label>
         <input type="text" name="nom_user" id="nom_user" required="required">
+        </div>
 
-        <label for="prenom_user">Votre prénom</label>
+        <div>
+        <label for="prenom_user">Your surname</label>
         <input type="text" name="prenom_user" id="prenom_user" required="required">
+        </div>
+        </div>
 
-        <label for="numero">Votre numéro de téléphone</label>
+        <label for="numero">Your phone number</label>
         <input type="tel" name="numero" id="numero" required="required">
 
-        <label for='email'>Entrez votre email</label>
+        <label for='email'>Enter your mail</label>
         <input type='email' name='email' id='email' required='required'>
 
-        <label for="age">Age</label>
+        <label for="age">Enter your age</label>
         <input type="number" name="age" id="age" required="required" min="1">
 
-        <label for='mdp1'>Définissez un mot de passe</label>
+        <label for='mdp1'>Set a password</label>
         <input type='password' name='mdp1' id='mdp1' required='required'>
 
-        <label for='mdp2'>Vérifier votre mot de passe</label>
+        <label for='mdp2'>Verify your password</label>
         <input type='password' name='mdp2' id='mdp2' required='required'>
         <p id="error-message" style="color: red;"></p>
 
 
-        <input type='submit' value='Valider' id='submit' name='soumettre'>
+        <input type='submit' value='Confirm' id='submit' name='soumettre'>
 
     </form>
 

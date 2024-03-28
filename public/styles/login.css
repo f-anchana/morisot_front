@@ -24,9 +24,13 @@ form a{
   padding: 20px;
 }
 
-.form h2 {
-  margin-bottom: 20px;
+.form h1 {
+  margin: 1.5rem 0;
+  padding-bottom: 1rem;
   text-align: center;
+  font-size: 1.5rem;
+  font-family: Darker-Grotesque, sans-serif;
+  line-height: 0px;
 }
 
 .form label {
@@ -34,9 +38,7 @@ form a{
   margin-bottom: 10px;
 }
 
-.form input[type="email"],
-.form input[type="password"],
-.form input[type="submit"] {
+.form input {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -44,10 +46,16 @@ form a{
 }
 
 .mdp {
-display: block;}
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+
 
 #showPasswordButton {
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 500px) {

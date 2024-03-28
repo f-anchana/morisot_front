@@ -135,6 +135,10 @@ button{
     color: var(--text-color);
 }
 
+input[type="submit"]{
+    cursor: pointer;
+  }
+
 .body {
     padding: 1rem;
 }

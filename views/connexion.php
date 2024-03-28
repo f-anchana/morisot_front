@@ -51,7 +51,7 @@
                 <img src="../img/test.jpg" alt="">
             </div>
             <div class="form">
-                <h2>Connexion</h2>
+                <h1>Connexion</h1>
                 <form action='/connexion' method='POST'>
 
                     <label for="email">Email</label>
@@ -62,8 +62,7 @@
 
                     <div class="mdp">
                         <input type="password" name="mdp" id="mdp" required="required">
-                        <button type="button" id="showPasswordButton" onclick="togglePasswordVisibility()">Afficher
-                            le mot de passe</button>
+                        <button type="button" id="showPasswordButton" onclick="togglePasswordVisibility()">Afficher</button>
                     </div>
 
                     <input type="submit" name="connexion" value="Se connecter">
