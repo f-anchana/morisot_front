@@ -42,10 +42,10 @@
                     <li><a href="<?= $this->router->generate('login') ?>"><img class="icon" src="../img/icon.svg" alt="login"></a></li>
                     <li class="language"><a class="lower" href="/" >fr / en</a></li>
                     <li><a class="bouton billeterie" href="<?= $this->router->generate('ticketing') ?>">
-                            <div id="image-container">
+                    <div id="image-container">
                                 <img id="default-image" src="../img/nav-ticket1.svg" alt="">
-                                <li><a href="<?= $this->router->generate('ticketing') ?>">Ticketing</a></li>
-                                <p class="brown text">Ticketing</p>
+                                <img id="hover-image" src="../img/nav-ticket2.svg" alt="" style="display: none;">
+                                <p class="brown texte">Ticketing</p>
                             </div>
                         </a>
                     </li>
