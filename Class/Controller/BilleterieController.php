@@ -4,7 +4,6 @@ namespace App\Controller;
 
 require '../../API/model.php';
 
-
 class BilleterieController {
     private $router;
     public function __construct($router)

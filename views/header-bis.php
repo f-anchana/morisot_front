@@ -16,12 +16,11 @@
             <nav class="menu-burger">
                 <ul>
                     <li><a href="/">Accueil</a></li>
-                    <li><a href="<?= $this->router->generate('oeuvres') ?>">Oeuvres</a></li>
                     <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
                     <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
                     <li><a href="<?= $this->router->generate('experience') ?>">L'expérience</a></li>
                     <li><a href="<?= $this->router->generate('billeterie') ?>">Billeterie</a></li>
-                    <li class="language"><button>fr / en</button></li>
+                    <li class="language"><a class="lower" href="/home" >fr / en</a></li>
                 </ul>
             </nav>
 
@@ -41,8 +40,7 @@
 
                 <ul>
                     <li><a href="<?= $this->router->generate('connexion') ?>"><img class="icon" src="../img/icon.svg" alt="connexion"></a></li>
-                    <li><button>fr / en</button></li>
-                    <li class="mute"><button><img src="../img/nav-son1.svg" alt="son"></button></li>
+                    <li class="language"><a class="lower" href="/home" >fr / en</a></li>
                     <li><a class="bouton billeterie" href="<?= $this->router->generate('billeterie') ?>">
                             <div id="image-container">
                                 <img id="default-image" src="../img/nav-ticket1.svg" alt="">
