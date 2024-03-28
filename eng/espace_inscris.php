@@ -59,10 +59,10 @@
                     <p class="welcome">Shadow and Light</p>
                 </div>
             </div>
-            <a href="/mes-reservations" class="button">View All</a>
+            <a href="/my-bookings" class="button">View All</a>
 
         </section>
-        <a href="/deconnexion" class="button logout">Logout</a>
+        <a href="/disconnect" class="button logout">Logout</a>
 
     </main>
 

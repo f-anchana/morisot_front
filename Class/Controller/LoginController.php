@@ -76,6 +76,62 @@ class LoginController
 
 
     }
+    public function createUserEng()
+    {
+
+        // $params=['name'=>'John', 'surname'=>'Doe', 'age'=>36];
+        $params = json_encode(['nom_user' => ($_POST['nom_user']), 'prenom_user' => ($_POST['prenom_user']), 'numero' => ($_POST['numero']), 'email' => ($_POST['email']), 'age' => ($_POST['age']), 'mdp1' => ($_POST['mdp1'])]);
+
+        $options = array(
+
+            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/inscription',
+
+            CURLOPT_POST => true,
+
+            CURLOPT_POSTFIELDS => $params,
+            CURLOPT_HTTPHEADER => array(
+                'Content-Type: application/json'
+            )
+        );
+        // var_dump($params);
+
+
+        $ch = curl_init();
+
+        curl_setopt_array($ch, ($options));
+
+        $response = curl_exec($ch);
+        curl_close($ch);
+
+
+        // Vérifier la réponse de l'API
+        if ($response) {
+            // L'inscription a réussi
+            session_start();
+            $user = checkUser($_POST['email']);
+
+            // Vérifier si l'utilisateur existe
+            if ($user) {
+                // Stocker les données de l'utilisateur dans la session
+                $_SESSION['id'] = $user['id'];
+                $_SESSION['nom'] = $user['nom'];
+                $_SESSION['prenom'] = $user['prenom'];
+                $_SESSION['email'] = $user['email'];
+            }
+
+            $youpi = "Inscription réussie. Vous pouvez vous connecter.";
+            header('Location: /login');
+            exit();
+        } else {
+            // L'inscription a échoué
+            $erreur = "L'inscription a échoué. Veuillez réessayer.";
+            require '../eng/inscription.php';
+        }
+
+        return $response;
+
+
+    }
 
     public function displayConnexion()
     {
@@ -141,6 +197,60 @@ class LoginController
         return $response;
 
     }
+    public function connectUserEng()
+    {
+        $params = json_encode(['email' => ($_POST['email']), 'mdp' => ($_POST['mdp'])]);
+
+        $options = array(
+
+            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/connexion',
+
+            CURLOPT_POST => true,
+
+            CURLOPT_POSTFIELDS => $params,
+            CURLOPT_HTTPHEADER => array(
+                'Content-Type: application/json'
+            )
+        );
+
+        $ch = curl_init();
+
+        curl_setopt_array($ch, ($options));
+
+        $response = curl_exec($ch);
+        curl_close($ch);
+
+        // Vérifier la réponse de l'API
+        if ($response) {
+            // La connexion a réussi
+            session_start();
+            // Récupérer les données de l'utilisateur depuis la fonction checkUserLogin
+            $user = checkUserLogin($_POST['email'], $_POST['mdp']);
+
+            // Vérifier si l'utilisateur existe
+            if ($user) {
+                // Stocker les données de l'utilisateur dans la session
+                $_SESSION['id_user'] = $user['id_user'];
+                $_SESSION['nom'] = $user['nom'];
+                $_SESSION['prenom'] = $user['prenom'];
+                $_SESSION['email'] = $_POST['email'];
+
+                header('Location: /my-dashboard');
+                exit();
+            } else {
+                // La connexion a échoué
+                $erreur = "La connexion a échoué. Veuillez réessayer.";
+                header ('Location: /login');
+            }
+
+            return $response;
+        }else{
+            $erreur = "Une erreur s'est produit. Veuillez réessayer ultérieuerement.";
+            require '../views/connexion.php';
+        }
+        return $response;
+
+    }
 
     public function displayConfirmation()
     {
@@ -196,7 +306,7 @@ class LoginController
             } else {
                 // Afficher un message d'erreur
                 $erreur = "Aucune réservation trouvée.";
-                require '../views/mes-reservations.php';
+                require '../views/mon-espace.php';
             }
         } else {
             // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
@@ -224,7 +334,7 @@ class LoginController
             } else {
                 // Afficher un message d'erreur
                 $erreur = "Aucune réservation trouvée.";
-                require '../eng/mes-reservations.php';
+                require '../eng/mon-espace.php';
             }
         } else {
             // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté

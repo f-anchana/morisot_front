@@ -19,11 +19,11 @@
 
 <body>
 
-    <?php require '../views/header-bis.php'; ?>
+    <?php require '../eng/header-bis.php'; ?>
 
     <div class="container">
         <div class="card form">
-            <form id="mon-formulaire" action="/inscription" method='POST' onsubmit="return validateForm();">
+            <form id="mon-formulaire" action="/signup" method='POST' onsubmit="return validateForm();">
                 <?php
                 if (isset($erreur)) {
                     echo $erreur;
@@ -70,7 +70,7 @@
     </div>
 
 
-    <?php require '../views/footer.php'; ?>
+    <?php require '../eng/footer.php'; ?>
 
 </body>
 

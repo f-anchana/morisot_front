@@ -157,7 +157,7 @@
 
     
 
-    <div class='commentaire'>
+    <!-- <div class='commentaire'>
         <h2>Laissez un commentaire</h2>
         <form action='/commenter' method='POST'>
             <div class='form-group'>
@@ -172,58 +172,58 @@
             </div>
 
         </form>
-    </div>
-</div>
+    </div> -->
+<!-- </div> -->
 
 
-
+<div class='commentaire'>
 
     <?php
 
-    // require_once '../../API/model.php';
+    require_once '../../API/model.php';
     
-    // if (isset($_SESSION['nom'])) {
+    if (isset($_SESSION['nom'])) {
     
-    //     echo "<div class='commentaire'>
-//     <h2>Laissez un commentaire</h2>
-//     <form action='/commenter' method='POST'>
-//         <div class='form-group'>
-//             <label for='commentaire'>Commentaire:</label>
-//             <textarea id='commentaire' name='commentaire' required></textarea>
-//         </div>
+        echo "
+    <h2>Laissez un commentaire</h2>
+    <form action='/commenter' method='POST'>
+        <div class='form-group'>
+            <label for='commentaire'>Commentaire:</label>
+            <textarea id='commentaire' name='commentaire' required></textarea>
+        </div>
     
-    //         <div class='bouton'>
-//             <img src='../public/img/bouton.svg' alt=''>
-//             // <button class='texte' type='submit'>Envoyer</button>
-//             <input type='hidden' name='id_user' value='" . $_SESSION['id_user'] . "'>
-//             <input type='submit' name='commenter' value='Envoyer'>
-//         </div>
+            <div class='bouton'>
+            <img src='../img/bouton.svg' alt=''>
+            // <button class='texte' type='submit'>Envoyer</button>
+            <input type='hidden' name='id_user' value='" . $_SESSION['id_user'] . "'>
+            <input type='submit' name='commenter' value='Envoyer'>
+        </div>
     
-    //     </form>
-// </div>";
-// }
-// var_dump($_SESSION['id_user']);
+        </form>
+";
+}else{
+    echo "    <h2>Commentaire</h2><br>
+    ";
+}
+
+?>
+</div>
+
+<?php
     
-    // $comments = getComments();
+    $comments = getComments();
     
-    // foreach ($comments as $comment) {
+    foreach ($comments as $comment) {
     
-    //     $user = getUser($comment['ext_user']);
+        $user = getUser($comment['ext_user']);
     
-    //     echo "<div class='commentaire'>
-//     <h2>Commentaire</h2><br>
-//     <p>" . $user['prenom'] . "</p>
-//     <p>" . $comment['content'] . "</p><br>
-// </div>";
-// }
-    
-    // var_dump(getComments());
+        echo "<div class='commentaire'>
+    <p>" . $user['prenom'] . "</p>
+    <p>" . $comment['content'] . "</p><br>
+</div>";
+}
     
     ?>
-<!--             <input type='hidden' name='id_user' value='" . $_SESSION['id'] . "'>
- -->
-
-
 
  <?php require '../views/footer.php'; ?>
 
