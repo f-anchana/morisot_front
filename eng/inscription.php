@@ -9,7 +9,7 @@
 <body>
 
 <div class="formulaire">
-<form id="mon-formulaire" action="/inscription" method='POST' onsubmit="return validateForm();">
+<form id="mon-formulaire" action="/signup" method='POST' onsubmit="return validateForm();">
 <?php 
 if(isset($erreur)){
     echo $erreur;

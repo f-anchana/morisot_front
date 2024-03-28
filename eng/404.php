@@ -20,7 +20,7 @@
     <main class="err404">
         <h1 class="err404_h1">4 <span class="nbr_itl">0</span> 4</h1>
 
-        <p>You seem lost, go back to <a class="retour-accueil" href="/">home</a></p>
+        <p>You seem lost, go back to <a class="retour-accueil" href="/home">home</a></p>
 
     </main>
 </body>

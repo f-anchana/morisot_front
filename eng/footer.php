@@ -6,7 +6,7 @@
             <li><a href="/home">Home</a></li>
             <li><a href="<?= $this->router->generate('resources') ?>">Resources</a></li>
             <li><a href="<?= $this->router->generate('your.visit') ?>">Your Visit</a></li>
-            <li><a href="<?= $this->router->generate('experience') ?>">The Experience</a></li>
+            <li><a href="<?= $this->router->generate('the.experience') ?>">The Experience</a></li>
             <li><a href="<?= $this->router->generate('ticketing') ?>">Ticketing</a></li>
         </ul>
 
@@ -56,7 +56,7 @@
                     <li><a href="<?= $this->router->generate('your.visit') ?>">Your Visit</a></li>
                 </ul>
                 <ul>
-                    <li><a href="<?= $this->router->generate('experience') ?>">The Experience</a></li>
+                    <li><a href="<?= $this->router->generate('the.experience') ?>">The Experience</a></li>
                     <li><a href="<?= $this->router->generate('ticketing') ?>">Ticketing</a></li>
                     <a href="<?= $this->router->generate('legal-notice') ?>">Legal Notice 🡥</a>
                 </ul>
@@ -73,7 +73,7 @@
         </section>
     </nav>
 
-    <nav class="desk_socials">
+    <nav class="desk_socials"> 
         <p>+7 59 69 78 32</p>
         <a href="#">Youtube</a>
         <a href="https://www.instagram.com/ombreetlumiere_morisot/" target="_blank">Instagram</a>

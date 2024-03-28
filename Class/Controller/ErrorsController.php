@@ -11,6 +11,8 @@ class ErrorsController {
 
     public function displayError404() {
         require '../views/404.php';
-
+    }
+    public function displayErreur404() {
+        require '../eng/404.php';
     }
 }

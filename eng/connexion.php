@@ -24,12 +24,12 @@ if (isset($youpi)) {
 // }
 
 if (isset($_SESSION['nom'])) {
-    header('Location: /mon-espace');
+    header('Location: /my-personal-space');
 } 
 
 ?>
 
-<form action="/connexion" method="POST">
+<form action="/login" method="POST">
 
 <label for="email">Email</label>
 <input type="email" name="email" id="email" required="required">

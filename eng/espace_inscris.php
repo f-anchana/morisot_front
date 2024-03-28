@@ -21,7 +21,7 @@
 
     <?php
     session_start();
-    require '../views/header-bis.php'; ?>
+    require '../eng/header-bis.php'; ?>
 
     <main>
         <section>
@@ -35,7 +35,7 @@
                 
                     echo "<h2>Bienvenue " . $_SESSION['prenom'] . " " . $_SESSION['nom'] . "</h2>";
                 } else {
-                    header('Location: /connexion');
+                    header('Location: /login');
                 }
 
                 ?>
@@ -66,7 +66,7 @@
 
     </main>
 
-    <?php require '../views/footer.php'; ?>
+    <?php require '../eng/footer.php'; ?>
 
 </body>
 
