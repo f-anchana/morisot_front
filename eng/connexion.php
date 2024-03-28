@@ -24,7 +24,7 @@ if (isset($youpi)) {
 // }
 
 if (isset($_SESSION['nom'])) {
-    header('Location: /mon-espace');
+    header('Location: /my-personal-space');
 } 
 
 ?>

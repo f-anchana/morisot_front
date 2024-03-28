@@ -50,6 +50,7 @@ $router->map('GET', '/Unveil-the-truth', 'RessourcesController#displayUnveil', '
 $router->map('GET', '/my-bookings', 'LoginController#displayBookings', 'my-bookings');
 
 
+
 $router->map('POST', '/login', 'LoginController#connectUser');
 $router->map('POST', '/comment', 'ExperienceController#AddComment');
 $router->map('POST', '/signup', 'LoginController#createUser');
