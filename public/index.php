@@ -59,6 +59,13 @@ $router->map('POST', '/booking', 'BilleterieController#AddBooking');
 
 
 
+$router->map('DELETE', '/supprimer_reservation', 'BilleterieController#DeleteReservation');
+
+
+
+
+
+
 // $router->map('GET', '/oeuvres', 'oeuvres', 'oeuvres'.);
 //le 4e paramètre est le nom de la route pour la fonction generate / le 3e est le nom de la page
 
