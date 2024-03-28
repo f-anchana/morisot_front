@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/svg">
 
+    <script src="javascript/connexion.js" defer></script>
+
     <title>Se connecter</title>
 </head>
 <body>
@@ -33,6 +35,8 @@ if (isset($_SESSION['nom'])) {
 
 <label for="email">Email</label>
 <input type="email" name="email" id="email" required="required">
+<button type="button" id="showPasswordButton" onclick="togglePasswordVisibility()">Afficher le mot de passe</button>
+
 
 <label for="mdp">Mot de passe</label>
 <input type="password" name="mdp" id="mdp" required="required">
