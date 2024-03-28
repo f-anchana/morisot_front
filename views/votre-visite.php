@@ -28,7 +28,7 @@
 
     <div class="visite">
 
-        <img src="/img/o-4.png" alt="">
+        <img src="/img/visite.jpg" alt="">
 
         <div class="div">
             <div>
