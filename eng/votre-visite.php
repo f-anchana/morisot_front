@@ -26,6 +26,13 @@
         </ul>
     </nav>
 
+    <div>
+
+        <img src="" alt="">
+
+        
+    </div>
+
 
 
 

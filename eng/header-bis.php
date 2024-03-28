@@ -16,7 +16,7 @@
             <nav class="menu-burger">
                 <ul>
                     <li><a href="/home">Home</a></li>
-                    <li><a href="<?= $this->router->generate('resources') ?>">Resources</a></li>
+                    <li><a href="<?= $this->router->generate('resources') ?>">Event</a></li>
                     <li><a href="<?= $this->router->generate('your.visit') ?>">Your Visit</a></li>
                     <li><a href="<?= $this->router->generate('experience') ?>">The Experience</a></li>
                     <li><a href="<?= $this->router->generate('ticketing') ?>">Ticketing</a></li>
@@ -33,7 +33,7 @@
 
             <nav>
                 <ul>
-                    <li><a href="<?= $this->router->generate('resources') ?>">Resources</a></li>
+                    <li><a href="<?= $this->router->generate('resources') ?>">Event</a></li>
                     <li><a href="<?= $this->router->generate('your.visit') ?>">Your Visit</a></li>
                     <li><a href="<?= $this->router->generate('experience') ?>">The Experience</a></li>
                 </ul>

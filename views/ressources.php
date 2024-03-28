@@ -12,45 +12,40 @@
 
     <script src="javascript/header.js" defer></script>
 
-    <title>Ressources</title>
+    <title>Événements</title>
 </head>
 
 <body>
 
-   <?php require '../views/header-bis.php'; ?>
+    <?php require '../views/header-bis.php'; ?>
 
-   <nav class="breadcrumb-1" aria-label="Breadcrumb">
+    <nav class="breadcrumb-1" aria-label="Breadcrumb">
         <ul>
             <li><a href="/">Accueil</a></li><span>&ensp; > &ensp;</span>
-            <li>Ressources</li>
+            <li>Événements</li>
         </ul>
     </nav>
 
     <section>
-    <h1>Ressources</h1>
-    <a href="/">Accueil</a>
+
+        <h1 class="event">Événements</h1>
+
+        <div class="media-body">
+            <a href="/Unveiling-the-truth">
+                <img src="img/podcast.png" alt="">
+                <h2>Unveiling the truth</h2>
+                <p>Podcast</p>
+            </a>
+        </div>
+
+    </section>
 
 
-    <div class="media-body">
-        <a href="/Unveiling-the-truth">
-        <img src="img/test.jpg" alt="">
-        <p>Unveiling the truth</p>
-        </a>
-    </div>
 
 
-</section>
-
-
-
-
-   <?php require '../views/footer.php'; ?>
+    <?php require '../views/footer.php'; ?>
 
 
 </body>
 
 </html>
-
-
-
-

@@ -176,10 +176,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    margin: 2rem 0;
 }
 
 .texte {
+    width: 140px;
+    cursor: pointer;
     color: var(--bc-color);
     font: 1rem Darker-Grotesque, sans-serif;
     text-transform: uppercase;
@@ -342,6 +344,7 @@ width: 120px;
 
 .brown{
     margin-right: 20px;
+    height: inherit;
 }
 
 .mute{

@@ -4,7 +4,7 @@
     <nav class="footer_nav">
         <ul class="footer_nav_main">
             <li><a href="/">Accueil</a></li>
-            <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
+            <li><a href="<?= $this->router->generate('ressources') ?>">Événements</a></li>
             <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>
             <li><a href="<?= $this->router->generate('experience') ?>">L'expérience</a></li>
             <li><a href="<?= $this->router->generate('billeterie') ?>">Billeterie</a></li>
@@ -52,7 +52,7 @@
             <main class="footer_main_nav">
                 <ul>
                     <li><a href="/">Accueil</a></li>
-                    <li><a href="<?= $this->router->generate('ressources') ?>">Ressources</a></li>
+                    <li><a href="<?= $this->router->generate('ressources') ?>">Événements</a></li>
                 </ul>
                 <ul>
                     <li><a href="<?= $this->router->generate('votre.visite') ?>">Votre visite</a></li>

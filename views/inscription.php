@@ -24,7 +24,7 @@ if(isset($erreur)){
     <input type="text" name="prenom_user" id="prenom_user" required="required">
 
     <label for="numero">Votre numéro de téléphone</label>
-    <input type="number" name="numero" id="numero" required="required">
+    <input type="tel" name="numero" id="numero" required="required">
 
     <label for='email'>Entrez votre email</label>
     <input type='email' name='email' id='email' required='required'>
@@ -46,6 +46,9 @@ if(isset($erreur)){
 
 </div>
 </div>
+
+<a href="/connexion"> Connexion</a>
+
 
 <script>
     // Fonction JS qui vérifie que les mots de passes sont les mêmes

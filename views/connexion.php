@@ -40,6 +40,8 @@ if (isset($_SESSION['nom'])) {
 
 <input type="submit" name="connexion" value="Se connecter">
 
+<a href="/inscription">Inscription</a>
+
 </form>
 
 </body>

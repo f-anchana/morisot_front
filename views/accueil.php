@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ombre et Lumière">
+    <meta name="keywords" content="exposition, Ombre et Lumière, Berthe Morisot, impressionnisme">
 
     <link rel="stylesheet" href="/styles/accueil.css">
 
@@ -48,7 +50,7 @@
             <div class="information">
 
                 <div class="info">
-                    <p>31 mars . 30 avril / 2024</p>
+                    <p>Du 28 mars au 28 septembre / 2024</p>
                     <p>Découvrez Berthe Morisot, une artiste éminente du mouvement impressionniste, dans une expérience
                         en
                         réalité

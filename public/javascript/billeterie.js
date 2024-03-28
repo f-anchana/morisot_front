@@ -1,3 +1,11 @@
+window.addEventListener("beforeunload", function (event) {
+    const formDataEntered = Array.from(document.querySelectorAll('input, select')).some(field => field.value.trim() !== '');
+    if (formDataEntered) {
+        event.returnValue = "Vous allez perdre les données non sauvegardées. Êtes-vous sûr de vouloir quitter ?";
+    }
+});
+
+
 function suivant() {
     const stepActuel = document.querySelector('.form-step.active');
     const suivant = stepActuel.nextElementSibling;
@@ -79,8 +87,8 @@ function step3() {
     const date = document.getElementById('date').value;
     const time = document.getElementById('time').value;
 
-    const pleinTarif = 10;
-    const tarifReduit = 17;
+    const pleinTarif = 25;
+    const tarifReduit = 16;
     const ptQuantity = parseInt(document.getElementById('ptQuantity').value);
     const trQuantity = parseInt(document.getElementById('trQuantity').value);
     const total = (pleinTarif * ptQuantity) + (tarifReduit * trQuantity);
@@ -107,8 +115,8 @@ function step4() {
     const tel = document.getElementById('téléphone').value;
     const ptQuantity = parseInt(document.getElementById('ptQuantity').value);
     const trQuantity = parseInt(document.getElementById('trQuantity').value);
-    const pleinTarif = 10;
-    const tarifReduit = 17;
+    const pleinTarif = 25;
+    const tarifReduit = 16;
 
     // Calcul du prix
     const pleinTarifTotal = pleinTarif * ptQuantity;

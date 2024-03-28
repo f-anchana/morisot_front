@@ -1,3 +1,59 @@
 .pt{
     font-family: Darker-Grotesque-Regular, serif;
 }
+
+.media-body{
+    padding: 1rem 2rem;
+}
+
+.media-body img{
+    height: 250px;
+    max-width: 480px;
+}
+
+.media-body p{
+    font-family: Addington-Regular-Italic, serif;
+
+}
+
+.media-body h2{
+padding-top: 10px;
+}
+
+.media-body-2{
+    width: 90vw;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.media-body-2 img{
+    height: 350px;
+}
+
+
+
+.event{
+    padding-left: 2rem;
+}
+
+.media-body-2 div{
+    width: 70%;
+}
+
+.media-body-2 h1{
+font: 1.5rem Moderat-Medium, sans-serif;
+padding: 2rem 0;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .event{
+        padding-left: 4rem;
+    }
+
+    .media-body{
+        padding: 1rem 4rem;
+    }
+}
