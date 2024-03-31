@@ -4,14 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/settings.css">
+    <meta name="author" content="Ombre et Lumière">
+    <meta name="keywords" content="exposition, Ombre et Lumière, Berthe Morisot, impressionnisme">
+
     <link rel="stylesheet" href="/styles/mes-reservations.css">
+
+    <link rel="stylesheet" href="/styles/settings.css">
+    <link rel="stylesheet" href="/styles/style.css">
+
     <link rel="shortcut icon" href="img/logo_icon_noir.svg" type="image/svg">
 
-    <title>Mes Réservations</title>
+
+    <script src="javascript/header.js" defer></script>
+
+    <title>Mes réservations</title>
 </head>
 
 <body>
+
+<?php
+
+require 'header-bis.php';
+
+?>
+
     <div class="reservation-cards-container">
         <?php foreach ($reservations as $reservation): ?>
             <div class="reservation-card">
@@ -55,6 +71,13 @@
             </div>
         <?php endforeach; ?>
     </div>
+
+    <?php
+
+    require 'footer.php';
+    ?>
+
+
 </body>
 
 <script>

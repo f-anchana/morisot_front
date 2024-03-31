@@ -2,13 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 8rem;
+    width: 85vw;
+    margin: auto;
 }
 
 .reservation-card {
     width: 300px;
-    height: 600px;
     background-color: #E5E4DC;
-    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0 10px 20px;
 }
@@ -16,11 +17,12 @@
 .reservation-card img {
     width: 100%;
     margin-bottom: 15px;
+    height: 20vh;
 }
 
 .reservation-info {
     font-size: 16px;
-    margin-bottom: 15px;
+    margin: 2rem;
 }
 
 .reservation-info p {
@@ -39,6 +41,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 2rem;
 }
 
 .reservation-buttons button:hover {
@@ -87,10 +90,4 @@
 .liens{
     display: flex;
     justify-content: space-evenly;
-}
-
-@media screen and (min-width: 768px) {
-    .reservation-cards-container {
-        justify-content: flex-start;
-    }
 }
