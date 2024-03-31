@@ -23,7 +23,6 @@
 <body>
 
 <?php
-session_start();
 require 'header-bis.php';
 
 ?>
