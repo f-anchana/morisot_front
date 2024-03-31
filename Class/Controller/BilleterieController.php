@@ -137,7 +137,7 @@ class BilleterieController {
         } else {
             // Si l'ID de la réservation n'est pas présent dans la requête POST
             // Redirection vers une page d'erreur ou traitement supplémentaire si nécessaire
-            header('Location: /erreur');
+            header('Location: /erreur404');
         }
     }
     

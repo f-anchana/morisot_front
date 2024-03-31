@@ -23,7 +23,7 @@
 <body>
 
 <?php
-
+session_start();
 require 'header-bis.php';
 
 ?>
@@ -61,7 +61,7 @@ require 'header-bis.php';
                         <div class="liens">
                             <form action='/supprimer_reservation' method='POST'>
                                 <input type='hidden' name='id_resa' value='<?php echo $reservation["id_resa"]; ?>'>
-                                <button type='submit' class='btn-supprimer'>Supprimer</button>
+                                <input type='submit' value="Supprimer" class='btn-supprimer'></input>
                             </form>
                             <a href='javascript:void(0);' class='btn-annuler' onclick='annulerSuppression()'>Annuler</a>
                         </div>

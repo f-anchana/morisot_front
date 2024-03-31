@@ -21,6 +21,7 @@ $router->map('GET', '/politique-prix', 'PolitiqueController#displayPrix', 'polit
 $router->map('GET', '/Unveiling-the-truth', 'RessourcesController#displayUnveiling', 'Unveiling-the-truth');
 $router->map('GET', '/deconnexion', 'LoginController#disconnectUser');
 $router->map('GET', '/mes-reservations', 'LoginController#displayReservations', 'mes-reservations');
+$router->map('GET', '/mes-donnees', 'LoginController#displayDonnees', 'mes-donnees');
 
 
 

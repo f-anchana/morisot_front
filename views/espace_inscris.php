@@ -30,23 +30,20 @@
 
 
                 <?php
-                // if (isset($_SESSION['nom'])) {
-                //     // var_dump($_SESSION['email']);
+                if (isset($_SESSION['email'])) {
 
-                //     echo "<h2>Bienvenue " . $_SESSION['prenom'] . " " . $_SESSION['nom'] . "</h2>";
-                // } else {
-                //     header('Location: /connexion');
-                // }
+                    echo "<h2>Bienvenue " . $_SESSION['prenom'] . " " . $_SESSION['nom'] . "</h2>";
+                } else {
+                    header('Location: /connexion');
+                }
 
                 ?>
-
-                <!-- <h2>Mme Maria Ouedraogo</h2> -->
                 <p class="welcome">
                     Bienvenue dans votre espace personnel. Vous pouvez y suivre vos commandes, accéder à vos offres
                     personnelles, imprimer vos billets et modifier vos coordonnées ou vos inscriptions aux newsletters.
                 </p>
             </div>
-            <a href="" class="button">modifier mes données</a>
+            <a href="/mes-donnees" class="button">modifier mes données</a>
         </section>
 
         <section class="btm_sec">
