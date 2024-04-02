@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-require '../../API/model.php';
+// require '../../API/model.php';
 
 class BilleterieController {
     private $router;

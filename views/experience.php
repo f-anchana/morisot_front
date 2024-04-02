@@ -180,7 +180,7 @@
 
     <?php
 
-    require_once '../../API/model.php';
+    // require_once '../../API/model.php';
     
     if (isset($_SESSION['nom'])) {
     
