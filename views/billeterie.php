@@ -179,7 +179,7 @@
 
                 </div>
 
-                <p class="infopratique">Veuillez noter que les billets pour ne sont pas remboursables.  Pour plus d'informations, consultez nos conditions générales. </p>
+                <p class="infopratique">Veuillez noter que les billets ne sont pas remboursables.  Pour plus d'informations, consultez nos conditions générales. </p>
 
             </form>
 
