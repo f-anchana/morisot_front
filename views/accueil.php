@@ -45,7 +45,10 @@
         <h1>Une expérience immersive <span class="font-2">multisensorielle</span></h1>
 
         <div class="morisot">
-            <img class="portrait" src="img/home-2.png" alt="">
+
+            <div class="parallax-container">
+                    <img class="portrait" src="img/home-2.png" alt="">
+            </div>
 
             <div class="information">
 
