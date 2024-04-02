@@ -28,7 +28,7 @@ class LoginController
 
         $options = array(
 
-            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/inscription',
+            CURLOPT_URL => 'https://www.api.ombreetlumiere.eu/controller.php/inscription',
 
             CURLOPT_POST => true,
 
@@ -61,6 +61,8 @@ class LoginController
                 $_SESSION['nom'] = $user['nom'];
                 $_SESSION['prenom'] = $user['prenom'];
                 $_SESSION['email'] = $user['email'];
+                $_SESSION['numero'] = $user['numero'];
+
             }
 
             $youpi = "Inscription réussie. Vous pouvez vous connecter.";
@@ -84,7 +86,7 @@ class LoginController
 
         $options = array(
 
-            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/inscription',
+            CURLOPT_URL => 'https://www.api.ombreetlumiere.eu/controller.php/inscription',
 
             CURLOPT_POST => true,
 
@@ -148,7 +150,7 @@ class LoginController
 
         $options = array(
 
-            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/connexion',
+            CURLOPT_URL => 'https://www.api.ombreetlumiere.eu/controller.php/connexion',
 
             CURLOPT_POST => true,
 
@@ -179,6 +181,7 @@ class LoginController
                 $_SESSION['nom'] = $user['nom'];
                 $_SESSION['prenom'] = $user['prenom'];
                 $_SESSION['email'] = $_POST['email'];
+                $_SESSION['numero'] = $user['numero'];
 
                 header('Location: /mon-espace');
                 exit();
@@ -203,7 +206,7 @@ class LoginController
 
         $options = array(
 
-            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/connexion',
+            CURLOPT_URL => 'https://www.api.ombreetlumiere.eu/controller.php/connexion',
 
             CURLOPT_POST => true,
 
@@ -234,6 +237,8 @@ class LoginController
                 $_SESSION['nom'] = $user['nom'];
                 $_SESSION['prenom'] = $user['prenom'];
                 $_SESSION['email'] = $_POST['email'];
+                $_SESSION['numero'] = $user['numero'];
+
 
                 header('Location: /my-dashboard');
                 exit();
@@ -343,6 +348,33 @@ class LoginController
     }
     
 
+    public function displayDonnees()
+    {
+        // Démarrer la session
+        session_start();
+    
+        // Vérifier si l'email est défini dans la session
+        if (isset($_SESSION['email'])) {
+            // Récupérer l'email de l'utilisateur connecté
+            $email = $_SESSION['email'];
+    
+            // Appeler la fonction pour récupérer les données de l'utilisateur
+            $donnees = checkUser($email);
+    
+            // Vérifier si des données ont été trouvées
+            if ($donnees) {
+                // Afficher les données
+                require '../views/mes-donnees.php';
+            } else {
+                // Afficher un message d'erreur
+                $erreur = "Aucune donnée trouvée.";
+                require '../views/mon-espace.php';
+            }
+        } else {
+            // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
+            header('Location: /connexion');
+        }
+    }
 
 
 

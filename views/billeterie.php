@@ -87,14 +87,14 @@
                                 <td>Billet plein tarif</td>
                                 <td>25</td>
                                 <td>
-                                    <input type="number" id="ptQuantity" min="0" max="5" value="0" required
+                                    <input type="number" id="ptQuantity" min="0" value="0" required
                                         class="form-field quantite">
                                 </td>
                             </tr>
                             <tr class="reduit-1">
                                 <td>Billet tarif réduit</td>
                                 <td>16</td>
-                                <td><input type="number" id="trQuantity" min="0" max="5" value="0" required
+                                <td><input type="number" id="trQuantity" min="0"  value="0" required
                                         class="form-field quantite">
                                 </td>
                             </tr>

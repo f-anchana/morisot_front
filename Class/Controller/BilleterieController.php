@@ -23,7 +23,7 @@ class BilleterieController {
 
         $options = array(
 
-            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/reserver',
+            CURLOPT_URL => 'https://www.api.ombreetlumiere.eu/controller.php/reserver',
 
             CURLOPT_POST => true,
 
@@ -61,7 +61,7 @@ class BilleterieController {
 
         $options = array(
 
-            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/booking',
+            CURLOPT_URL => 'https://www.api.ombreetlumiere.eu/controller.php/booking',
 
             CURLOPT_POST => true,
 
@@ -107,7 +107,7 @@ class BilleterieController {
     
             // Configuration de la requête CURL
             $options = array(
-                CURLOPT_URL => 'http://localhost/morisot/API/controller.php/supprimer_reservation',
+                CURLOPT_URL => 'https://www.api.ombreetlumiere.eu/controller.php/supprimer_reservation',
                 CURLOPT_POST => true,
                 CURLOPT_POSTFIELDS => $params,
                 CURLOPT_HTTPHEADER => array(
@@ -137,7 +137,7 @@ class BilleterieController {
         } else {
             // Si l'ID de la réservation n'est pas présent dans la requête POST
             // Redirection vers une page d'erreur ou traitement supplémentaire si nécessaire
-            header('Location: /erreur');
+            header('Location: /erreur404');
         }
     }
     
