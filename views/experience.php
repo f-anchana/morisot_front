@@ -155,32 +155,11 @@
     </div>
 
 
-    
-
-    <!-- <div class='commentaire'>
-        <h2>Laissez un commentaire</h2>
-        <form action='/commenter' method='POST'>
-            <div class='form-group'>
-                <label for='commentaire'>Commentaire:</label>
-                <textarea id='commentaire' name='commentaire' required></textarea>
-            </div>
-
-            <div class='bouton'>
-                <img src='../img/bouton.svg' alt=''>
-                <input type='hidden' name='id_user' value='" . $_SESSION[' id_user'] . "'>
-                <input class='texte' type='submit' name='commenter' value='Envoyer'>
-            </div>
-
-        </form>
-    </div> -->
-<!-- </div> -->
-
-
 <div class='commentaire'>
 
     <?php
 
-    // require_once '../../API/model.php';
+    require_once '../../API/model.php';
     
     if (isset($_SESSION['nom'])) {
     
@@ -216,9 +195,9 @@
     
         $user = getUser($comment['ext_user']);
     
-        echo "<div class='commentaire'>
+        echo "<div class='commentaire-1'>
     <p>" . $user['prenom'] . "</p>
-    <p>" . $comment['content'] . "</p><br>
+    <p>" . $comment['content'] . "</p>
 </div>";
 }
     

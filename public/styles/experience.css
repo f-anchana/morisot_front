@@ -72,6 +72,14 @@
     padding-top: 5rem;
 }
 
+.commentaire-1{
+    max-width: 650px;
+    margin: 1.5rem auto;
+    background-color: #E5E4DC;
+    border: solid 1px #C0C0C0;
+    padding: 1rem;
+}
+
 .claude {
     font-family: Addington-Regular-Italic, serif;
 }
