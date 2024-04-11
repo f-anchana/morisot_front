@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-// require '../../API/model.php';
+require '../../API/model.php';
 
 class LoginController
 {
@@ -28,7 +28,7 @@ class LoginController
 
         $options = array(
 
-            CURLOPT_URL => 'https://www.api.ombreetlumiere.eu/controller.php/inscription',
+            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/inscription',
 
             CURLOPT_POST => true,
 
@@ -86,7 +86,7 @@ class LoginController
 
         $options = array(
 
-            CURLOPT_URL => 'https://www.api.ombreetlumiere.eu/controller.php/inscription',
+            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/inscription',
 
             CURLOPT_POST => true,
 
@@ -150,7 +150,7 @@ class LoginController
 
         $options = array(
 
-            CURLOPT_URL => 'https://www.api.ombreetlumiere.eu/controller.php/connexion',
+            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/connexion',
 
             CURLOPT_POST => true,
 
@@ -206,7 +206,7 @@ class LoginController
 
         $options = array(
 
-            CURLOPT_URL => 'https://www.api.ombreetlumiere.eu/controller.php/connexion',
+            CURLOPT_URL => 'http://localhost/morisot/API/controller.php/connexion',
 
             CURLOPT_POST => true,
 
