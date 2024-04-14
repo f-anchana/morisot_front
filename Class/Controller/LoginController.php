@@ -189,11 +189,11 @@ class LoginController
                 // La connexion a échoué
                 $erreur = "La connexion a échoué. Veuillez réessayer.";
                 // require '../views/connexion.php';
-                header ('Location: /connexion');
+                header('Location: /connexion');
             }
 
             return $response;
-        }else{
+        } else {
             $erreur = "Une erreur s'est produit. Veuillez réessayer ultérieuerement.";
             require '../views/connexion.php';
         }
@@ -245,11 +245,11 @@ class LoginController
             } else {
                 // La connexion a échoué
                 $erreur = "La connexion a échoué. Veuillez réessayer.";
-                header ('Location: /login');
+                header('Location: /login');
             }
 
             return $response;
-        }else{
+        } else {
             $erreur = "Une erreur s'est produit. Veuillez réessayer ultérieuerement.";
             require '../views/connexion.php';
         }
@@ -295,15 +295,15 @@ class LoginController
     {
         // Démarrer la session
         session_start();
-    
+
         // Vérifier si l'email est défini dans la session
         if (isset($_SESSION['email'])) {
             // Récupérer l'email de l'utilisateur connecté
             $email = $_SESSION['email'];
-    
+
             // Appeler la fonction pour récupérer les réservations de l'utilisateur
             $reservations = getReservationByPerson($email);
-    
+
             // Vérifier si des réservations ont été trouvées
             if ($reservations) {
                 // Afficher les réservations
@@ -323,15 +323,15 @@ class LoginController
     {
         // Démarrer la session
         session_start();
-    
+
         // Vérifier si l'email est défini dans la session
         if (isset($_SESSION['email'])) {
             // Récupérer l'email de l'utilisateur connecté
             $email = $_SESSION['email'];
-    
+
             // Appeler la fonction pour récupérer les réservations de l'utilisateur
             $reservations = getReservationByPerson($email);
-    
+
             // Vérifier si des réservations ont été trouvées
             if ($reservations) {
                 // Afficher les réservations
@@ -346,21 +346,21 @@ class LoginController
             header('Location: /login');
         }
     }
-    
+
 
     public function displayDonnees()
     {
         // Démarrer la session
         session_start();
-    
+
         // Vérifier si l'email est défini dans la session
         if (isset($_SESSION['email'])) {
             // Récupérer l'email de l'utilisateur connecté
             $email = $_SESSION['email'];
-    
+
             // Appeler la fonction pour récupérer les données de l'utilisateur
             $donnees = checkUser($email);
-    
+
             // Vérifier si des données ont été trouvées
             if ($donnees) {
                 // Afficher les données
@@ -380,15 +380,16 @@ class LoginController
     public function modifierUser()
     {
         // Vérifier si les données du formulaire sont présentes et non vides
-        if (isset($_POST['nom'], $_POST['prenom'], $_POST['numero'])) {
-            
+        if (isset($_POST['nom'], $_POST['prenom'], $_POST['numero'], $_POST['email'])) {
+
             // Préparer les données à envoyer à l'API
             $params = json_encode([
                 'nom' => $_POST['nom'],
                 'prenom' => $_POST['prenom'],
-                'numero' => $_POST['numero']
+                'numero' => $_POST['numero'],
+                'email' => $_POST['email']
             ]);
-    
+
             // Configuration de la requête CURL
             $options = array(
                 CURLOPT_URL => 'http://localhost/morisot/API/controller.php/modifier-informations',
@@ -399,46 +400,47 @@ class LoginController
                 ),
                 CURLOPT_RETURNTRANSFER => true // Pour récupérer la réponse de l'API
             );
-    
+
             // Initialiser la session CURL
             $ch = curl_init();
-    
+
             // Configuration des options CURL
             curl_setopt_array($ch, ($options));
-    
+
             // Exécuter la requête CURL et récupérer la réponse
             $response = curl_exec($ch);
-    
+
             // Fermer la session CURL
             curl_close($ch);
-    
+
             // Vérifier si la réponse de l'API est valide
             if ($response) {
                 // La modification a réussi
-    
+
                 // Mettre à jour les données dans la base de données
                 updateUser($_POST['nom'], $_POST['prenom'], $_POST['numero'], $_POST['email']);
-    
-                // Mettre à jour les données de session
+
+                // // Mettre à jour les données de session
                 $_SESSION['nom'] = $_POST['nom'];
                 $_SESSION['prenom'] = $_POST['prenom'];
                 $_SESSION['numero'] = $_POST['numero'];
-    
+
                 // Rediriger vers la page de mon-espace
-                header('Location: /mon-espace');
-                exit();
+                // header('Location: /mon-espace');
+                // exit();
+                require '../views/espace_inscris.php';
             } else {
                 // La modification a échoué
                 $erreur = "La modification a échoué. Veuillez réessayer.";
                 header('Location: /mon-espace');
                 exit();
             }
-    
+
         } else {
             // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
             header('Location: /connexion');
             exit();
         }
     }
-    
+
 }

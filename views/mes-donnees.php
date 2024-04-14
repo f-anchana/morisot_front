@@ -40,12 +40,12 @@
 
         <div class="nom">
                 <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom" value="<?php echo $_SESSION['prenom']; ?>" required>
+                <input type="text" id="nom" name="nom" value="<?php echo $_SESSION['nom']; ?>" required>
         </div>
 
         <div class="prenom">
         <label for="prenom">Prénom:</label>
-                <input type="text" id="prenom" name="prenom" value="<?php echo $_SESSION['nom']; ?>" required>
+                <input type="text" id="prenom" name="prenom" value="<?php echo $_SESSION['prenom']; ?>" required>
         </div>
         </div>
 
