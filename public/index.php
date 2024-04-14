@@ -30,6 +30,7 @@ $router->map('POST', '/connexion', 'LoginController#connectUser');
 $router->map('POST', '/reserver', 'BilleterieController#AddReservation', 'reserver');
 $router->map('POST', '/commenter', 'ExperienceController#AddComment', 'commenter');
 $router->map('POST', '/supprimer_reservation', 'BilleterieController#DeleteReservation', 'supprimer_reservation');
+$router->map('POST', '/modifier-informations', 'LoginController#modifierUser', 'modifier-informations');
 
 //La version anglaise
 $router->map('GET', '/home', 'HomeController#displayHomeEng', 'home');

@@ -21,7 +21,13 @@
     
     <?php 
 
-    require '../views/header-bis.php'; ?>
+    require '../views/header-bis.php';
+    
+    if(isset($erreur)) {
+        echo '<div class="erreur">' . $erreur . '</div>';
+    }
+    
+    ?>
 
 
     <section class="infos">
