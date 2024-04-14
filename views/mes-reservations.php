@@ -49,7 +49,12 @@ require 'header-bis.php';
                 </div>
                 <div class="reservation-buttons">
                     <button onclick='afficherPopupConfirmation(<?php echo $reservation["id_resa"]; ?>)'>Supprimer</button>
-                    <button>Modifier</button>
+
+                    <form action="">
+
+                    
+                    <button  >Modifier</button>
+                    </form>
                 </div>
 
                 <div class='popup-visible' id='popup-<?php echo $reservation["id_resa"]; ?>'>

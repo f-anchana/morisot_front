@@ -18,6 +18,10 @@ class BilleterieController {
         require '../eng/billeterie.php';
     }
 
+    public function displayModifierReservation() {
+        require '../views/modifier-reservation.php';
+    }
+
    public function AddReservation() {
         $params = json_encode(['nom_client' => ($_POST['nom_client']), 'prenom_client' => ($_POST['prenom_client']) ,'email_client' => ($_POST['email_client']) ,'numero_client' => ($_POST['tel_client']), 'date_choisi' => ($_POST['date']), 'horaire_choisi' => ($_POST['time']), 'prix_tota' => ($_POST['prix_total']), 'nbr_billets' => ($_POST['nbr_billets'])]);
 

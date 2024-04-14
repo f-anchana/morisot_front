@@ -22,6 +22,7 @@ $router->map('GET', '/Unveiling-the-truth', 'RessourcesController#displayUnveili
 $router->map('GET', '/deconnexion', 'LoginController#disconnectUser');
 $router->map('GET', '/mes-reservations', 'LoginController#displayReservations', 'mes-reservations');
 $router->map('GET', '/mes-donnees', 'LoginController#displayDonnees', 'mes-donnees');
+$router->map('GET', '/modifier-reservation', 'BilleterieController#displayModifierReservation', 'modifier-reservation');
 
 
 
@@ -31,6 +32,7 @@ $router->map('POST', '/reserver', 'BilleterieController#AddReservation', 'reserv
 $router->map('POST', '/commenter', 'ExperienceController#AddComment', 'commenter');
 $router->map('POST', '/supprimer_reservation', 'BilleterieController#DeleteReservation', 'supprimer_reservation');
 $router->map('POST', '/modifier-informations', 'LoginController#modifierUser', 'modifier-informations');
+
 
 //La version anglaise
 $router->map('GET', '/home', 'HomeController#displayHomeEng', 'home');

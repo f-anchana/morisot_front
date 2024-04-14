@@ -379,7 +379,6 @@ class LoginController
 
     public function modifierUser()
     {
-        // Vérifier si les données du formulaire sont présentes et non vides
         if (isset($_POST['nom'], $_POST['prenom'], $_POST['numero'], $_POST['email'])) {
 
             // Préparer les données à envoyer à l'API
@@ -398,46 +397,33 @@ class LoginController
                 CURLOPT_HTTPHEADER => array(
                     'Content-Type: application/json'
                 ),
-                CURLOPT_RETURNTRANSFER => true // Pour récupérer la réponse de l'API
+                CURLOPT_RETURNTRANSFER => true
             );
 
-            // Initialiser la session CURL
             $ch = curl_init();
-
-            // Configuration des options CURL
             curl_setopt_array($ch, ($options));
-
-            // Exécuter la requête CURL et récupérer la réponse
             $response = curl_exec($ch);
-
-            // Fermer la session CURL
             curl_close($ch);
 
-            // Vérifier si la réponse de l'API est valide
             if ($response) {
-                // La modification a réussi
 
-                // Mettre à jour les données dans la base de données
                 updateUser($_POST['nom'], $_POST['prenom'], $_POST['numero'], $_POST['email']);
 
-                // // Mettre à jour les données de session
+
+                session_start();
+
                 $_SESSION['nom'] = $_POST['nom'];
                 $_SESSION['prenom'] = $_POST['prenom'];
                 $_SESSION['numero'] = $_POST['numero'];
-
-                // Rediriger vers la page de mon-espace
-                // header('Location: /mon-espace');
-                // exit();
-                require '../views/espace_inscris.php';
+                header('Location: /mon-espace');
+                exit();
             } else {
-                // La modification a échoué
                 $erreur = "La modification a échoué. Veuillez réessayer.";
                 header('Location: /mon-espace');
                 exit();
             }
 
         } else {
-            // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
             header('Location: /connexion');
             exit();
         }
