@@ -76,7 +76,7 @@
     <nav class="desk_socials">
         <p>+7 59 69 78 32</p>
         <a href="#" >Youtube</a>
-        <a href="https://www.instagram.com/ombreetlumiere_morisot/" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/ombreetlumiere__morisot/" target="_blank">Instagram</a>
         <a href="https://www.tiktok.com/@ombreetlumieres_morisot?lang=fr" target="_blank">Tiktok</a>
     </nav>
 </footer>

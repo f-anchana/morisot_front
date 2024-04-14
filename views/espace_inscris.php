@@ -24,7 +24,7 @@
     require '../views/header-bis.php'; ?>
 
     <main class="espace">
-        <section >
+        <section>
             <div>
                 <h1>Espace <span class="font-2">personnel</span></h1>
 
@@ -50,9 +50,18 @@
             <div>
                 <h1>Votre dernière <span class="font-2">réservation</span></h1>
                 <div>
-                    <p>31.03.2024</p>
-                    <p>16$</p>
-                    <p>13h00</p>
+
+                    <?php
+                    $dernierereservation = getReservationByPerson($_SESSION['email']);
+                    $dernierereservation = $dernierereservation[0];
+                    $date = date_create($dernierereservation['date_choisi']);
+                    $date = date_format($date, 'd.m.Y');
+                    $prix = $dernierereservation['prix_tota'];
+                    $horaire = $dernierereservation['horaire_choisi'];
+                    echo "<p>$date</p>";
+                    echo "<p>$prix €</p>";
+                    echo "<p>$horaire</p>";
+                    ?>
                     <p class="welcome">Ombre et lumière</p>
                 </div>
             </div>

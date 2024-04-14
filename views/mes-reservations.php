@@ -42,11 +42,10 @@ require 'header-bis.php';
                         <?php echo $reservation['numero_client']; ?>
                     </p> <br><br>
                     <p><strong>Date:</strong>
-                        <?php echo $reservation['date_choisi']; ?>
+                    <?php echo date_format(date_create($reservation['date_choisi']), 'd.m.Y') . ', ' . $reservation['horaire_choisi'] ; ?>
                     </p>
-                    <p><strong>Heure:</strong>
-                        <?php echo $reservation['horaire_choisi']; ?>
-                    </p>
+                    <p><strong>Prix:</strong>
+                        <?php echo $reservation['prix_tota'] . '€'; ?>
                 </div>
                 <div class="reservation-buttons">
                     <button onclick='afficherPopupConfirmation(<?php echo $reservation["id_resa"]; ?>)'>Supprimer</button>

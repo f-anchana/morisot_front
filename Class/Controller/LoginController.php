@@ -377,7 +377,63 @@ class LoginController
     }
 
 
+    public function modifierUser()
+    {
+        // Vérifier si les données du formulaire sont présentes et non vides
+        if (isset($_POST['nom'], $_POST['prenom'], $_POST['numero'])) {
+            
+            // Préparer les données à envoyer à l'API
+            $params = json_encode([
+                'nom' => $_POST['nom'],
+                'prenom' => $_POST['prenom'],
+                'numero' => $_POST['numero']
+            ]);
+    
+            // Configuration de la requête CURL
+            $options = array(
+                CURLOPT_URL => 'http://localhost/morisot/API/controller.php/modifier-informations',
+                CURLOPT_POST => true,
+                CURLOPT_POSTFIELDS => $params,
+                CURLOPT_HTTPHEADER => array(
+                    'Content-Type: application/json'
+                ),
+                CURLOPT_RETURNTRANSFER => true // Pour récupérer la réponse de l'API
+            );
+    
+            // Initialiser la session CURL
+            $ch = curl_init();
+    
+            // Configuration des options CURL
+            curl_setopt_array($ch, ($options));
+    
+            // Exécuter la requête CURL et récupérer la réponse
+            $response = curl_exec($ch);
+    
+            // Fermer la session CURL
+            curl_close($ch);
+    
+            // Vérifier si la réponse de l'API est valide
+            if ($response) {
 
-   
+                updateUser($_POST['nom'], $_POST['prenom'], $_POST['numero'], $_POST['email']);
+                // La modification a réussi
+                $_SESSION['nom'] = $_POST['nom'];
+                $_SESSION['prenom'] = $_POST['prenom'];
+                $_SESSION['numero'] = $_POST['numero'];
+            
 
+                header('Location: /mon-espace');
+                exit();
+            } else {
+                // La modification a échoué
+                $erreur = "La modification a échoué. Veuillez réessayer.";
+                header('Location: /mon-espace');
+                exit();
+            }
+
+        } else {
+            // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
+            header('Location: /login');
+        }
+    }
 }
