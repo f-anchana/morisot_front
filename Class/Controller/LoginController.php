@@ -414,14 +414,17 @@ class LoginController
     
             // Vérifier si la réponse de l'API est valide
             if ($response) {
-
-                updateUser($_POST['nom'], $_POST['prenom'], $_POST['numero'], $_POST['email']);
                 // La modification a réussi
+    
+                // Mettre à jour les données dans la base de données
+                updateUser($_POST['nom'], $_POST['prenom'], $_POST['numero'], $_POST['email']);
+    
+                // Mettre à jour les données de session
                 $_SESSION['nom'] = $_POST['nom'];
                 $_SESSION['prenom'] = $_POST['prenom'];
                 $_SESSION['numero'] = $_POST['numero'];
-            
-
+    
+                // Rediriger vers la page de mon-espace
                 header('Location: /mon-espace');
                 exit();
             } else {
@@ -430,10 +433,12 @@ class LoginController
                 header('Location: /mon-espace');
                 exit();
             }
-
+    
         } else {
             // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
-            header('Location: /login');
+            header('Location: /connexion');
+            exit();
         }
     }
+    
 }
