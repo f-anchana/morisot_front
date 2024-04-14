@@ -234,6 +234,19 @@ button[type="submit"] {
 
 }
 
+@media screen and (max-width: 1024px) {
+
+    .deux{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .part-3 h1{
+        margin: 1.5rem 0 0.5rem 0;
+    }
+
+}
+
 
 @media screen and (min-width: 1024px) {
 
